@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ffr-Ze-cKL">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController title="attractionListViewControlelr" id="m9v-Bh-ZO6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UWv-sY-PRT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hCE-Dc-ocs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -27,13 +27,13 @@
         <!--mapViewController-->
         <scene sceneID="Tpw-Sl-g7t">
             <objects>
-                <viewController title="mapViewController" id="wbk-Ed-cWK" sceneMemberID="viewController">
+                <viewController title="mapViewController" id="wbk-Ed-cWK" customClass="mapViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="auZ-ce-ul9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -41,17 +41,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="XKZ-fV-zA4"/>
+                    <connections>
+                        <outlet property="gardenMapView" destination="5HS-Ek-fGm" id="4cg-Wg-8fO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh8-aZ-VHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="-626.11607142857144"/>
+            <point key="canvasLocation" x="944.61538461538453" y="-626.30331753554503"/>
         </scene>
         <!--settingsViewController-->
         <scene sceneID="Krs-Dc-yGX">
             <objects>
                 <viewController title="settingsViewController" id="jUF-pP-bgT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hfq-Y9-syb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xxv-e9-ZPJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
