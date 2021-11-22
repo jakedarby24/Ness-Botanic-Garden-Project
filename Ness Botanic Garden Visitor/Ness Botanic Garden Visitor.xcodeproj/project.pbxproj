@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B3274C0F2A0031D666 /* AppDelegate.swift */; };
+		473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B5274C0F2A0031D666 /* SceneDelegate.swift */; };
+		473976B8274C0F2A0031D666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B7274C0F2A0031D666 /* ViewController.swift */; };
+		473976BB274C0F2A0031D666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976B9274C0F2A0031D666 /* Main.storyboard */; };
+		473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976BC274C0F2B0031D666 /* Assets.xcassets */; };
+		473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */; };
+		473976C5274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 473976C4274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976C9274C0F2B0031D666 /* Interface.storyboard */; };
+		473976CD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976CC274C0F2B0031D666 /* Assets.xcassets */; };
+		473976D3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		473976D8274C0F2B0031D666 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976D7274C0F2B0031D666 /* InterfaceController.swift */; };
+		473976DA274C0F2B0031D666 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */; };
+		473976DC274C0F2B0031D666 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DB274C0F2B0031D666 /* NotificationController.swift */; };
+		473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DD274C0F2B0031D666 /* ComplicationController.swift */; };
+		473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976DF274C0F2C0031D666 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		473976C6274C0F2B0031D666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473976A8274C0F2A0031D666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 473976C3274C0F2B0031D666;
+			remoteInfo = "Ness Botanic Garden Visitor WatchKit App";
+		};
+		473976D4274C0F2B0031D666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473976A8274C0F2A0031D666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 473976D1274C0F2B0031D666;
+			remoteInfo = "Ness Botanic Garden Visitor WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		473976E8274C0F2C0031D666 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				473976D3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473976EC274C0F2C0031D666 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				473976C5274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Botanic Garden Visitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		473976B3274C0F2A0031D666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		473976B5274C0F2A0031D666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		473976B7274C0F2A0031D666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		473976BA274C0F2A0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		473976BC274C0F2B0031D666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		473976BF274C0F2B0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		473976C1274C0F2B0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473976C4274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Botanic Garden Visitor WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		473976CA274C0F2B0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		473976CC274C0F2B0031D666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ness Botanic Garden Visitor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		473976D7274C0F2B0031D666 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		473976DB274C0F2B0031D666 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		473976DD274C0F2B0031D666 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		473976DF274C0F2C0031D666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		473976E1274C0F2C0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473976E2274C0F2C0031D666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		473976AD274C0F2A0031D666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473976CF274C0F2B0031D666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		473976A7274C0F2A0031D666 = {
+			isa = PBXGroup;
+			children = (
+				473976B2274C0F2A0031D666 /* Ness Botanic Garden Visitor */,
+				473976C8274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */,
+				473976D6274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */,
+				473976B1274C0F2A0031D666 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		473976B1274C0F2A0031D666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */,
+				473976C4274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app */,
+				473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		473976B2274C0F2A0031D666 /* Ness Botanic Garden Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				473976B3274C0F2A0031D666 /* AppDelegate.swift */,
+				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
+				473976B7274C0F2A0031D666 /* ViewController.swift */,
+				473976B9274C0F2A0031D666 /* Main.storyboard */,
+				473976BC274C0F2B0031D666 /* Assets.xcassets */,
+				473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */,
+				473976C1274C0F2B0031D666 /* Info.plist */,
+			);
+			path = "Ness Botanic Garden Visitor";
+			sourceTree = "<group>";
+		};
+		473976C8274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				473976C9274C0F2B0031D666 /* Interface.storyboard */,
+				473976CC274C0F2B0031D666 /* Assets.xcassets */,
+			);
+			path = "Ness Botanic Garden Visitor WatchKit App";
+			sourceTree = "<group>";
+		};
+		473976D6274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				473976D7274C0F2B0031D666 /* InterfaceController.swift */,
+				473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */,
+				473976DB274C0F2B0031D666 /* NotificationController.swift */,
+				473976DD274C0F2B0031D666 /* ComplicationController.swift */,
+				473976DF274C0F2C0031D666 /* Assets.xcassets */,
+				473976E1274C0F2C0031D666 /* Info.plist */,
+				473976E2274C0F2C0031D666 /* PushNotificationPayload.apns */,
+			);
+			path = "Ness Botanic Garden Visitor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		473976AF274C0F2A0031D666 /* Ness Botanic Garden Visitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473976ED274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor" */;
+			buildPhases = (
+				473976AC274C0F2A0031D666 /* Sources */,
+				473976AD274C0F2A0031D666 /* Frameworks */,
+				473976AE274C0F2A0031D666 /* Resources */,
+				473976EC274C0F2C0031D666 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				473976C7274C0F2B0031D666 /* PBXTargetDependency */,
+			);
+			name = "Ness Botanic Garden Visitor";
+			productName = "Ness Botanic Garden Visitor";
+			productReference = 473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		473976C3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473976E9274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor WatchKit App" */;
+			buildPhases = (
+				473976C2274C0F2B0031D666 /* Resources */,
+				473976E8274C0F2C0031D666 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				473976D5274C0F2B0031D666 /* PBXTargetDependency */,
+			);
+			name = "Ness Botanic Garden Visitor WatchKit App";
+			productName = "Ness Botanic Garden Visitor WatchKit App";
+			productReference = 473976C4274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		473976D1274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 473976E5274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor WatchKit Extension" */;
+			buildPhases = (
+				473976CE274C0F2B0031D666 /* Sources */,
+				473976CF274C0F2B0031D666 /* Frameworks */,
+				473976D0274C0F2B0031D666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ness Botanic Garden Visitor WatchKit Extension";
+			productName = "Ness Botanic Garden Visitor WatchKit Extension";
+			productReference = 473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		473976A8274C0F2A0031D666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					473976AF274C0F2A0031D666 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					473976C3274C0F2B0031D666 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					473976D1274C0F2B0031D666 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 473976AB274C0F2A0031D666 /* Build configuration list for PBXProject "Ness Botanic Garden Visitor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 473976A7274C0F2A0031D666;
+			productRefGroup = 473976B1274C0F2A0031D666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				473976AF274C0F2A0031D666 /* Ness Botanic Garden Visitor */,
+				473976C3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */,
+				473976D1274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		473976AE274C0F2A0031D666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */,
+				473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */,
+				473976BB274C0F2A0031D666 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473976C2274C0F2B0031D666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473976CD274C0F2B0031D666 /* Assets.xcassets in Resources */,
+				473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473976D0274C0F2B0031D666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		473976AC274C0F2A0031D666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473976B8274C0F2A0031D666 /* ViewController.swift in Sources */,
+				473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */,
+				473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473976CE274C0F2B0031D666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473976DC274C0F2B0031D666 /* NotificationController.swift in Sources */,
+				473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */,
+				473976DA274C0F2B0031D666 /* ExtensionDelegate.swift in Sources */,
+				473976D8274C0F2B0031D666 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		473976C7274C0F2B0031D666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 473976C3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */;
+			targetProxy = 473976C6274C0F2B0031D666 /* PBXContainerItemProxy */;
+		};
+		473976D5274C0F2B0031D666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 473976D1274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */;
+			targetProxy = 473976D4274C0F2B0031D666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		473976B9274C0F2A0031D666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				473976BA274C0F2A0031D666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				473976BF274C0F2B0031D666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		473976C9274C0F2B0031D666 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				473976CA274C0F2B0031D666 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		473976E3274C0F2C0031D666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		473976E4274C0F2C0031D666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		473976E6274C0F2C0031D666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ness Botanic Garden Visitor WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		473976E7274C0F2C0031D666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ness Botanic Garden Visitor WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		473976EA274C0F2C0031D666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		473976EB274C0F2C0031D666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		473976EE274C0F2C0031D666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		473976EF274C0F2C0031D666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		473976AB274C0F2A0031D666 /* Build configuration list for PBXProject "Ness Botanic Garden Visitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473976E3274C0F2C0031D666 /* Debug */,
+				473976E4274C0F2C0031D666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		473976E5274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473976E6274C0F2C0031D666 /* Debug */,
+				473976E7274C0F2C0031D666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		473976E9274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473976EA274C0F2C0031D666 /* Debug */,
+				473976EB274C0F2C0031D666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		473976ED274C0F2C0031D666 /* Build configuration list for PBXNativeTarget "Ness Botanic Garden Visitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473976EE274C0F2C0031D666 /* Debug */,
+				473976EF274C0F2C0031D666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 473976A8274C0F2A0031D666 /* Project object */;
+}
