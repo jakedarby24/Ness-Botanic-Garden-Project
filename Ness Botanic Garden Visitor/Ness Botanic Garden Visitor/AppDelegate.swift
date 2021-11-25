@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        preloadDataCheck()
         return true
     }
 
@@ -57,5 +58,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
+    private func preloadDataCheck() {
+        let key = "didLoadData"
+        let userDefaults = UserDefaults.standard
+        if userDefaults.bool(forKey: key) == false {
+        
+            guard let attractionsURL = Bundle.main.url(forResource: "attractions", withExtension: "plist") else { return }
+            guard let featuresURL = Bundle.main.url(forResource: "features", withExtension: "plist") else { return }
+            guard let gardensURL = Bundle.main.url(forResource: "garden_sections", withExtension: "plist") else { return }
+        
+            /* The if statements below attempt to return the data stored in the plist files.
+            In the following format:
+            Item 0 is whether the attraction is currently active
+            Item 1 is the name of the attraction
+            Item 2 is the description of the attraction
+            Item 3 is the latitude
+            Item 4 is the longitude */
+            if let attractionsContents = NSArray(contentsOf: attractionsURL) as? [[Any]] {
+                for item in attractionsContents {
+                    print(item)
+                }
+            }
+            if let featuresContents = NSArray(contentsOf: featuresURL) as? [[Any]] {
+                for item in featuresContents {
+                    print(item)
+                }
+            }
+            if let gardensContents = NSArray(contentsOf: gardensURL) as? [[Any]] {
+                for item in gardensContents {
+                    print(item)
+                }
+            }
+            
+            userDefaults.set(true, forKey: key)
+        }
+    }
 }
 

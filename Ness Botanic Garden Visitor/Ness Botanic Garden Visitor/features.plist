@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<true/>
+		<string>Entrance</string>
+		<string>The entrance to the Ness Botanic Garden</string>
+		<real>53.272281</real>
+		<real>-3.041818</real>
+	</array>
+	<array>
+		<false/>
+		<string>Car Park A</string>
+		<string>A car park for the gardens</string>
+		<real>53.272428</real>
+		<real>-3.04222</real>
+	</array>
+	<array>
+		<false/>
+		<string>Car Park B</string>
+		<string>A car park for the gardens</string>
+		<real>53.272018</real>
+		<real>-3.042038</real>
+	</array>
+	<array>
+		<true/>
+		<string>Visitor Centre</string>
+		<string>The information centre for visitors to the gardens</string>
+		<real>53.272306</real>
+		<real>-3.042912</real>
+	</array>
+	<array>
+		<true/>
+		<string>Picnic Area</string>
+		<string>A place to have some food whilst taking in the beauty of the gardens</string>
+		<real>53.271941</real>
+		<real>-3.045536</real>
+	</array>
+	<array>
+		<true/>
+		<string>View Point</string>
+		<string></string>
+		<real>53.272345</real>
+		<real>-3.044195</real>
+	</array>
+	<array>
+		<true/>
+		<string>View Point</string>
+		<string></string>
+		<real>53.271963</real>
+		<real>-3.044221</real>
+	</array>
+	<array>
+		<true/>
+		<string>Labyrinth</string>
+		<string></string>
+		<real>53.271694</real>
+		<real>-3.045375</real>
+	</array>
+	<array>
+		<true/>
+		<string>Wedding Area</string>
+		<string>The entrance to the Ness Botanic Garden</string>
+		<real>53.271267</real>
+		<real>-3.041936</real>
+	</array>
+	<array>
+		<false/>
+		<string>Toilets</string>
+		<string></string>
+		<real>53.272508</real>
+		<real>-3.043149</real>
+	</array>
+	<array>
+		<false/>
+		<string>Toilets</string>
+		<string></string>
+		<real>53.271915</real>
+		<real>-3.042773</real>
+	</array>
+	<array>
+		<false/>
+		<string>Toilets</string>
+		<string></string>
+		<real>53.273192</real>
+		<real>-3.045316</real>
+	</array>
+</array>
+</plist>

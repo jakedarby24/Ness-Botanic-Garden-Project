@@ -22,7 +22,11 @@
 		473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DD274C0F2B0031D666 /* ComplicationController.swift */; };
 		473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976DF274C0F2C0031D666 /* Assets.xcassets */; };
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
+		4797EA30274FF49700496756 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA2F274FF49700496756 /* features.plist */; };
+		4797EA32274FFB0900496756 /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
 		47BE535C274EAFC0002C6E93 /* Attractions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */; };
+		47BE536A274FEC8A002C6E93 /* attractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BE5369274FEC8A002C6E93 /* attractions.plist */; };
+		47BE536B274FEC8A002C6E93 /* attractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BE5369274FEC8A002C6E93 /* attractions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +91,10 @@
 		473976E1274C0F2C0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473976E2274C0F2C0031D666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		473976F2274C13410031D666 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		4797EA2F274FF49700496756 /* features.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
+		4797EA31274FFB0900496756 /* garden_sections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = garden_sections.plist; sourceTree = "<group>"; };
 		47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Attractions.xcdatamodel; sourceTree = "<group>"; };
+		47BE5369274FEC8A002C6E93 /* attractions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = attractions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				473976B3274C0F2A0031D666 /* AppDelegate.swift */,
+				47BE5369274FEC8A002C6E93 /* attractions.plist */,
+				4797EA2F274FF49700496756 /* features.plist */,
+				4797EA31274FFB0900496756 /* garden_sections.plist */,
 				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
 				47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */,
@@ -271,6 +281,9 @@
 				473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */,
 				473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */,
 				473976BB274C0F2A0031D666 /* Main.storyboard in Resources */,
+				47BE536A274FEC8A002C6E93 /* attractions.plist in Resources */,
+				4797EA30274FF49700496756 /* features.plist in Resources */,
+				4797EA32274FFB0900496756 /* garden_sections.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +293,7 @@
 			files = (
 				473976CD274C0F2B0031D666 /* Assets.xcassets in Resources */,
 				473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */,
+				47BE536B274FEC8A002C6E93 /* attractions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

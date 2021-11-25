@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<true/>
+		<string>Pine Woods</string>
+		<string>The pinewood has a number of paths to investigate and is also home to many fine examples of rhododendrons.</string>
+		<real>53.27417</real>
+		<real>-3.04405</real>
+	</array>
+	<array>
+		<true/>
+		<string>Old House Area</string>
+		<string>Mickwell Brow was built in 1898 as the first phase of Arthur Bulley&apos;s vision for what is now Ness botanic Gardens.The images show both old and new views of the house.</string>
+		<real>53.272057</real>
+		<real>-3.043731</real>
+	</array>
+	<array>
+		<true/>
+		<string>Water Garden</string>
+		<string>This area was originally created for use as a research project in the 1960&apos;s before being planted with a stunning range of trees which all have fabulous autumn colour and beautiful winter barks.</string>
+		<real>53.270263</real>
+		<real>-3.043095</real>
+	</array>
+	<array>
+		<true/>
+		<string>Rock Garden</string>
+		<string>One of the original features of Ness, the Rock Garden was orginally created by A.K Bulley on the site of an old clay marl pit, to house his ever increasing collection of alpines. </string>
+		<real>53.271159</real>
+		<real>-3.042296</real>
+	</array>
+	<array>
+		<true/>
+		<string>Azalea Walk</string>
+		<string>So called for its colour displays of Azaleas in the Spring, the area also has stunning snowdrop displays in February. Fabulous birches and rowans, part of the botanical collections surround the children&apos;s play area.</string>
+		<real>53.272233</real>
+		<real>-3.046131</real>
+	</array>
+	<array>
+		<true/>
+		<string>Terraces</string>
+		<string>The sun baked terraces allows us to grow slightly tender plants outdoors all year round and provides fantastic views of the surrounding Gardens.</string>
+		<real>53.27154</real>
+		<real>-3.042687</real>
+	</array>
+	<array>
+		<true/>
+		<string>Potager Area</string>
+		<string>The Potager is a scenic vegetable/food growing area.  Food grown here is used for the Tea Rooms, sold at harvest time to the public (by way of a donations box) and the pumpkins are used for carving/cooking for Halloween.</string>
+		<real>53.273368</real>
+		<real>-3.044382</real>
+	</array>
+	<array>
+		<true/>
+		<string>Herbaceous Area</string>
+		<string>Another original area of Ness although the layout has changed over the years. It now houses 120 metres of herbaceous borders which look beautiful from May to February.</string>
+		<real>53.272797</real>
+		<real>-3.044747</real>
+	</array>
+	<array>
+		<true/>
+		<string>Ness Botanische</string>
+		<string>Designed in 2009 by Chris Beardshaw and exhibited at RHS Tatton Show where it won Gold and Best in Show.  It celebrates the botanical research at Ness and the pleasure afforded to our visitors.</string>
+		<real>53.273015</real>
+		<real>-3.043567</real>
+	</array>
+</array>
+</plist>
