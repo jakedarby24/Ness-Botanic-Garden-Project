@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B3274C0F2A0031D666 /* AppDelegate.swift */; };
 		473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B5274C0F2A0031D666 /* SceneDelegate.swift */; };
-		473976B8274C0F2A0031D666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B7274C0F2A0031D666 /* ViewController.swift */; };
 		473976BB274C0F2A0031D666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976B9274C0F2A0031D666 /* Main.storyboard */; };
 		473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976BC274C0F2B0031D666 /* Assets.xcassets */; };
 		473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,7 @@
 		473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DD274C0F2B0031D666 /* ComplicationController.swift */; };
 		473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976DF274C0F2C0031D666 /* Assets.xcassets */; };
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
+		47BE535C274EAFC0002C6E93 /* Attractions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Botanic Garden Visitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473976B3274C0F2A0031D666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473976B5274C0F2A0031D666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		473976B7274C0F2A0031D666 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		473976BA274C0F2A0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		473976BC274C0F2B0031D666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		473976BF274C0F2B0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		473976E1274C0F2C0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473976E2274C0F2C0031D666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		473976F2274C13410031D666 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Attractions.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +133,8 @@
 			children = (
 				473976B3274C0F2A0031D666 /* AppDelegate.swift */,
 				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
-				473976B7274C0F2A0031D666 /* ViewController.swift */,
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
+				47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */,
 				473976BC274C0F2B0031D666 /* Assets.xcassets */,
 				473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */,
 				473976C1274C0F2B0031D666 /* Info.plist */,
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473976B8274C0F2A0031D666 /* ViewController.swift in Sources */,
+				47BE535C274EAFC0002C6E93 /* Attractions.xcdatamodeld in Sources */,
 				473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */,
 				473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */,
 				473976F3274C13410031D666 /* mapViewController.swift in Sources */,
@@ -547,7 +547,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -573,7 +573,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -596,6 +596,8 @@
 				DEVELOPMENT_TEAM = NU8BL486WN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -606,7 +608,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -626,6 +628,8 @@
 				DEVELOPMENT_TEAM = NU8BL486WN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -636,7 +640,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -687,6 +691,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */,
+			);
+			currentVersion = 47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */;
+			path = Attractions.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 473976A8274C0F2A0031D666 /* Project object */;
 }

@@ -30,6 +30,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     */
     
+    // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
     func setMapLocation() {
         let latitude = 53.27182
         let longitude = -3.0448
