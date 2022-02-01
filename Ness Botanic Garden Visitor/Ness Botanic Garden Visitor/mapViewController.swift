@@ -41,4 +41,24 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: location, span: span)
-        self.gardenMapView.setReg
+        self.gardenMapView.setRegion(region, animated: true)
+    }
+    
+    // A function for getting landmark information from the plist files
+    func getItemsFromPlist(fileName: String) -> [Landmark]? {
+        
+        var landmarks: [Landmark]
+        
+        do {
+            // Try to create a URL for the given file path
+            guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "plist") else { return nil }
+            // Try to get the data that's contained in the file at the file URL
+            let fileData = try Data(contentsOf: fileURL)
+            // Try to match the format of the plist to an array of landmark objects
+            landmarks = try PropertyListDecoder().decode([Landmark].self, from: fileData)
+        } catch {
+            print("Error")
+        }
+        return landmarks
+    }
+}
