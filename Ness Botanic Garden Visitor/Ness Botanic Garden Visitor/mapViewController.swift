@@ -58,6 +58,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             landmarks = try PropertyListDecoder().decode([Landmark].self, from: fileData)
         } catch {
             print("Error")
+            return nil
         }
         return landmarks
     }
