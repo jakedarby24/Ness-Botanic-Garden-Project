@@ -8,16 +8,21 @@
 import UIKit
 import MapKit
 
-class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class mapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var gardenMapView: MKMapView!
+    var attractions: [Landmark]?
+    var sections: [Landmark]?
+    var features: [Landmark]?
     
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        gardenMapView.delegate = self
 
         // Do any additional setup after loading the view.
         setMapLocation()
+        addMapAnnotations()
     }
 
     /*
@@ -42,6 +47,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: location, span: span)
         self.gardenMapView.setRegion(region, animated: true)
+        self.gardenMapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
     }
     
     // A function for getting landmark information from the plist files
@@ -61,5 +67,58 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             return nil
         }
         return landmarks
+    }
+    
+    func addMapAnnotations() {
+        features = getItemsFromPlist(fileName: "features")
+        for item in features! {
+            if item.enabled {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        }
+        sections = getItemsFromPlist(fileName: "garden_sections")
+        for item in sections! {
+            if item.enabled {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        }
+        attractions = getItemsFromPlist(fileName: "attractions")
+        for item in attractions! {
+            if item.enabled {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        }
+    }
+    
+    // MARK: - Delegate Functions
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if !(annotation is MKUserLocation) {
+            let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotation.title!!)
+            marker.canShowCallout = true
+            if annotation.subtitle != "" {
+                marker.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            }
+            
+            return marker
+        }
+        else {
+            return nil
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
     }
 }

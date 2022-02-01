@@ -8,22 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--attractionListViewControlelr-->
-        <scene sceneID="gks-Ak-ZiE">
-            <objects>
-                <viewController title="attractionListViewControlelr" id="m9v-Bh-ZO6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UWv-sY-PRT">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="hCE-Dc-ocs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Attractions" image="mappin.and.ellipse" catalog="system" id="IrW-Di-pmO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zuc-V6-zgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1705" y="144"/>
-        </scene>
         <!--mapViewController-->
         <scene sceneID="Tpw-Sl-g7t">
             <objects>
@@ -32,13 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Un-6X-QT9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5HS-Ek-fGm" firstAttribute="bottom" secondItem="2Un-6X-QT9" secondAttribute="bottom" id="84n-oE-rTO"/>
+                            <constraint firstItem="5HS-Ek-fGm" firstAttribute="trailing" secondItem="2Un-6X-QT9" secondAttribute="trailing" id="HuH-by-PBj"/>
+                            <constraint firstItem="5HS-Ek-fGm" firstAttribute="top" secondItem="2Un-6X-QT9" secondAttribute="top" id="JvA-3d-i0D"/>
+                            <constraint firstItem="5HS-Ek-fGm" firstAttribute="leading" secondItem="2Un-6X-QT9" secondAttribute="leading" id="dhr-Tx-fCV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="XKZ-fV-zA4"/>
                     <connections>
@@ -47,23 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh8-aZ-VHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-516"/>
-        </scene>
-        <!--settingsViewController-->
-        <scene sceneID="Krs-Dc-yGX">
-            <objects>
-                <viewController title="settingsViewController" id="jUF-pP-bgT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hfq-Y9-syb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xxv-e9-ZPJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="Gk4-JI-uzG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tJs-kf-HVo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1705" y="859"/>
+            <point key="canvasLocation" x="1704.6153846153845" y="-516.11374407582935"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l4i-VG-SFe">
@@ -76,19 +49,64 @@
                     </tabBar>
                     <connections>
                         <segue destination="wbk-Ed-cWK" kind="relationship" relationship="viewControllers" id="lIK-AZ-gPl"/>
-                        <segue destination="m9v-Bh-ZO6" kind="relationship" relationship="viewControllers" id="jJL-tY-K2q"/>
-                        <segue destination="jUF-pP-bgT" kind="relationship" relationship="viewControllers" id="9qf-Xg-sxq"/>
+                        <segue destination="Fjc-jF-dcw" kind="relationship" relationship="viewControllers" id="o4z-Ii-1MM"/>
+                        <segue destination="3Tf-Ft-xSe" kind="relationship" relationship="viewControllers" id="qHD-Vm-ddA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXh-fi-JZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946" y="144"/>
         </scene>
+        <!--Attractions-->
+        <scene sceneID="7rq-k6-LCO">
+            <objects>
+                <tableViewController id="Fjc-jF-dcw" customClass="attractionListViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="PZm-2d-GQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" id="ZXR-TX-hqu">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZXR-TX-hqu" id="4fV-PW-Xno">
+                                    <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fjc-jF-dcw" id="Z7C-Vh-kDg"/>
+                            <outlet property="delegate" destination="Fjc-jF-dcw" id="1Jn-Ew-8km"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Attractions" image="mappin.circle" catalog="system" id="wb6-A2-bx0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-Vn-0Y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685" y="150"/>
+        </scene>
+        <!--settingsViewController-->
+        <scene sceneID="gnD-Iv-6SK">
+            <objects>
+                <viewController title="settingsViewController" id="3Tf-Ft-xSe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwD-Mo-hu2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sHn-PX-UrN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.2" catalog="system" id="i6R-uP-zyK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaO-A5-0NA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685" y="808"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gearshape.2" catalog="system" width="128" height="100"/>
         <image name="map" catalog="system" width="128" height="110"/>
-        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

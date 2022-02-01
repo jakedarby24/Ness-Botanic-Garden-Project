@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4719EF4627A9E19E0061AD55 /* attractionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4719EF4527A9E19E0061AD55 /* attractionListViewController.swift */; };
 		473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B3274C0F2A0031D666 /* AppDelegate.swift */; };
 		473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B5274C0F2A0031D666 /* SceneDelegate.swift */; };
 		473976BB274C0F2A0031D666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976B9274C0F2A0031D666 /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4719EF4527A9E19E0061AD55 /* attractionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attractionListViewController.swift; sourceTree = "<group>"; };
 		473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Botanic Garden Visitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473976B3274C0F2A0031D666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473976B5274C0F2A0031D666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		473976B2274C0F2A0031D666 /* Ness Botanic Garden Visitor */ = {
 			isa = PBXGroup;
 			children = (
+				4719EF4527A9E19E0061AD55 /* attractionListViewController.swift */,
 				473976B3274C0F2A0031D666 /* AppDelegate.swift */,
 				47BE5369274FEC8A002C6E93 /* attractions.plist */,
 				4797EA2F274FF49700496756 /* features.plist */,
@@ -316,6 +319,7 @@
 				473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */,
 				473976F3274C13410031D666 /* mapViewController.swift in Sources */,
 				473AC91627A9C43900280A25 /* Landmark.swift in Sources */,
+				4719EF4627A9E19E0061AD55 /* attractionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
