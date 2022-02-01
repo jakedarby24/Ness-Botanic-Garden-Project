@@ -2,89 +2,149 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<array>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Entrance</string>
+		<key>description</key>
 		<string>The entrance to the Ness Botanic Garden</string>
+		<key>latitude</key>
 		<real>53.272281</real>
+		<key>longitude</key>
 		<real>-3.041818</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Car Park A</string>
+		<key>description</key>
 		<string>A car park for the gardens</string>
+		<key>latitude</key>
 		<real>53.272428</real>
+		<key>longitude</key>
 		<real>-3.04222</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Car Park B</string>
+		<key>description</key>
 		<string>A car park for the gardens</string>
+		<key>latitude</key>
 		<real>53.272018</real>
+		<key>longitude</key>
 		<real>-3.042038</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Visitor Centre</string>
+		<key>description</key>
 		<string>The information centre for visitors to the gardens</string>
+		<key>latitude</key>
 		<real>53.272306</real>
+		<key>longitude</key>
 		<real>-3.042912</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Picnic Area</string>
+		<key>description</key>
 		<string>A place to have some food whilst taking in the beauty of the gardens</string>
+		<key>latitude</key>
 		<real>53.271941</real>
+		<key>longitude</key>
 		<real>-3.045536</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>View Point</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.272345</real>
+		<key>longitude</key>
 		<real>-3.044195</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>View Point</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.271963</real>
+		<key>longitude</key>
 		<real>-3.044221</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Labyrinth</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.271694</real>
+		<key>longitude</key>
 		<real>-3.045375</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Wedding Area</string>
+		<key>description</key>
 		<string>The entrance to the Ness Botanic Garden</string>
+		<key>latitude</key>
 		<real>53.271267</real>
+		<key>longitude</key>
 		<real>-3.041936</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Toilets</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.272508</real>
+		<key>longitude</key>
 		<real>-3.043149</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Toilets</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.271915</real>
+		<key>longitude</key>
 		<real>-3.042773</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Toilets</string>
+		<key>description</key>
 		<string></string>
+		<key>latitude</key>
 		<real>53.273192</real>
+		<key>longitude</key>
 		<real>-3.045316</real>
-	</array>
+	</dict>
 </array>
 </plist>

@@ -2,68 +2,114 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<array>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Pine Woods</string>
+		<key>description</key>
 		<string>The pinewood has a number of paths to investigate and is also home to many fine examples of rhododendrons.</string>
+		<key>latitude</key>
 		<real>53.27417</real>
+		<key>longitude</key>
 		<real>-3.04405</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Old House Area</string>
-		<string>Mickwell Brow was built in 1898 as the first phase of Arthur Bulley&apos;s vision for what is now Ness botanic Gardens.The images show both old and new views of the house.</string>
+		<key>description</key>
+		<string>Mickwell Brow was built in 1898 as the first phase of Arthur Bulley&apos;s vision for what is now Ness botanic Gardens.
+The images show both old and new views of the house.</string>
+		<key>latitude</key>
 		<real>53.272057</real>
+		<key>longitude</key>
 		<real>-3.043731</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Water Garden</string>
+		<key>description</key>
 		<string>This area was originally created for use as a research project in the 1960&apos;s before being planted with a stunning range of trees which all have fabulous autumn colour and beautiful winter barks.</string>
+		<key>latitude</key>
 		<real>53.270263</real>
+		<key>longitude</key>
 		<real>-3.043095</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Rock Garden</string>
+		<key>description</key>
 		<string>One of the original features of Ness, the Rock Garden was orginally created by A.K Bulley on the site of an old clay marl pit, to house his ever increasing collection of alpines. </string>
+		<key>latitude</key>
 		<real>53.271159</real>
+		<key>longitude</key>
 		<real>-3.042296</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Azalea Walk</string>
+		<key>description</key>
 		<string>So called for its colour displays of Azaleas in the Spring, the area also has stunning snowdrop displays in February. Fabulous birches and rowans, part of the botanical collections surround the children&apos;s play area.</string>
+		<key>latitude</key>
 		<real>53.272233</real>
+		<key>longitude</key>
 		<real>-3.046131</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Terraces</string>
+		<key>description</key>
 		<string>The sun baked terraces allows us to grow slightly tender plants outdoors all year round and provides fantastic views of the surrounding Gardens.</string>
+		<key>latitude</key>
 		<real>53.27154</real>
+		<key>longitude</key>
 		<real>-3.042687</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Potager Area</string>
+		<key>description</key>
 		<string>The Potager is a scenic vegetable/food growing area.  Food grown here is used for the Tea Rooms, sold at harvest time to the public (by way of a donations box) and the pumpkins are used for carving/cooking for Halloween.</string>
+		<key>latitude</key>
 		<real>53.273368</real>
+		<key>longitude</key>
 		<real>-3.044382</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Herbaceous Area</string>
+		<key>description</key>
 		<string>Another original area of Ness although the layout has changed over the years. It now houses 120 metres of herbaceous borders which look beautiful from May to February.</string>
+		<key>latitude</key>
 		<real>53.272797</real>
+		<key>longitude</key>
 		<real>-3.044747</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Ness Botanische</string>
+		<key>description</key>
 		<string>Designed in 2009 by Chris Beardshaw and exhibited at RHS Tatton Show where it won Gold and Best in Show.  It celebrates the botanical research at Ness and the pleasure afforded to our visitors.</string>
+		<key>latitude</key>
 		<real>53.273015</real>
+		<key>longitude</key>
 		<real>-3.043567</real>
-	</array>
+	</dict>
 </array>
 </plist>

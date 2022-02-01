@@ -22,9 +22,9 @@
 		473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DD274C0F2B0031D666 /* ComplicationController.swift */; };
 		473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976DF274C0F2C0031D666 /* Assets.xcassets */; };
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
+		473AC91627A9C43900280A25 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AC91527A9C43900280A25 /* Landmark.swift */; };
 		4797EA30274FF49700496756 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA2F274FF49700496756 /* features.plist */; };
 		4797EA32274FFB0900496756 /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
-		47BE535C274EAFC0002C6E93 /* Attractions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */; };
 		47BE536A274FEC8A002C6E93 /* attractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BE5369274FEC8A002C6E93 /* attractions.plist */; };
 		47BE536B274FEC8A002C6E93 /* attractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BE5369274FEC8A002C6E93 /* attractions.plist */; };
 /* End PBXBuildFile section */
@@ -91,9 +91,9 @@
 		473976E1274C0F2C0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473976E2274C0F2C0031D666 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		473976F2274C13410031D666 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		473AC91527A9C43900280A25 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		4797EA2F274FF49700496756 /* features.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
 		4797EA31274FFB0900496756 /* garden_sections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = garden_sections.plist; sourceTree = "<group>"; };
-		47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Attractions.xcdatamodel; sourceTree = "<group>"; };
 		47BE5369274FEC8A002C6E93 /* attractions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = attractions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,9 +142,9 @@
 				47BE5369274FEC8A002C6E93 /* attractions.plist */,
 				4797EA2F274FF49700496756 /* features.plist */,
 				4797EA31274FFB0900496756 /* garden_sections.plist */,
+				473AC91527A9C43900280A25 /* Landmark.swift */,
 				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
-				47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */,
 				473976BC274C0F2B0031D666 /* Assets.xcassets */,
 				473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */,
 				473976C1274C0F2B0031D666 /* Info.plist */,
@@ -312,10 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47BE535C274EAFC0002C6E93 /* Attractions.xcdatamodeld in Sources */,
 				473976B4274C0F2A0031D666 /* AppDelegate.swift in Sources */,
 				473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */,
 				473976F3274C13410031D666 /* mapViewController.swift in Sources */,
+				473AC91627A9C43900280A25 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,19 +705,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		47BE535A274EAFC0002C6E93 /* Attractions.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */,
-			);
-			currentVersion = 47BE535B274EAFC0002C6E93 /* Attractions.xcdatamodel */;
-			path = Attractions.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 473976A8274C0F2A0031D666 /* Project object */;
 }

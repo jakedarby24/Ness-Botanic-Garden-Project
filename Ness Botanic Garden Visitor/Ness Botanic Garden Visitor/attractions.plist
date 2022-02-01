@@ -2,89 +2,149 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<array>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Allium</string>
+		<key>description</key>
 		<string>The generic name Allium is the Latin word for garlic. The genus contains hundreds of distinct species; many have been harvested through human history, but only about a dozen are still economically important today as crops or garden vegetables. Many others are cultivated as ornamental plants</string>
+		<key>latitude</key>
 		<real>53.271937</real>
+		<key>longitude</key>
 		<real>-3.044404</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Ammocharis</string>
+		<key>description</key>
 		<string>Ammocharis is a genus in the Amaryllidaceae family (subfamily Amaryllidoideae) which includes 6 species distributed in Africa. The plant grows as a succulent, above-ground bulb, preferring seasonally wet, hot, sandy soils and full sun.</string>
+		<key>latitude</key>
 		<real>53.271642</real>
+		<key>longitude</key>
 		<real>-3.04332</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Bomarea</string>
+		<key>description</key>
 		<string>Bomarea is one of the two major genera in the plant family Alstroemeriaceae. Most occur in the Andes. Several species are occasionally found as gardenplants.</string>
+		<key>latitude</key>
 		<real>53.270981</real>
+		<key>longitude</key>
 		<real>-3.043052</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Arisaema</string>
+		<key>description</key>
 		<string>Arisaema is a genus of about 150 species in the flowering plant family Araceae, native to eastern and central Africa, Asia and eastern North America. Its species are often called Cobra lilies, particularly the Asiatic species.</string>
+		<key>latitude</key>
 		<real>53.270821</real>
+		<key>longitude</key>
 		<real>-3.043513</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Brunsvigia</string>
+		<key>description</key>
 		<string>Brunsvigia is a flowering plant genus in the family Amaryllidaceae, subfamily Amaryllidoideae. It contains about 20 species native to South Africa. Brunsvigia are tender bulbs, winter-growing and summer-dormant, generally flowering in early autumn. Their flowers are brilliant scarlet, pink, or red.</string>
+		<key>latitude</key>
 		<real>53.27127</real>
+		<key>longitude</key>
 		<real>-3.042462</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Lilium</string>
+		<key>description</key>
 		<string>Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large, prominent flowers. They comprise a genus of about 110 species in the lily family Liliaceae. Most species are native to the temperate northern hemisphere, though their range extends into the northern subtropics.</string>
+		<key>latitude</key>
 		<real>53.271366</real>
+		<key>longitude</key>
 		<real>-3.041915</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<false/>
+		<key>name</key>
 		<string>Galanthus</string>
+		<key>description</key>
 		<string>Galanthus is a small genus of about 20 species of bulbous herbaceous plants in the family Amaryllidaceae, subfamily Amaryllidoideae. Most flower in winter, before the vernal equinox (20 or 21 March in the Northern Hemisphere), but certain species flower in early spring and late autumn.</string>
+		<key>latitude</key>
 		<real>53.271585</real>
+		<key>longitude</key>
 		<real>-3.042623</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Acer Griseum</string>
+		<key>description</key>
 		<string>Related to Japanese maples and, of course, the common sycamore, the paper bark maple is native to central China. A small tree only growing to 6-9 metres, it was introduced to Europe in 1901 by plant hunter, Ernest Henry Wilson. It normally has coppery red bark which peels off ? like sheets of fine paper. The tree in front of you has been polished smooth by successive visitors rubbing its bark. In the autumn its also has stunning foliage of oranges and reds. Despite the popularity of Acers in gardens, it is worrying to note that 54 out 128 known species are under threat of extinction in the wild.</string>
+		<key>latitude</key>
 		<real>53.27057</real>
+		<key>longitude</key>
 		<real>-3.043627</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Betula Utilis</string>
+		<key>description</key>
 		<string>Betula utilis is a common birch throughout the Himalayans from Afghanistan to China.  It has different coloured bark depending on where is comes from. Subspecies jacquemontii from the western Himalayans has white bark. Subsp. utilis (central Himalayans) has chocolate coloured bark and subsp. albosinensis (northern china) has copper coloured bark. Commonly subspecies of Betula utilis are seen as single stemmed trees which means they have been either grafted, grown from cuttings or pruned when young.  To achieve a multi stemmed tree, they must be seed grown.</string>
+		<key>latitude</key>
 		<real>53.274456</real>
+		<key>longitude</key>
 		<real>-3.0451944</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Araucaria Araucana</string>
+		<key>description</key>
 		<string>The monkey puzzle tree is an evergreen conifer native to Argentina and Chile. It was  introduced to England in 1795 by Archibald Menzies; a plant collector and naval surgeon on Captain George Vancouver&apos;s circumnavigation of the globe. The common name Monkey Puzzle refers to the fact that the task of climbing the tree, with its with spiny leaves, would puzzle even a monkey. The scientific name Araucaria araucana comes from the Spanish name Araucanos, given to the Mapuche peoples from Chile who consider monkey puzzles to be sacred. The edible seeds are still harvested today, made into a flour, and used to make a fermented beverage (muday). </string>
+		<key>latitude</key>
 		<real>53.272794</real>
+		<key>longitude</key>
 		<real>-3.0452417</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Acer Rubrum &apos;October Glory&apos;</string>
+		<key>description</key>
 		<string>This deciduous tree is one of the most common and widespread trees of eastern North America. Commonly known as the red maple, a part of it is red in every season. In autumn, the leaves are red, in winter the buds are red, in spring, the flowers are red, and in the summer, the petioles or leaf stems are red. Red maples are a very important first source of nectar for bees as they flower very early in spring. This is a good plant for a wide range of gardens, and will tolerate a wide range of growing conditions; from wet to dry sites, and as such is commonly used in landscape plantings</string>
+		<key>latitude</key>
 		<real>53.270503</real>
+		<key>longitude</key>
 		<real>-3.0439639</real>
-	</array>
-	<array>
+	</dict>
+	<dict>
+		<key>enabled</key>
 		<true/>
+		<key>name</key>
 		<string>Eucalyptus Pauciflora</string>
+		<key>description</key>
 		<string>The snow gum is no ordinary eucalyptus. It is a tree of high mountains, particularly prevalent in the Snowy Mountains of New South Wales, as well as on Tasmania. Its ability to prosper in snow and ice makes it one of the hardiest Eucalyptus species and has been known to survive at temperatures of -20¬∞C. Instead of shedding its leaves in winter, this evergreen allows the weight of the snow to bend its branches, and in so doing, dislodges the snow. The oil extracted from its leaves has many  medicinal uses but can be toxic in large  quantities. Koalas and some possums are tolerant to its effects, which is just as well as the koala feeds on virtually nothing else!</string>
+		<key>latitude</key>
 		<real>53.271542</real>
+		<key>longitude</key>
 		<real>-3.04215</real>
-	</array>
+	</dict>
 </array>
 </plist>
