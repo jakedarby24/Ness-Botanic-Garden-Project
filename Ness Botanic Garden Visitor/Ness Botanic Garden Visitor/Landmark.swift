@@ -14,4 +14,5 @@ struct Landmark: Codable {
     var description: String
     var latitude: Double
     var longitude: Double
+    var imageLink: String?
 }

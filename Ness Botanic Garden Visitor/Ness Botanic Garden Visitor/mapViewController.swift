@@ -21,7 +21,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         gardenMapView.delegate = self
 
         // Do any additional setup after loading the view.
-        setMapLocation()
+        mapSetUp()
         addMapAnnotations()
     }
 
@@ -38,7 +38,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     
     // MARK: - Custom Functions
     // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
-    func setMapLocation() {
+    func mapSetUp() {
         let latitude = 53.27182
         let longitude = -3.0448
         let latDelta: CLLocationDegrees = 0.0113
@@ -46,27 +46,9 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: location, span: span)
+        drawPolyLine(vertices: nessGardenOutline, mapView: gardenMapView)
         self.gardenMapView.setRegion(region, animated: true)
         self.gardenMapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
-    }
-    
-    // A function for getting landmark information from the plist files
-    func getItemsFromPlist(fileName: String) -> [Landmark]? {
-        
-        var landmarks: [Landmark]
-        
-        do {
-            // Try to create a URL for the given file path
-            guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "plist") else { return nil }
-            // Try to get the data that's contained in the file at the file URL
-            let fileData = try Data(contentsOf: fileURL)
-            // Try to match the format of the plist to an array of landmark objects
-            landmarks = try PropertyListDecoder().decode([Landmark].self, from: fileData)
-        } catch {
-            print("Error")
-            return nil
-        }
-        return landmarks
     }
     
     func addMapAnnotations() {
@@ -112,11 +94,46 @@ class mapViewController: UIViewController, MKMapViewDelegate {
                 marker.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             }
             
+            for i in features! {
+                if annotation.title!! == i.name {
+                    marker.markerTintColor = UIColor.purple
+                    if annotation.title!! == "Picnic Area" {
+                        marker.glyphImage = UIImage(systemName: "fork.knife")
+                    }
+                    else if annotation.title!! == "View Point" {
+                        marker.glyphImage = UIImage(systemName: "binoculars")
+                    }
+                }
+            }
+            if marker.markerTintColor != UIColor.purple || marker.markerTintColor != UIColor.green || marker.markerTintColor != UIColor.orange {
+                for i in sections! {
+                    if annotation.title!! == i.name {
+                        marker.markerTintColor = UIColor.systemGreen
+                        marker.glyphImage = UIImage(systemName: "mappin.and.ellipse")
+                    }
+                }
+                if marker.markerTintColor != UIColor.purple || marker.markerTintColor != UIColor.green || marker.markerTintColor != UIColor.orange {
+                    for i in attractions! {
+                        if annotation.title!! == i.name {
+                            marker.markerTintColor = UIColor.systemOrange
+                            marker.glyphImage = UIImage(systemName: "leaf")
+                        }
+                    }
+                }
+            }
+
             return marker
         }
         else {
             return nil
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        polylineRenderer.strokeColor = UIColor.purple.withAlphaComponent(0.55)
+        polylineRenderer.lineWidth = 3
+        return polylineRenderer
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

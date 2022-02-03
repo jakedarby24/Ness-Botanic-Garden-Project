@@ -13,6 +13,8 @@
 		<real>53.27417</real>
 		<key>longitude</key>
 		<real>-3.04405</real>
+		<key>imageLink</key>
+		<string>pinewood5IMG_20190125_095106.jpg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -26,6 +28,8 @@ The images show both old and new views of the house.</string>
 		<real>53.272057</real>
 		<key>longitude</key>
 		<real>-3.043731</real>
+		<key>imageLink</key>
+		<string>mickwellhouse1.DSC_7836 - Mickwell House - R Cartwright.JPG</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -38,6 +42,8 @@ The images show both old and new views of the house.</string>
 		<real>53.270263</real>
 		<key>longitude</key>
 		<real>-3.043095</real>
+		<key>imageLink</key>
+		<string>watergarden1.DSC_2930.JPG</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -50,6 +56,8 @@ The images show both old and new views of the house.</string>
 		<real>53.271159</real>
 		<key>longitude</key>
 		<real>-3.042296</real>
+		<key>imageLink</key>
+		<string>rockgarden7.DSC_4186 - Rock Garden - R Cartwright (3).JPG</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -62,6 +70,8 @@ The images show both old and new views of the house.</string>
 		<real>53.272233</real>
 		<key>longitude</key>
 		<real>-3.046131</real>
+		<key>imageLink</key>
+		<string>Azalea Walk.jpg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -74,6 +84,8 @@ The images show both old and new views of the house.</string>
 		<real>53.27154</real>
 		<key>longitude</key>
 		<real>-3.042687</real>
+		<key>imageLink</key>
+		<string>terraces1.DSC_4176 - Rock Garden - R Cartwright (3).JPG</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -98,6 +110,8 @@ The images show both old and new views of the house.</string>
 		<real>53.272797</real>
 		<key>longitude</key>
 		<real>-3.044747</real>
+		<key>imageLink</key>
+		<string>herbaceousarea1.DSC_8098 - Herbaceous Border - R Cartwright.JPG</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -110,6 +124,48 @@ The images show both old and new views of the house.</string>
 		<real>53.273015</real>
 		<key>longitude</key>
 		<real>-3.043567</real>
+	</dict>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>name</key>
+		<string>Ness Henge</string>
+		<key>description</key>
+		<string>The Botanical Garden&apos;s equivalent of the World Famous Stonehenge, just on a slightly smaller scale.</string>
+		<key>latitude</key>
+		<real>53.271766</real>
+		<key>longitude</key>
+		<real>-3.04848</real>
+		<key>imageLink</key>
+		<string>woodhenge2.IMG_20190226_162207.jpg</string>
+	</dict>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>name</key>
+		<string>The Spinney</string>
+		<key>description</key>
+		<string>A gorgeous, mystical looking wooded area on the western side of the Botanic Garden. </string>
+		<key>latitude</key>
+		<real>53.270273</real>
+		<key>longitude</key>
+		<real>-3.046066</real>
+		<key>imageLink</key>
+		<string>spinney3.DSC_2578.JPG</string>
+	</dict>
+	<dict>
+		<key>enabled</key>
+		<true/>
+		<key>name</key>
+		<string>Wildflower Meadow</string>
+		<key>description</key>
+		<string>Overlooking the fantastic views of the Wirral&apos;s coast, this wildflower meadow is perfect for a picnic and to integrate with the outdoor surroundings.</string>
+		<key>latitude</key>
+		<real>53.270308</real>
+		<key>longitude</key>
+		<real>-3.048212</real>
+		<key>imageLink</key>
+		<string>wildflowermeadow3.IMG_20190213_165259.jpg</string>
 	</dict>
 </array>
 </plist>

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
                                 <rect key="frame" x="0.0" y="44" width="390" height="717"/>
                             </mapView>
                         </subviews>
@@ -50,14 +50,14 @@
                     <connections>
                         <segue destination="wbk-Ed-cWK" kind="relationship" relationship="viewControllers" id="lIK-AZ-gPl"/>
                         <segue destination="Fjc-jF-dcw" kind="relationship" relationship="viewControllers" id="o4z-Ii-1MM"/>
-                        <segue destination="3Tf-Ft-xSe" kind="relationship" relationship="viewControllers" id="qHD-Vm-ddA"/>
+                        <segue destination="YPO-Ob-87G" kind="relationship" relationship="viewControllers" id="KGF-rC-xs7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXh-fi-JZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946" y="144"/>
         </scene>
-        <!--Attractions-->
+        <!--Places-->
         <scene sceneID="7rq-k6-LCO">
             <objects>
                 <tableViewController id="Fjc-jF-dcw" customClass="attractionListViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="myCell" id="ZXR-TX-hqu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="placeCell" id="ZXR-TX-hqu">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZXR-TX-hqu" id="4fV-PW-Xno">
@@ -80,31 +80,44 @@
                             <outlet property="delegate" destination="Fjc-jF-dcw" id="1Jn-Ew-8km"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Attractions" image="mappin.circle" catalog="system" id="wb6-A2-bx0"/>
+                    <tabBarItem key="tabBarItem" title="Places" image="mappin.circle" catalog="system" id="wb6-A2-bx0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-Vn-0Y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1685" y="150"/>
         </scene>
-        <!--settingsViewController-->
-        <scene sceneID="gnD-Iv-6SK">
+        <!--floraViewController-->
+        <scene sceneID="UsH-AJ-fTW">
             <objects>
-                <viewController title="settingsViewController" id="3Tf-Ft-xSe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mwD-Mo-hu2">
+                <tableViewController title="floraViewController" id="YPO-Ob-87G" customClass="floraListViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qrX-TQ-Z3w">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="sHn-PX-UrN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.2" catalog="system" id="i6R-uP-zyK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WaO-A5-0NA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="floraCell" id="Pat-YK-blD">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pat-YK-blD" id="1c6-wF-oD5">
+                                    <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YPO-Ob-87G" id="CLw-Bf-aFi"/>
+                            <outlet property="delegate" destination="YPO-Ob-87G" id="vtP-gV-APx"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Flora" image="leaf.circle" catalog="system" id="MNc-mv-Hfq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXq-Tj-kgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="808"/>
+            <point key="canvasLocation" x="2357" y="279"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape.2" catalog="system" width="128" height="100"/>
+        <image name="leaf.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

@@ -22,24 +22,25 @@ class attractionListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let mapPage = mapViewController()
-        let attractions = mapPage.getItemsFromPlist(fileName: "attractions")
-        return attractions!.count
+        let sections = getItemsFromPlist(fileName: "garden_sections")
+        return sections!.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let mapPage = mapViewController()
-         let attractions = mapPage.getItemsFromPlist(fileName: "attractions")
-         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-         var content = cell.defaultContentConfiguration()
-         content.text = attractions?[indexPath.row].name
-         cell.contentConfiguration = content
-         return cell
+        let sections = getItemsFromPlist(fileName: "garden_sections")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        content.text = sections?[indexPath.row].name
+        if sections?[indexPath.row].imageLink != nil {
+            content.image = UIImage(named: "images/\(sections?[indexPath.row].imageLink ?? "")")
+            content.imageProperties.maximumSize = CGSize(width: 120, height: 96)
+        }
+        cell.contentConfiguration = content
+        return cell
     }
 
 
