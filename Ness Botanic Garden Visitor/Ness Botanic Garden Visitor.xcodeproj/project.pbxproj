@@ -13,6 +13,7 @@
 		4734959327AC231400DF56D4 /* PolylineCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959227AC231400DF56D4 /* PolylineCoordinates.swift */; };
 		4734959527AC23C500DF56D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959427AC23C500DF56D4 /* AppDelegate.swift */; };
 		4734959727AC3D6100DF56D4 /* floraListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959627AC3D6100DF56D4 /* floraListViewController.swift */; };
+		4734959927AD413600DF56D4 /* placeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959827AD413600DF56D4 /* placeDetailViewController.swift */; };
 		473976B6274C0F2A0031D666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976B5274C0F2A0031D666 /* SceneDelegate.swift */; };
 		473976BB274C0F2A0031D666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976B9274C0F2A0031D666 /* Main.storyboard */; };
 		473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976BC274C0F2B0031D666 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		4734959227AC231400DF56D4 /* PolylineCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolylineCoordinates.swift; sourceTree = "<group>"; };
 		4734959427AC23C500DF56D4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4734959627AC3D6100DF56D4 /* floraListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floraListViewController.swift; sourceTree = "<group>"; };
+		4734959827AD413600DF56D4 /* placeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeDetailViewController.swift; sourceTree = "<group>"; };
 		473976B0274C0F2A0031D666 /* Ness Botanic Garden Visitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Botanic Garden Visitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473976B5274C0F2A0031D666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		473976BA274C0F2A0031D666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				4719EF4527A9E19E0061AD55 /* attractionListViewController.swift */,
 				4734959627AC3D6100DF56D4 /* floraListViewController.swift */,
 				473976F2274C13410031D666 /* mapViewController.swift */,
+				4734959827AD413600DF56D4 /* placeDetailViewController.swift */,
 				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
 				4734959427AC23C500DF56D4 /* AppDelegate.swift */,
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
@@ -336,6 +339,7 @@
 				4734959327AC231400DF56D4 /* PolylineCoordinates.swift in Sources */,
 				4719EF4627A9E19E0061AD55 /* attractionListViewController.swift in Sources */,
 				4734959727AC3D6100DF56D4 /* floraListViewController.swift in Sources */,
+				4734959927AD413600DF56D4 /* placeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

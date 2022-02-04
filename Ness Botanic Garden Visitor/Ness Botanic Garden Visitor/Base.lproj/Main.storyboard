@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
                                 <rect key="frame" x="0.0" y="44" width="390" height="717"/>
                             </mapView>
                         </subviews>
@@ -32,11 +32,103 @@
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="XKZ-fV-zA4"/>
                     <connections>
                         <outlet property="gardenMapView" destination="5HS-Ek-fGm" id="4cg-Wg-8fO"/>
+                        <segue destination="2Kw-WZ-Ydp" kind="show" identifier="placeDetailViewSegue" id="PLP-Cy-8ii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh8-aZ-VHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704.6153846153845" y="-516.11374407582935"/>
+            <point key="canvasLocation" x="1685" y="-516"/>
+        </scene>
+        <!--Place Detail View Controller-->
+        <scene sceneID="MZm-TD-keb">
+            <objects>
+                <viewController id="2Kw-WZ-Ydp" customClass="placeDetailViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4zd-cE-GgK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4o-wS-6P8">
+                                <rect key="frame" x="16" y="53" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="lGC-eq-lOo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Description" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuD-Hu-ZQG">
+                                <rect key="frame" x="16" y="125" width="358" height="284"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on map for walking directions to this location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-va-qio">
+                                <rect key="frame" x="16" y="417" width="358" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="n2Y-wZ-nJy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-sX-JCj">
+                                <rect key="frame" x="174" y="721" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zaq-Rk-ypi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0X-wd-nVk">
+                                <rect key="frame" x="0.0" y="460" width="390" height="253"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="U0t-a7-LB9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MSz-y3-Daq" appends="YES" id="EtJ-3Z-DAY"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NUu-aG-W7B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="m4o-wS-6P8" firstAttribute="leading" secondItem="xuD-Hu-ZQG" secondAttribute="leading" id="0kW-DM-fKW"/>
+                            <constraint firstItem="ii4-sX-JCj" firstAttribute="top" secondItem="j0X-wd-nVk" secondAttribute="bottom" constant="8" id="0lD-2p-6tC"/>
+                            <constraint firstItem="j0X-wd-nVk" firstAttribute="leading" secondItem="NUu-aG-W7B" secondAttribute="leading" id="71P-Vj-m7B"/>
+                            <constraint firstItem="ii4-sX-JCj" firstAttribute="leading" secondItem="NUu-aG-W7B" secondAttribute="leading" constant="174" id="7N7-4W-lNb"/>
+                            <constraint firstItem="m4o-wS-6P8" firstAttribute="trailing" secondItem="xuD-Hu-ZQG" secondAttribute="trailing" id="FQQ-EB-Rlx"/>
+                            <constraint firstItem="m4o-wS-6P8" firstAttribute="trailing" secondItem="4zd-cE-GgK" secondAttribute="trailingMargin" id="KcU-h3-gkb"/>
+                            <constraint firstItem="xuD-Hu-ZQG" firstAttribute="leading" secondItem="8Xy-va-qio" secondAttribute="leading" id="OQC-oM-nd5"/>
+                            <constraint firstItem="xuD-Hu-ZQG" firstAttribute="top" secondItem="NUu-aG-W7B" secondAttribute="top" constant="125" id="SV9-gN-MGu"/>
+                            <constraint firstItem="NUu-aG-W7B" firstAttribute="bottom" secondItem="ii4-sX-JCj" secondAttribute="bottom" constant="14" id="TPg-gy-eTN"/>
+                            <constraint firstItem="j0X-wd-nVk" firstAttribute="top" secondItem="8Xy-va-qio" secondAttribute="bottom" constant="8" id="UNQ-92-TtI"/>
+                            <constraint firstItem="m4o-wS-6P8" firstAttribute="leading" secondItem="4zd-cE-GgK" secondAttribute="leadingMargin" id="V8e-Pp-5Ti"/>
+                            <constraint firstItem="8Xy-va-qio" firstAttribute="centerX" secondItem="j0X-wd-nVk" secondAttribute="centerX" id="V8n-Tw-t2p"/>
+                            <constraint firstItem="m4o-wS-6P8" firstAttribute="top" secondItem="NUu-aG-W7B" secondAttribute="top" constant="53" id="bOX-Vx-Mfd"/>
+                            <constraint firstItem="xuD-Hu-ZQG" firstAttribute="trailing" secondItem="8Xy-va-qio" secondAttribute="trailing" id="bVD-f2-iUp"/>
+                            <constraint firstItem="8Xy-va-qio" firstAttribute="top" secondItem="xuD-Hu-ZQG" secondAttribute="bottom" constant="8" id="sO1-6m-yKx"/>
+                            <constraint firstItem="8Xy-va-qio" firstAttribute="trailing" secondItem="ii4-sX-JCj" secondAttribute="trailing" id="tEi-wW-Mga"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cYJ-Uo-5Vr"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xuD-Hu-ZQG" id="x3e-rV-jlX"/>
+                        <outlet property="positionOfLandmarkMap" destination="j0X-wd-nVk" id="pC5-Gx-Ab4"/>
+                        <outlet property="timeDistanceLabel" destination="ii4-sX-JCj" id="RJd-uW-pwo"/>
+                        <outlet property="titleLabel" destination="m4o-wS-6P8" id="e4N-3Q-PBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8t-6W-nhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MSz-y3-Daq">
+                    <connections>
+                        <action selector="mapTapped:" destination="2Kw-WZ-Ydp" id="Vce-e9-OKq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2673.8461538461538" y="-516.11374407582935"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l4i-VG-SFe">
@@ -55,7 +147,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXh-fi-JZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="144"/>
+            <point key="canvasLocation" x="820" y="149"/>
         </scene>
         <!--Places-->
         <scene sceneID="7rq-k6-LCO">
@@ -73,6 +165,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2Kw-WZ-Ydp" kind="show" identifier="placeDetailFromTable" id="pR0-Oi-Zy2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -84,7 +179,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-Vn-0Y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="150"/>
+            <point key="canvasLocation" x="1685" y="192"/>
         </scene>
         <!--floraViewController-->
         <scene sceneID="UsH-AJ-fTW">
@@ -113,15 +208,21 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXq-Tj-kgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2357" y="279"/>
+            <point key="canvasLocation" x="1685" y="990"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PLP-Cy-8ii"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="leaf.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

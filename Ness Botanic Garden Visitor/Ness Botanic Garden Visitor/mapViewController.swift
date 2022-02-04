@@ -8,32 +8,45 @@
 import UIKit
 import MapKit
 
-class mapViewController: UIViewController, MKMapViewDelegate {
+class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var gardenMapView: MKMapView!
     var attractions: [Landmark]?
     var sections: [Landmark]?
     var features: [Landmark]?
     
+    var selectedTitle: String?
+    var selectedDescription: String?
+    var selectedCoordinates: CLLocationCoordinate2D?
+    
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
         gardenMapView.delegate = self
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
 
         // Do any additional setup after loading the view.
         mapSetUp()
         addMapAnnotations()
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "placeDetailViewSegue" {
+            let secondViewController = segue.destination as! placeDetailViewController
+            secondViewController.titleName = selectedTitle
+            secondViewController.descriptionName = selectedDescription
+            secondViewController.position = selectedCoordinates
+        }
     }
-    */
     
     
     // MARK: - Custom Functions
@@ -94,35 +107,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
                 marker.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             }
             
-            for i in features! {
-                if annotation.title!! == i.name {
-                    marker.markerTintColor = UIColor.purple
-                    if annotation.title!! == "Picnic Area" {
-                        marker.glyphImage = UIImage(systemName: "fork.knife")
-                    }
-                    else if annotation.title!! == "View Point" {
-                        marker.glyphImage = UIImage(systemName: "binoculars")
-                    }
-                }
-            }
-            if marker.markerTintColor != UIColor.purple || marker.markerTintColor != UIColor.green || marker.markerTintColor != UIColor.orange {
-                for i in sections! {
-                    if annotation.title!! == i.name {
-                        marker.markerTintColor = UIColor.systemGreen
-                        marker.glyphImage = UIImage(systemName: "mappin.and.ellipse")
-                    }
-                }
-                if marker.markerTintColor != UIColor.purple || marker.markerTintColor != UIColor.green || marker.markerTintColor != UIColor.orange {
-                    for i in attractions! {
-                        if annotation.title!! == i.name {
-                            marker.markerTintColor = UIColor.systemOrange
-                            marker.glyphImage = UIImage(systemName: "leaf")
-                        }
-                    }
-                }
-            }
-
-            return marker
+            return setAnnotationStyle(marker: marker, annotation: annotation, features: features, attractions: attractions, sections: sections)
         }
         else {
             return nil
@@ -137,5 +122,21 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        selectedTitle = view.annotation?.title!!
+        selectedDescription = view.annotation?.subtitle!!
+        selectedCoordinates = view.annotation?.coordinate
+        performSegue(withIdentifier: "placeDetailViewSegue", sender: nil)
+    }
+
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        let coordinate = CLLocationCoordinate2DMake(mapView.region.center.latitude, mapView.region.center.longitude)
+        var span = mapView.region.span
+        if span.latitudeDelta < 0.003 { // MIN LEVEL
+            span = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
+        } else if span.latitudeDelta > 0.01 { // MAX LEVEL
+            span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        }
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        mapView.setRegion(region, animated:true)
     }
 }
