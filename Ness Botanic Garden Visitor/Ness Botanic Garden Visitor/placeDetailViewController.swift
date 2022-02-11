@@ -19,7 +19,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     // Action function for when the map is tapped.
     // This redirects the user to Apple Maps, if installed.
     @IBAction func mapTapped(_ sender: UITapGestureRecognizer) {
-        let directionsURL = "http://maps.apple.com/?saddr=\(currentLocation!.coordinate.latitude),\(currentLocation!.coordinate.longitude)&daddr=\(position!.latitude),\(position!.longitude)"
+        let directionsURL = "http://maps.apple.com/?saddr=\(currentLocation!.coordinate.latitude),\(currentLocation!.coordinate.longitude)&daddr=\(position!.latitude),\(position!.longitude)&dirflg=w&t=m"
         guard let url = URL(string: directionsURL) else {
             return
         }
@@ -59,6 +59,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         titleLabel.text = titleName
         descriptionLabel.text = descriptionName
+        descriptionLabel.sizeToFit()
         let latDelta: CLLocationDegrees = 0.003
         let lonDelta: CLLocationDegrees = 0.003
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
@@ -105,6 +106,10 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
     }
@@ -126,7 +131,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
                 self.positionOfLandmarkMap.addOverlay(route.polyline)
                 //set the map area to show the route
                 self.positionOfLandmarkMap.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsets.init(top: 60.0, left: 20.0, bottom: 80.0, right: 20.0), animated: true)
-                self.timeDistanceLabel.text = "\(Int(route.distance))m away, \(Int(route.expectedTravelTime / 60.0)) mins"
+                self.timeDistanceLabel.text = "\(Int(route.distance))m along paths, \(Int(route.expectedTravelTime / 60.0)) mins"
             }
         }
     }

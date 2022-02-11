@@ -97,6 +97,8 @@
 		<real>53.27057</real>
 		<key>longitude</key>
 		<real>-3.043627</real>
+		<key>imageLink</key>
+		<string>Acer Griseum.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -109,6 +111,8 @@
 		<real>53.274456</real>
 		<key>longitude</key>
 		<real>-3.0451944</real>
+		<key>imageLink</key>
+		<string>Betula Utilis.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -121,6 +125,8 @@
 		<real>53.272794</real>
 		<key>longitude</key>
 		<real>-3.0452417</real>
+		<key>imageLink</key>
+		<string>Araucaria_araucana_cones.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -133,6 +139,8 @@
 		<real>53.270503</real>
 		<key>longitude</key>
 		<real>-3.0439639</real>
+		<key>imageLink</key>
+		<string>640px-Acer-rubrum-4829.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -145,6 +153,8 @@
 		<real>53.271542</real>
 		<key>longitude</key>
 		<real>-3.04215</real>
+		<key>imageLink</key>
+		<string>640px-Eucalyptus_pauciflora1.jpeg</string>
 	</dict>
 </array>
 </plist>

@@ -32,7 +32,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         locationManager.startUpdatingLocation()
 
         // Do any additional setup after loading the view.
-        mapSetUp()
+        mapSetUp(mapView: gardenMapView)
         addMapAnnotations()
     }
 
@@ -51,18 +51,6 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     // MARK: - Custom Functions
     // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
-    func mapSetUp() {
-        let latitude = 53.27182
-        let longitude = -3.0448
-        let latDelta: CLLocationDegrees = 0.0113
-        let lonDelta: CLLocationDegrees = 0.0113
-        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
-        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let region = MKCoordinateRegion(center: location, span: span)
-        drawPolyLine(vertices: nessGardenOutline, mapView: gardenMapView)
-        self.gardenMapView.setRegion(region, animated: true)
-        self.gardenMapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
-    }
     
     func addMapAnnotations() {
         features = getItemsFromPlist(fileName: "features")

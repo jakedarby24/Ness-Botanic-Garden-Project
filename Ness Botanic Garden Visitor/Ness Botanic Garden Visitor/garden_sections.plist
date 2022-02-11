@@ -98,6 +98,8 @@ The images show both old and new views of the house.</string>
 		<real>53.273368</real>
 		<key>longitude</key>
 		<real>-3.044382</real>
+		<key>imageLink</key>
+		<string>Potager Garden.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>

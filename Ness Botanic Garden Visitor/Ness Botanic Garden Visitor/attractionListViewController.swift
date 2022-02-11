@@ -8,18 +8,19 @@
 import UIKit
 import MapKit
 
-class attractionListViewController: UITableViewController {
+class attractionListViewController: UITableViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     var sections: [Landmark]?
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
     
     override func viewDidLoad() {
+        sections = getItemsFromPlist(fileName: "garden_sections")
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
 
     // MARK: - Table view data source
@@ -29,18 +30,19 @@ class attractionListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        sections = getItemsFromPlist(fileName: "garden_sections")
         return sections!.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        sections = getItemsFromPlist(fileName: "garden_sections")
         let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = sections?[indexPath.row].name
         if sections?[indexPath.row].imageLink != nil {
             content.image = UIImage(named: "images/\(sections?[indexPath.row].imageLink ?? "")")
             content.imageProperties.maximumSize = CGSize(width: 120, height: 96)
+        }
+        if sections?[indexPath.row].distanceFromUser != nil {
+            content.secondaryText = "\(Int(sections![indexPath.row].distanceFromUser!))m away"
         }
         cell.contentConfiguration = content
         return cell
@@ -57,6 +59,20 @@ class attractionListViewController: UITableViewController {
             secondViewController.titleName = sections![selectedRow!.row].name
             secondViewController.descriptionName = sections![selectedRow!.row].description
             secondViewController.position = CLLocationCoordinate2D(latitude: sections![selectedRow!.row].latitude, longitude: sections![selectedRow!.row].longitude)
+        }
+    }
+    
+    //updates the current location, updates the table of locations
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = locations.last
+        var newSections: [Landmark]
+        newSections = sections!
+        if sections != nil && currentLocation != nil {
+            for i in 0..<newSections.count {
+                sections?[i].distanceFromUser = currentLocation?.distance(from: CLLocation(latitude: newSections[i].latitude, longitude: newSections[i].longitude))
+            }
+            sections?.sort(by: { $0.distanceFromUser! < $1.distanceFromUser! } )
+            self.tableView.reloadData()
         }
     }
 

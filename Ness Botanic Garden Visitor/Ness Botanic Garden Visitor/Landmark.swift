@@ -15,4 +15,5 @@ struct Landmark: Codable {
     var latitude: Double
     var longitude: Double
     var imageLink: String?
+    var distanceFromUser: CLLocationDistance?
 }

@@ -28,9 +28,15 @@ func getItemsFromPlist(fileName: String) -> [Landmark]? {
 }
 
 // Draws an overlay on a MapKit map
-func drawPolyLine(vertices: [CLLocationCoordinate2D], mapView: MKMapView) {
+func drawPolyLine(lineName: String, vertices: [CLLocationCoordinate2D], mapView: MKMapView) {
     let polyLine = MKPolyline(coordinates: vertices, count: vertices.count)
+    polyLine.title = lineName
     mapView.addOverlay(polyLine)
+}
+
+// Removes an overlay from the map
+func removePolyLine(overlay: MKOverlay, mapView: MKMapView) {
+    mapView.removeOverlay(overlay)
 }
 
 // Sets the glyph image and colour of an annotation view on the map
@@ -74,4 +80,17 @@ func setAnnotationStyle(marker: MKMarkerAnnotationView, annotation: MKAnnotation
     }
     
     return marker
+}
+
+func mapSetUp(mapView: MKMapView) {
+    let latitude = 53.27182
+    let longitude = -3.0448
+    let latDelta: CLLocationDegrees = 0.0113
+    let lonDelta: CLLocationDegrees = 0.0113
+    let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+    let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    let region = MKCoordinateRegion(center: location, span: span)
+    drawPolyLine(lineName: "gardenOutline", vertices: nessGardenOutline, mapView: mapView)
+    mapView.setRegion(region, animated: true)
+    mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
 }
