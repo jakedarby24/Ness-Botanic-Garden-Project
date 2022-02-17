@@ -15,10 +15,7 @@ class floraListViewController: UITableViewController, CLLocationManagerDelegate 
     var currentLocation: CLLocation?
     
     override func viewDidLoad() {
-        flowers = getItemsFromPlist(fileName: "attractions")
-        flowers = flowers?.filter({ place in
-            place.enabled
-        })
+        flowers = getPlacesFromPlist(fileName: "attractions")
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

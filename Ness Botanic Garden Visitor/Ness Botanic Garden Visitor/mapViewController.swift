@@ -53,35 +53,29 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
     
     func addMapAnnotations() {
-        features = getItemsFromPlist(fileName: "features")
+        features = getPlacesFromPlist(fileName: "features")
         for item in features! {
-            if item.enabled {
-                let newAnnotation = MKPointAnnotation()
-                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-                newAnnotation.title = item.name
-                newAnnotation.subtitle = item.description
-                gardenMapView.addAnnotation(newAnnotation)
-            }
+            let newAnnotation = MKPointAnnotation()
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+            newAnnotation.title = item.name
+            newAnnotation.subtitle = item.description
+            gardenMapView.addAnnotation(newAnnotation)
         }
-        sections = getItemsFromPlist(fileName: "garden_sections")
+        sections = getPlacesFromPlist(fileName: "garden_sections")
         for item in sections! {
-            if item.enabled {
-                let newAnnotation = MKPointAnnotation()
-                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-                newAnnotation.title = item.name
-                newAnnotation.subtitle = item.description
-                gardenMapView.addAnnotation(newAnnotation)
-            }
+            let newAnnotation = MKPointAnnotation()
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+            newAnnotation.title = item.name
+            newAnnotation.subtitle = item.description
+            gardenMapView.addAnnotation(newAnnotation)
         }
-        attractions = getItemsFromPlist(fileName: "attractions")
+        attractions = getPlacesFromPlist(fileName: "attractions")
         for item in attractions! {
-            if item.enabled {
-                let newAnnotation = MKPointAnnotation()
-                newAnnotation.title = item.name
-                newAnnotation.subtitle = item.description
-                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-                gardenMapView.addAnnotation(newAnnotation)
-            }
+            let newAnnotation = MKPointAnnotation()
+            newAnnotation.title = item.name
+            newAnnotation.subtitle = item.description
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+            gardenMapView.addAnnotation(newAnnotation)
         }
     }
     

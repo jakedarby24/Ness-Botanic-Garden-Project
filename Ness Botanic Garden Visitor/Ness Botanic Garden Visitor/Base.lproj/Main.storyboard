@@ -48,13 +48,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuD-Hu-ZQG">
-                                <rect key="frame" x="16" y="184" width="358" height="181"/>
+                                <rect key="frame" x="16" y="184" width="358" height="230"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on map for walking directions to this location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-va-qio">
-                                <rect key="frame" x="16" y="373" width="358" height="35"/>
+                                <rect key="frame" x="16" y="422" width="358" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="n2Y-wZ-nJy"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-sX-JCj">
-                                <rect key="frame" x="174" y="677" width="200" height="21"/>
+                                <rect key="frame" x="174" y="726" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="zaq-Rk-ypi"/>
                                 </constraints>
@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0X-wd-nVk">
-                                <rect key="frame" x="0.0" y="416" width="390" height="253"/>
+                                <rect key="frame" x="0.0" y="465" width="390" height="253"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="253" id="U0t-a7-LB9"/>
@@ -141,7 +141,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="wbk-Ed-cWK" kind="relationship" relationship="viewControllers" id="lIK-AZ-gPl"/>
-                        <segue destination="7Eg-MA-Y8o" kind="relationship" relationship="viewControllers" id="Uos-oy-gor"/>
+                        <segue destination="YwV-Va-88N" kind="relationship" relationship="viewControllers" id="Uos-oy-gor"/>
                         <segue destination="d3X-FX-uac" kind="relationship" relationship="viewControllers" id="D3W-Tl-n3e"/>
                         <segue destination="LPh-Na-kYq" kind="relationship" relationship="viewControllers" id="n2q-ES-n0A"/>
                     </connections>
@@ -176,15 +176,13 @@
                             <outlet property="delegate" destination="Fjc-jF-dcw" id="1Jn-Ew-8km"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="B4n-ga-WBy">
-                        <barButtonItem key="rightBarButtonItem" title="Info" id="PWK-0g-ibX"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="B4n-ga-WBy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSa-Vn-0Y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2613.8461538461538" y="191.9431279620853"/>
         </scene>
-        <!--Trails-->
+        <!--Trail View Controller-->
         <scene sceneID="yTZ-Pu-NH0">
             <objects>
                 <viewController id="7Eg-MA-Y8o" customClass="trailViewController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZJ-cB-grP">
-                                <rect key="frame" x="0.0" y="44" width="390" height="443"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="399"/>
                             </mapView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hoj-Gg-Uy7">
                                 <rect key="frame" x="0.0" y="485" width="390" height="276"/>
@@ -207,6 +205,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="92F-Lf-rRw" kind="show" identifier="trailDetail" trigger="accessoryAction" id="U3A-2B-SiG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -220,7 +221,7 @@
                             <constraint firstItem="HBA-8a-ntn" firstAttribute="bottom" secondItem="DZJ-cB-grP" secondAttribute="bottom" constant="274" id="tV7-zr-WWs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Trails" image="signpost.right" catalog="system" id="3kV-MA-Vlp"/>
+                    <navigationItem key="navigationItem" id="T4x-T6-IKJ"/>
                     <connections>
                         <outlet property="trailMap" destination="DZJ-cB-grP" id="IP4-RK-FdB"/>
                         <outlet property="trailTable" destination="Hoj-Gg-Uy7" id="aoX-Aa-ZU0"/>
@@ -229,6 +230,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hl8-Hp-hTq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="820" y="990"/>
+        </scene>
+        <!--Trail Detail Controller-->
+        <scene sceneID="B9f-RJ-bZf">
+            <objects>
+                <viewController id="92F-Lf-rRw" customClass="trailDetailController" customModule="Ness_Botanic_Garden_Visitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OYV-fZ-Gv1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrailName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnX-Iv-Oui">
+                                <rect key="frame" x="16" y="110" width="301" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6eZ-cu-uPY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrailDescription" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWG-x3-t94">
+                                <rect key="frame" x="16" y="161" width="358" height="260"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrailAccessible" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD9-bf-Zw9">
+                                <rect key="frame" x="16" y="444" width="358" height="43"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FxY-AK-7ZJ">
+                                <rect key="frame" x="0.0" y="495" width="390" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="nsp-KD-mLp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrailDistance" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-He-gMr">
+                                <rect key="frame" x="166" y="429" width="208" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="tyh-q7-t8V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xSs-aA-2u3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CWG-x3-t94" firstAttribute="trailing" secondItem="lJC-He-gMr" secondAttribute="trailing" id="01F-tX-vez"/>
+                            <constraint firstItem="lJC-He-gMr" firstAttribute="trailing" secondItem="uD9-bf-Zw9" secondAttribute="trailing" id="0tZ-9p-YEX"/>
+                            <constraint firstItem="xSs-aA-2u3" firstAttribute="trailing" secondItem="xnX-Iv-Oui" secondAttribute="trailing" constant="73" id="5Ez-BA-SCx"/>
+                            <constraint firstItem="xSs-aA-2u3" firstAttribute="bottom" secondItem="FxY-AK-7ZJ" secondAttribute="bottom" constant="50" id="9As-8c-sVp"/>
+                            <constraint firstItem="uD9-bf-Zw9" firstAttribute="centerX" secondItem="FxY-AK-7ZJ" secondAttribute="centerX" id="BZI-Cq-llq"/>
+                            <constraint firstItem="uD9-bf-Zw9" firstAttribute="top" secondItem="CWG-x3-t94" secondAttribute="bottom" constant="23" id="LUk-Ok-1ub"/>
+                            <constraint firstItem="xnX-Iv-Oui" firstAttribute="top" secondItem="xSs-aA-2u3" secondAttribute="top" constant="22" id="NjW-TW-amQ"/>
+                            <constraint firstItem="CWG-x3-t94" firstAttribute="top" secondItem="xnX-Iv-Oui" secondAttribute="bottom" constant="21" id="Xia-TN-Z4X"/>
+                            <constraint firstItem="lJC-He-gMr" firstAttribute="leading" secondItem="xSs-aA-2u3" secondAttribute="leading" constant="166" id="eDC-1e-dcW"/>
+                            <constraint firstItem="CWG-x3-t94" firstAttribute="trailing" secondItem="OYV-fZ-Gv1" secondAttribute="trailingMargin" id="gH1-ic-GB8"/>
+                            <constraint firstItem="FxY-AK-7ZJ" firstAttribute="top" secondItem="lJC-He-gMr" secondAttribute="bottom" constant="37" id="rJJ-Ih-9jh"/>
+                            <constraint firstItem="lJC-He-gMr" firstAttribute="top" secondItem="CWG-x3-t94" secondAttribute="bottom" constant="8" id="u1G-6s-vX8"/>
+                            <constraint firstItem="FxY-AK-7ZJ" firstAttribute="leading" secondItem="xSs-aA-2u3" secondAttribute="leading" id="u54-xH-4gV"/>
+                            <constraint firstItem="CWG-x3-t94" firstAttribute="leading" secondItem="uD9-bf-Zw9" secondAttribute="leading" id="uuU-OS-anh"/>
+                            <constraint firstItem="FxY-AK-7ZJ" firstAttribute="top" secondItem="uD9-bf-Zw9" secondAttribute="bottom" constant="8" id="vEW-PA-j2S"/>
+                            <constraint firstItem="xnX-Iv-Oui" firstAttribute="leading" secondItem="CWG-x3-t94" secondAttribute="leading" id="vZK-1p-EiI"/>
+                            <constraint firstItem="xnX-Iv-Oui" firstAttribute="leading" secondItem="OYV-fZ-Gv1" secondAttribute="leadingMargin" id="xN9-dE-GCy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lEh-ig-Sae"/>
+                    <connections>
+                        <outlet property="images" destination="FxY-AK-7ZJ" id="hMk-Di-hmG"/>
+                        <outlet property="trailAccessibleLabel" destination="uD9-bf-Zw9" id="v3B-6R-LZu"/>
+                        <outlet property="trailDescLabel" destination="CWG-x3-t94" id="4ID-9q-uu8"/>
+                        <outlet property="trailDistanceLabel" destination="lJC-He-gMr" id="4VC-PZ-Zum"/>
+                        <outlet property="trailNameLabel" destination="xnX-Iv-Oui" id="eVX-9a-S3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVc-hj-ViM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684.6153846153845" y="989.57345971563973"/>
         </scene>
         <!--floraViewController-->
         <scene sceneID="UsH-AJ-fTW">
@@ -268,7 +349,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXq-Tj-kgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2613.8461538461538" y="989.57345971563973"/>
+            <point key="canvasLocation" x="3543.0769230769229" y="989.57345971563973"/>
         </scene>
         <!--Copyright, etc-->
         <scene sceneID="vsX-Ax-5nz">
@@ -318,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xp-ra-d0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432.3076923076924" y="1289.5734597156397"/>
+            <point key="canvasLocation" x="4361.538461538461" y="1289.5734597156397"/>
         </scene>
         <!--Places-->
         <scene sceneID="RqM-37-7P2">
@@ -356,11 +437,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMS-Lt-XrU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684.6153846153845" y="989.57345971563973"/>
+            <point key="canvasLocation" x="2613.8461538461538" y="989.57345971563973"/>
+        </scene>
+        <!--Trails-->
+        <scene sceneID="Wij-XL-ogo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YwV-Va-88N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trails" image="signpost.right" catalog="system" id="3kV-MA-Vlp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vsW-2e-jGJ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Eg-MA-Y8o" kind="relationship" relationship="rootViewController" id="pdn-Im-xKQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJf-Kz-fCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="990"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Py0-vE-7ca"/>
+        <segue reference="pR0-Oi-Zy2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="leaf.circle" catalog="system" width="128" height="121"/>

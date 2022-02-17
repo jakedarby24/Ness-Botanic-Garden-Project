@@ -10,37 +10,50 @@ import MapKit
 
 class attractionListViewController: UITableViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
+    // MARK: - Class set-up
+    
+    // Define class attributes
     var sections: [Landmark]?
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
+    // Perform these steps when the view loads
     override func viewDidLoad() {
-        sections = getItemsFromPlist(fileName: "garden_sections")
+        // Retrieve the sections of the gardens from local storage
+        sections = getPlacesFromPlist(fileName: "garden_sections")
         super.viewDidLoad()
+        // Start the location manager to get the user's location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table view data
 
+    // Returns the number of sections for the table (will only ever be 1 for this implementation)
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
+    // Get the number of rows in the table, i.e. the number of sections of the garden
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections!.count
     }
 
+    // Populate each table cell with the name of the section and the distance it is from the user
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = sections?[indexPath.row].name
+        
+        // Set the image of the content view to the one specified in local storage
         if sections?[indexPath.row].imageLink != nil {
             content.image = UIImage(named: "images/\(sections?[indexPath.row].imageLink ?? "")")
             content.imageProperties.maximumSize = CGSize(width: 120, height: 96)
         }
+        
+        // Get the distance of the garden section from the user
         if sections?[indexPath.row].distanceFromUser != nil {
             content.secondaryText = "\(Int(sections![indexPath.row].distanceFromUser!))m away"
         }
@@ -62,7 +75,9 @@ class attractionListViewController: UITableViewController, CLLocationManagerDele
         }
     }
     
-    //updates the current location, updates the table of locations
+    // MARK: - Location Manager
+    
+    // Updates the current location, updates the table of locations
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
         var newSections: [Landmark]

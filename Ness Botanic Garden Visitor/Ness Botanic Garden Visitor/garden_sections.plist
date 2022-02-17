@@ -126,6 +126,8 @@ The images show both old and new views of the house.</string>
 		<real>53.273015</real>
 		<key>longitude</key>
 		<real>-3.043567</real>
+		<key>imageLink</key>
+		<string>botanischearea4.jpg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>

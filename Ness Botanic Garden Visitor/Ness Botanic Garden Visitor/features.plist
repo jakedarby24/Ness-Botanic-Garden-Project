@@ -90,18 +90,6 @@
 		<key>enabled</key>
 		<true/>
 		<key>name</key>
-		<string>Labyrinth</string>
-		<key>description</key>
-		<string></string>
-		<key>latitude</key>
-		<real>53.271694</real>
-		<key>longitude</key>
-		<real>-3.045375</real>
-	</dict>
-	<dict>
-		<key>enabled</key>
-		<true/>
-		<key>name</key>
 		<string>Wedding Area</string>
 		<key>description</key>
 		<string>The entrance to the Ness Botanic Garden</string>

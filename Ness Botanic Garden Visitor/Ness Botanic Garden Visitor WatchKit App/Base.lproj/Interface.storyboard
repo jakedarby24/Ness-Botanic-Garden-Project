@@ -1,48 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch45"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Main Menu-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="Main Menu" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Ness_Botanic_Visitor" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="0fv-eG-rXH">
+                            <items>
+                                <label alignment="left" text="Ness Botanic" id="fIP-Y6-554">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="BiR-rQ-tDM">
+                            <items>
+                                <table alignment="left" id="imG-6I-3nX">
+                                    <items>
+                                        <tableRow identifier="menuTable" id="7CT-Nh-VOS" customClass="menuTableController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="CN4-uH-FGC">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Title" textAlignment="left" baselineAdjustment="alignCenters" id="GNX-h7-EuV"/>
+                                                </items>
+                                                <connections>
+                                                    <segue destination="LyI-UN-f7a" kind="push" identifier="tableInfo" id="P1h-1h-9fS"/>
+                                                </connections>
+                                            </group>
+                                            <connections>
+                                                <outlet property="titleLabel" destination="GNX-h7-EuV" id="S7q-Pi-M6V"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="menuTable" destination="imG-6I-3nX" id="xg0-Vi-v4R"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Table Info-->
+        <scene sceneID="NJc-Xk-RC6">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller identifier="Table Info" id="LyI-UN-f7a" customClass="SecondScreenController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" id="rkP-ns-ffv">
+                            <items>
+                                <table alignment="left" id="3F9-8M-VkM">
+                                    <items>
+                                        <tableRow identifier="infoRow" id="Vth-n9-g4Z" customClass="menuTableController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="6G7-kK-ibl">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Title" textAlignment="left" baselineAdjustment="alignCenters" id="HUJ-Bv-T1R"/>
+                                                </items>
+                                                <connections>
+                                                    <segue destination="Rcc-Pr-KLz" kind="push" identifier="itemDetail" id="btA-Hp-ftg"/>
+                                                </connections>
+                                            </group>
+                                            <connections>
+                                                <outlet property="titleLabel" destination="HUJ-Bv-T1R" id="cDn-EP-sjh"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <outlet property="infoTable" destination="3F9-8M-VkM" id="9Z8-VY-OHh"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="506" y="345"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Item Detail-->
+        <scene sceneID="PXD-Ua-5qo">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="Item Detail" id="Rcc-Pr-KLz" customClass="DetailScreenController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="J9Z-DO-I6b">
+                            <items>
+                                <label alignment="left" text="Description" textAlignment="center" numberOfLines="0" id="PoU-Lh-vaA"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="nhU-mU-QXS">
+                            <items>
+                                <label alignment="center" text="Accessibility" textAlignment="center" numberOfLines="0" id="Y3P-RQ-AlY">
+                                    <fontDescription key="font" type="italicSystem" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Q97-z7-aPC">
+                            <items>
+                                <imageView alignment="left" id="cyd-V8-Urg">
+                                    <gestureRecognizers>
+                                        <tapGestureRecognizer id="eud-Qf-HqE"/>
+                                    </gestureRecognizers>
+                                </imageView>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="accessLabel" destination="Y3P-RQ-AlY" id="UuC-I1-eBt"/>
+                        <outlet property="descriptionText" destination="PoU-Lh-vaA" id="L3c-GJ-RSR"/>
+                        <outlet property="itemImage" destination="cyd-V8-Urg" id="M2p-pN-yvb"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="791" y="345"/>
         </scene>
     </scenes>
 </document>

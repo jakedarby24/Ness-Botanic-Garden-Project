@@ -53,9 +53,9 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
 
-        attractions = getItemsFromPlist(fileName: "attractions")
-        features = getItemsFromPlist(fileName: "features")
-        sections = getItemsFromPlist(fileName: "garden_sections")
+        attractions = getPlacesFromPlist(fileName: "attractions")
+        features = getPlacesFromPlist(fileName: "features")
+        sections = getPlacesFromPlist(fileName: "garden_sections")
         
         titleLabel.text = titleName
         descriptionLabel.text = descriptionName
