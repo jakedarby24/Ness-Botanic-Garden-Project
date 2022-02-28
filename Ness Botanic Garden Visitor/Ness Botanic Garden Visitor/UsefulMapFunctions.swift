@@ -46,7 +46,7 @@ func setAnnotationStyle(marker: MKMarkerAnnotationView, annotation: MKAnnotation
             marker.markerTintColor = UIColor.purple
             return marker
         default:
-            print("Next List")
+            break
         }
     }
     for i in attractions! {

@@ -16,8 +16,6 @@ class DetailScreenController: WKInterfaceController {
     
     @IBOutlet weak var accessLabel: WKInterfaceLabel!
     
-    
-    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         if let contextType = context as? Trail {
@@ -37,7 +35,6 @@ class DetailScreenController: WKInterfaceController {
             let contextType = context as? Landmark
             setTitle(contextType?.name)
             descriptionText.setText(contextType?.description)
-            print(contextType?.imageLink)
             itemImage.setImage(UIImage(named: "images/\(contextType?.imageLink ?? "")"))
             accessLabel.setText("")
             accessLabel.sizeToFitHeight()

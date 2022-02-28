@@ -946,6 +946,91 @@
 			<string>spinney5IMG_20190123_100546.jpg</string>
 			<string>specimenlawn2.DSC_2650.JPG</string>
 		</array>
+		<key>pointsOfInterest</key>
+		<array>
+			<dict>
+				<key>trailNumber</key>
+				<integer>1</integer>
+				<key>pointName</key>
+				<string>Noble Fir</string>
+				<key>pointDescription</key>
+				<string>Noble Fir is a member of the pine family and is a stately ornamental tree. This species was first discovered by Scottish plant hunter David Douglas in the Cascade Mountains of Oregon in 1825. He named it ‘procera’ which means tall. It grows up to 50m in height and has a clean straight trunk up to 2.5m in diameter. It flowers from May to June and has large erect cones which disintegrate on ripening. This selected form of the species has attractive very blue-green foliage which is part of the natural colour variation of this species, varying from bright blue to dusky
+green. In the wild, Noble Fir often forms extensive forests and grows with other conifer species including Douglas Fir and Western Hemlock. 
+The next tree is diagonally to your right (not down the steps) on a grassy bank. 
+Keaki, Zelkova serrata, is a relative of our native Elm. In the wild it grows in lowland and upland valleys throughout China, Japan, Korea and Taiwan. It grows best in full sun and is highly resistant to Dutch Elm Disease. 
+From the Keaki, follow the tarmac path for about 200m, keeping the large herbaceous border lawn on your left, and head towards the Pine Wood in front of you. Stop once inside the wood</string>
+				<key>pointLatitude</key>
+				<real>53.27206</real>
+				<key>pointLongitude</key>
+				<real>-3.04457</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>2</integer>
+				<key>pointName</key>
+				<string>Scots Pine</string>
+				<key>pointDescription</key>
+				<string>Scots Pine is commonly found throughout northern Eurasia, from Scotland in the west to far eastern Russia, and from the Arctic Circle to as far south as Spain. It is quick to colonise new sites, but in the wild in the UK is now restricted to the Caledonian Pinewoods in Scotland. It is very important as a timber tree, and can live up to 300 years. Scots Pine can be identified by the orange-red colour of the bark on the branches and trunk in the canopy. The Ness Pine Wood was planted as a shelterbelt in about 1913 by the Gardens’ founder, Arthur Kilpin Bulley. Pine naturally grows with birch and rowan trees in the wild and the Ness wood contains many important rowans including Sorbus carmesina, which has bright vermillion-coloured fruits in autumn. 
+The acid sandy soil in this area is ideal for growing camellias and rhododendrons. Of the 1,000 species of Rhododendron in the world, many are shrubs but several form large trees. The best known is Rhododendron arboreum which grows to 30m and forms dense forests throughout the Sino-Himalayan region. 
+Walk all the way through the Pine Wood for about 160m following the lower woodchip path.
+ 
+At the end of this path, look out for Rhododendron ‘Polar Bear’ that has sweetly scented flowers in July. Opposite this is a large Camellia x williamsii ‘J.C. Williams’, a superb large shrub that can flower from November to March. 
+Now turn left and head to the striking multi-stemmed white-barked birch in front of you.</string>
+				<key>pointLatitude</key>
+				<real>53.27354</real>
+				<key>pointLongitude</key>
+				<real>-3.04319</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>3</integer>
+				<key>pointName</key>
+				<string>Himalayan Birch</string>
+				<key>pointDescription</key>
+				<string>Himalayan Birch is thought to occur from Afghanistan in the west, through Bhutan, India and Nepal to China in the east. It grows in temperate broad-leaved forests from 2,500-3,800m altitude where it can be an important timber tree up to 35m in height, and is often grown for its hard, dense, but rather brittle timber. In cultivation, it is grown for its attractive bark colouration that varies from shades of copper and red to the purest white. Many forms have bark that peels in strips, with the best forms being the red-barked subspecies albosinensis. 
+ 
+This fine specimen is subspecies jacquemontii, collected as seed by modern-day plant collectors in Himachal Pradesh in northern India. 
+You can tell that this plant has been grown from seed, as its natural form is 
+ 
+multi-stemmed (single-trunk nursery trees have been grafted). This is one of the best specimens of this species in the Gardens, but other fine examples can be found around Ness. 
+A little further on is Strawberry Dogwood, Cornus kousa var. chinensis, one of the very best large shrubs for any garden. It has flowers with large petal-like bracts that mature into raspberry-like and edible red fruit.
+Continue straight on. At the junction take the left fork and after 20m stop at the large evergreen shrub on your left</string>
+				<key>pointLatitude</key>
+				<real>53.27434</real>
+				<key>pointLongitude</key>
+				<real>-3.04506</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>4</integer>
+				<key>pointName</key>
+				<string>Piers formosa var. forrestii</string>
+				<key>pointDescription</key>
+				<string>Arthur Kilpin Bulley launched the careers of several great plant collectors. This started in 1904 when he sponsored George Forrest to collect alpine primulas and gentians in Yunnan in western China. Throughout his career, Forrest collected many other plant species, and is credited with introducing 250 species of Rhododendron.  
+The Pieris formosa var. forrestii is thought to have been collected as seed by Forrest from the Tali range in Yunnan, China in 1904-6 and planted here in about 1919. Unfortunately, as Bulley did not keep records of what plants were planted where in his gardens, this is a best guess as to its real origin. 
+It is very likely that all of the Pieris formosa var. forrestii, including the popular cultivar ‘Wakehurst’, that are grown in Britain today are descendents of these plants. Many of these will have been grown from the seed which Bulley distributed through his company, Bees Ltd. 
+In the bed to your far right you can see a large specimen of Magnolia sprengeri ‘Diva’. Ernest ‘Chinese’ Wilson collected this plant from Western Hubei, China in 1900. This is most impressive in March when it is in full bloom and covered in beautiful pink flowers.
+From the Pieris, follow the path immediately to your right and then continue to go under the arch and walk through the Potager. Turn right on the main path and walk between the red brick buildings. Just beyond the buildings, stop at the crossroad</string>
+				<key>pointLatitude</key>
+				<real>53.27378</real>
+				<key>pointLongitude</key>
+				<real>-3.04526</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>5</integer>
+				<key>pointName</key>
+				<string>Maidenhair Tree</string>
+				<key>pointDescription</key>
+				<string>At the crossroads, on your right, are two large specimens of Maidenhair Tree. This species is the sole surviving member of a plant family (Ginkgoaceae) that dominated the planet at the time of the dinosaurs. It is thought to have originated around 350 million years ago, but is now endangered in the wild. It is a native of eastern China but is found growing in sacred places in China and Japan, often as very ancient trees. Ginkgo was introduced into Europe in the early 1700’s and has been much planted since for its upright form, unique leaves and butter-yellow autumn colour. The tree at Kew, the first planted in Britain (in 1762) is still strong and healthy. 
+Ginkgo is a very resilient tree and is resistant to bacteria, insects and pollution; a tree growing next to a temple less than a mile from Hiroshima is said to have survived the atomic bomb. Ginkgo is dioecious, having separate male and female trees; male trees are preferred as the crushed fruits of female trees smell like vomit! The white nut in the fruit is, however, considered a delicacy in China. Ginkgo has a growing reputation in herbal medicine with proposed uses for Alzheimer’s Disease and in erectile dysfunction. It should not be eaten while pregnant as it contains teratogenic substances that can damage the developing foetus.
+From the Ginkgos bear diagonally left to follow the narrow gravel path that leads through the middle of two beds</string>
+				<key>pointLatitude</key>
+				<real>53.27344</real>
+				<key>pointLongitude</key>
+				<real>-3.04509</real>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>

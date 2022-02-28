@@ -57,15 +57,22 @@
                                 <table alignment="left" id="3F9-8M-VkM">
                                     <items>
                                         <tableRow identifier="infoRow" id="Vth-n9-g4Z" customClass="menuTableController" customModule="Ness_Botanic_Garden_Visitor_WatchKit_Extension">
-                                            <group key="rootItem" width="1" alignment="left" id="6G7-kK-ibl">
+                                            <group key="rootItem" width="1" height="48" alignment="left" id="6G7-kK-ibl">
                                                 <items>
-                                                    <label alignment="left" verticalAlignment="center" text="Title" textAlignment="left" baselineAdjustment="alignCenters" id="HUJ-Bv-T1R"/>
+                                                    <label width="126" height="41" alignment="left" verticalAlignment="center" text="Title" textAlignment="left" baselineAdjustment="alignCenters" numberOfLines="2" id="HUJ-Bv-T1R">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="bottom" text="Distance" textAlignment="right" baselineAdjustment="alignCenters" id="zqh-0s-BuC">
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                    </label>
                                                 </items>
                                                 <connections>
                                                     <segue destination="Rcc-Pr-KLz" kind="push" identifier="itemDetail" id="btA-Hp-ftg"/>
                                                 </connections>
                                             </group>
                                             <connections>
+                                                <outlet property="distanceLabel" destination="zqh-0s-BuC" id="UPK-tI-oDQ"/>
                                                 <outlet property="titleLabel" destination="HUJ-Bv-T1R" id="cDn-EP-sjh"/>
                                             </connections>
                                         </tableRow>
@@ -79,7 +86,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="506" y="345"/>
+            <point key="canvasLocation" x="505.53535353535358" y="344.91735537190084"/>
         </scene>
         <!--Item Detail-->
         <scene sceneID="PXD-Ua-5qo">
@@ -88,7 +95,9 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="J9Z-DO-I6b">
                             <items>
-                                <label alignment="left" text="Description" textAlignment="center" numberOfLines="0" id="PoU-Lh-vaA"/>
+                                <label alignment="left" text="Description" textAlignment="center" numberOfLines="0" id="PoU-Lh-vaA">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="nhU-mU-QXS">

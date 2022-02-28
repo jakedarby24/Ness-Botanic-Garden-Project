@@ -16,4 +16,14 @@ struct Trail: Codable {
     var latitudes: [Double]
     var longitudes: [Double]
     var images: [String]?
+    var pointsOfInterest: [PointOfInterest]?
 }
+
+struct PointOfInterest: Codable {
+    var trailNumber: Int
+    var pointName: String
+    var pointDescription: String?
+    var pointLatitude: Double
+    var pointLongitude: Double
+}
+

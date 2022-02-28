@@ -10,5 +10,6 @@ import WatchKit
 class menuTableController: NSObject {
     
     @IBOutlet weak var titleLabel: WKInterfaceLabel!
+    @IBOutlet weak var distanceLabel: WKInterfaceLabel!
     
 }

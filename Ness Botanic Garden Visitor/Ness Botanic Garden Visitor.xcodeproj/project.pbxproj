@@ -33,6 +33,13 @@
 		474C300927B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C300827B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift */; };
 		474C300B27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C300A27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift */; };
 		4759A40727B69773006CAA08 /* Main Route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4759A40627B69773006CAA08 /* Main Route.gpx */; };
+		475B060D27CD757F0022D9CE /* trailPinDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B060C27CD757F0022D9CE /* trailPinDetailController.swift */; };
+		476631CB27CD0ADD0050BA77 /* Botanic Circle.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */; };
+		4786984927BEDFBF00F84992 /* UsefulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959027AC187B00DF56D4 /* UsefulFunctions.swift */; };
+		4786984A27BEDFE800F84992 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C3238827BC05BC000ECB66 /* Trail.swift */; };
+		4786984B27BEDFEB00F84992 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AC91527A9C43900280A25 /* Landmark.swift */; };
+		4786984C27BEE1DA00F84992 /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
+		4786984D27BEE1DD00F84992 /* trails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C3238627BC052B000ECB66 /* trails.plist */; };
 		4797EA30274FF49700496756 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA2F274FF49700496756 /* features.plist */; };
 		4797EA32274FFB0900496756 /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
 		479D33FD27BACAB500FC269D /* trailDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D33FC27BACAB500FC269D /* trailDetailController.swift */; };
@@ -141,6 +148,8 @@
 		474C300827B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Botanic_Garden_VisitorUITests.swift; sourceTree = "<group>"; };
 		474C300A27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4759A40627B69773006CAA08 /* Main Route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Main Route.gpx"; path = "Routes/Main Route.gpx"; sourceTree = "<group>"; };
+		475B060C27CD757F0022D9CE /* trailPinDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailPinDetailController.swift; sourceTree = "<group>"; };
+		476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Botanic Circle.gpx"; sourceTree = "<group>"; };
 		4797EA2F274FF49700496756 /* features.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
 		4797EA31274FFB0900496756 /* garden_sections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = garden_sections.plist; sourceTree = "<group>"; };
 		479D33FC27BACAB500FC269D /* trailDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailDetailController.swift; sourceTree = "<group>"; };
@@ -211,12 +220,14 @@
 				479D33FC27BACAB500FC269D /* trailDetailController.swift */,
 				4734959627AC3D6100DF56D4 /* floraListViewController.swift */,
 				473976F2274C13410031D666 /* mapViewController.swift */,
+				475B060C27CD757F0022D9CE /* trailPinDetailController.swift */,
 				4734959827AD413600DF56D4 /* placeDetailViewController.swift */,
 				473976B5274C0F2A0031D666 /* SceneDelegate.swift */,
 				4734959427AC23C500DF56D4 /* AppDelegate.swift */,
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
 				473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */,
 				4759A40627B69773006CAA08 /* Main Route.gpx */,
+				476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */,
 				47BE5369274FEC8A002C6E93 /* attractions.plist */,
 				4797EA2F274FF49700496756 /* features.plist */,
 				4797EA31274FFB0900496756 /* garden_sections.plist */,
@@ -401,6 +412,7 @@
 				4734958D27AABA3100DF56D4 /* images in Resources */,
 				4797EA32274FFB0900496756 /* garden_sections.plist in Resources */,
 				4759A40727B69773006CAA08 /* Main Route.gpx in Resources */,
+				476631CB27CD0ADD0050BA77 /* Botanic Circle.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +448,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4786984C27BEE1DA00F84992 /* garden_sections.plist in Resources */,
+				4786984D27BEE1DD00F84992 /* trails.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +469,7 @@
 				4734959527AC23C500DF56D4 /* AppDelegate.swift in Sources */,
 				4734959327AC231400DF56D4 /* PolylineCoordinates.swift in Sources */,
 				4719EF4627A9E19E0061AD55 /* attractionListViewController.swift in Sources */,
+				475B060D27CD757F0022D9CE /* trailPinDetailController.swift in Sources */,
 				4734959727AC3D6100DF56D4 /* floraListViewController.swift in Sources */,
 				479D33FD27BACAB500FC269D /* trailDetailController.swift in Sources */,
 				47C3238927BC05BC000ECB66 /* Trail.swift in Sources */,
@@ -485,7 +500,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				474C300B27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift in Sources */,
+				4786984927BEDFBF00F84992 /* UsefulFunctions.swift in Sources */,
+				4786984A27BEDFE800F84992 /* Trail.swift in Sources */,
 				474C300927B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift in Sources */,
+				4786984B27BEDFEB00F84992 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

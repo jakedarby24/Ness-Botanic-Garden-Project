@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+// The outline of the Ness Botanic Garden
 let nessGardenOutline = [CLLocationCoordinate2D(latitude: 53.27515, longitude: -3.04510),
                          CLLocationCoordinate2D(latitude: 53.27463, longitude: -3.04570),
                          CLLocationCoordinate2D(latitude: 53.27431, longitude: -3.04597),
