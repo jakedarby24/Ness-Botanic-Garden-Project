@@ -10,7 +10,8 @@ import UIKit
 class trailPinDetailController: UIViewController {
 
     @IBOutlet weak var pinTitleLabel: UILabel!
-    @IBOutlet weak var pinDescriptionLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     
     var pinTitle: String?
     var pinDescription: String?
@@ -21,7 +22,7 @@ class trailPinDetailController: UIViewController {
         // Do any additional setup after loading the view.
         
         pinTitleLabel.text = pinTitle
-        pinDescriptionLabel.text = pinDescription
+        descriptionTextView.text = pinDescription
     }
     
 

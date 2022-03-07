@@ -30,10 +30,9 @@
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
 		473AC91627A9C43900280A25 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AC91527A9C43900280A25 /* Landmark.swift */; };
 		473E733E27B14F60009B311A /* trailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E733D27B14F60009B311A /* trailViewController.swift */; };
-		474C300927B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C300827B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift */; };
-		474C300B27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C300A27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift */; };
 		4759A40727B69773006CAA08 /* Main Route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4759A40627B69773006CAA08 /* Main Route.gpx */; };
 		475B060D27CD757F0022D9CE /* trailPinDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B060C27CD757F0022D9CE /* trailPinDetailController.swift */; };
+		475C1A2027CE6EB300721B4A /* Ness_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475C1A1F27CE6EB300721B4A /* Ness_Tests.swift */; };
 		476631CB27CD0ADD0050BA77 /* Botanic Circle.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */; };
 		4786984927BEDFBF00F84992 /* UsefulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959027AC187B00DF56D4 /* UsefulFunctions.swift */; };
 		4786984A27BEDFE800F84992 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C3238827BC05BC000ECB66 /* Trail.swift */; };
@@ -83,6 +82,13 @@
 			remoteInfo = "Ness Botanic Garden Visitor WatchKit Extension";
 		};
 		474C300C27B682E5005C06EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 473976A8274C0F2A0031D666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 473976AF274C0F2A0031D666;
+			remoteInfo = "Ness Botanic Garden Visitor";
+		};
+		475C1A2127CE6EB300721B4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 473976A8274C0F2A0031D666 /* Project object */;
 			proxyType = 1;
@@ -145,10 +151,10 @@
 		473AC91527A9C43900280A25 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		473E733D27B14F60009B311A /* trailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailViewController.swift; sourceTree = "<group>"; };
 		474C300627B682E5005C06EB /* Ness Botanic Garden VisitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ness Botanic Garden VisitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		474C300827B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Botanic_Garden_VisitorUITests.swift; sourceTree = "<group>"; };
-		474C300A27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4759A40627B69773006CAA08 /* Main Route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Main Route.gpx"; path = "Routes/Main Route.gpx"; sourceTree = "<group>"; };
 		475B060C27CD757F0022D9CE /* trailPinDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailPinDetailController.swift; sourceTree = "<group>"; };
+		475C1A1D27CE6EB300721B4A /* Ness Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ness Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		475C1A1F27CE6EB300721B4A /* Ness_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Tests.swift; sourceTree = "<group>"; };
 		476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Botanic Circle.gpx"; sourceTree = "<group>"; };
 		4797EA2F274FF49700496756 /* features.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = features.plist; sourceTree = "<group>"; };
 		4797EA31274FFB0900496756 /* garden_sections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = garden_sections.plist; sourceTree = "<group>"; };
@@ -185,6 +191,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		475C1A1A27CE6EB300721B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -194,7 +207,7 @@
 				473976B2274C0F2A0031D666 /* Ness Botanic Garden Visitor */,
 				473976C8274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */,
 				473976D6274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */,
-				474C300727B682E5005C06EB /* Ness Botanic Garden VisitorUITests */,
+				475C1A1E27CE6EB300721B4A /* Ness Tests */,
 				473976B1274C0F2A0031D666 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 				473976C4274C0F2B0031D666 /* Ness Botanic Visitor.app */,
 				473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */,
 				474C300627B682E5005C06EB /* Ness Botanic Garden VisitorUITests.xctest */,
+				475C1A1D27CE6EB300721B4A /* Ness Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,13 +283,12 @@
 			path = "Ness Botanic Garden Visitor WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		474C300727B682E5005C06EB /* Ness Botanic Garden VisitorUITests */ = {
+		475C1A1E27CE6EB300721B4A /* Ness Tests */ = {
 			isa = PBXGroup;
 			children = (
-				474C300827B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift */,
-				474C300A27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift */,
+				475C1A1F27CE6EB300721B4A /* Ness_Tests.swift */,
 			);
-			path = "Ness Botanic Garden VisitorUITests";
+			path = "Ness Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +365,24 @@
 			productReference = 474C300627B682E5005C06EB /* Ness Botanic Garden VisitorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		475C1A1C27CE6EB300721B4A /* Ness Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475C1A2327CE6EB300721B4A /* Build configuration list for PBXNativeTarget "Ness Tests" */;
+			buildPhases = (
+				475C1A1927CE6EB300721B4A /* Sources */,
+				475C1A1A27CE6EB300721B4A /* Frameworks */,
+				475C1A1B27CE6EB300721B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				475C1A2227CE6EB300721B4A /* PBXTargetDependency */,
+			);
+			name = "Ness Tests";
+			productName = "Ness Tests";
+			productReference = 475C1A1D27CE6EB300721B4A /* Ness Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,6 +406,10 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 473976AF274C0F2A0031D666;
 					};
+					475C1A1C27CE6EB300721B4A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 473976AF274C0F2A0031D666;
+					};
 				};
 			};
 			buildConfigurationList = 473976AB274C0F2A0031D666 /* Build configuration list for PBXProject "Ness Botanic Garden Visitor" */;
@@ -394,6 +429,7 @@
 				473976C3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */,
 				473976D1274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */,
 				474C300527B682E5005C06EB /* Ness Botanic Garden VisitorUITests */,
+				475C1A1C27CE6EB300721B4A /* Ness Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +489,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		475C1A1B27CE6EB300721B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -499,11 +542,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				474C300B27B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITestsLaunchTests.swift in Sources */,
 				4786984927BEDFBF00F84992 /* UsefulFunctions.swift in Sources */,
 				4786984A27BEDFE800F84992 /* Trail.swift in Sources */,
-				474C300927B682E5005C06EB /* Ness_Botanic_Garden_VisitorUITests.swift in Sources */,
 				4786984B27BEDFEB00F84992 /* Landmark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475C1A1927CE6EB300721B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475C1A2027CE6EB300721B4A /* Ness_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +573,11 @@
 			isa = PBXTargetDependency;
 			target = 473976AF274C0F2A0031D666 /* Ness Botanic Garden Visitor */;
 			targetProxy = 474C300C27B682E5005C06EB /* PBXContainerItemProxy */;
+		};
+		475C1A2227CE6EB300721B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 473976AF274C0F2A0031D666 /* Ness Botanic Garden Visitor */;
+			targetProxy = 475C1A2127CE6EB300721B4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -892,6 +946,47 @@
 			};
 			name = Release;
 		};
+		475C1A2427CE6EB300721B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ness Botanic Garden Visitor.app/Ness Botanic Garden Visitor";
+			};
+			name = Debug;
+		};
+		475C1A2527CE6EB300721B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU8BL486WN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ness Botanic Garden Visitor.app/Ness Botanic Garden Visitor";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -936,6 +1031,15 @@
 			buildConfigurations = (
 				474C300E27B682E5005C06EB /* Debug */,
 				474C300F27B682E5005C06EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475C1A2327CE6EB300721B4A /* Build configuration list for PBXNativeTarget "Ness Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475C1A2427CE6EB300721B4A /* Debug */,
+				475C1A2527CE6EB300721B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

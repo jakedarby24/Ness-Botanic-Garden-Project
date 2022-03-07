@@ -16,6 +16,7 @@ class floraListViewController: UITableViewController, CLLocationManagerDelegate 
     
     override func viewDidLoad() {
         flowers = getPlacesFromPlist(fileName: "attractions")
+        navigationItem.title = "Flora"
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

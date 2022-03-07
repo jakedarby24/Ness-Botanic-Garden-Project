@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Allium</string>
 		<key>description</key>
@@ -16,7 +16,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Ammocharis</string>
 		<key>description</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Bomarea</string>
 		<key>description</key>
@@ -40,7 +40,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Arisaema</string>
 		<key>description</key>
@@ -52,7 +52,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Brunsvigia</string>
 		<key>description</key>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Lilium</string>
 		<key>description</key>
@@ -76,7 +76,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Galanthus</string>
 		<key>description</key>

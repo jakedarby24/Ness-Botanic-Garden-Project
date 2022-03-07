@@ -16,7 +16,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Car Park A</string>
 		<key>description</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>enabled</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Car Park B</string>
 		<key>description</key>
@@ -66,7 +66,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>name</key>
-		<string>View Point</string>
+		<string>View Point A</string>
 		<key>description</key>
 		<string></string>
 		<key>latitude</key>
@@ -78,7 +78,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>name</key>
-		<string>View Point</string>
+		<string>View Point B</string>
 		<key>description</key>
 		<string></string>
 		<key>latitude</key>

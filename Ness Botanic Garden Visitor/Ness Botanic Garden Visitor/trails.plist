@@ -726,21 +726,24 @@
 		<key>accessible</key>
 		<false/>
 		<key>distance</key>
-		<real>1.5</real>
+		<real>1.51</real>
 		<key>latitudes</key>
 		<array>
 			<real>53.272367539</real>
 			<real>53.27235111</real>
 			<real>53.272351027</real>
+			<real>53.27231723</real>
 			<real>53.272308111</real>
 			<real>53.27231884</real>
 			<real>53.272286654</real>
+			<real>53.272254735</real>
 			<real>53.272233009</real>
 			<real>53.272114992</real>
 			<real>53.272082806</real>
 			<real>53.272082806</real>
 			<real>53.27213645</real>
 			<real>53.272200823</real>
+			<real>53.272259445</real>
 			<real>53.272265196</real>
 			<real>53.272393942</real>
 			<real>53.272474241</real>
@@ -749,104 +752,219 @@
 			<real>53.272619331</real>
 			<real>53.272619247</real>
 			<real>53.272694349</real>
-			<real>53.27287674</real>
+			<real>53.272714986</real>
+			<real>53.272848068</real>
+			<real>53.272876739</real>
 			<real>53.272930384</real>
 			<real>53.272994757</real>
 			<real>53.273016214</real>
+			<real>53.273048507</real>
 			<real>53.273048485</real>
 			<real>53.273048401</real>
+			<real>53.273150046</real>
 			<real>53.273150078</real>
+			<real>53.273259097</real>
 			<real>53.273259147</real>
+			<real>53.273416159</real>
 			<real>53.273416335</real>
-			<real>53.273551067</real>
-			<real>53.273708253</real>
-			<real>53.274314539</real>
-			<real>53.274356241</real>
-			<real>53.274356241</real>
+			<real>53.273550884</real>
+			<real>53.273550812</real>
+			<real>53.273545699</real>
+			<real>53.273552656</real>
+			<real>53.273584843</real>
+			<real>53.273591967</real>
+			<real>53.273599176</real>
+			<real>53.273591967</real>
+			<real>53.273627758</real>
+			<real>53.273650282</real>
+			<real>53.273735046</real>
+			<real>53.273739954</real>
+			<real>53.273745775</real>
+			<real>53.273847882</real>
+			<real>53.273863792</real>
+			<real>53.273895031</real>
+			<real>53.27394845</real>
+			<real>53.273939146</real>
+			<real>53.27400145</real>
+			<real>53.274050096</real>
+			<real>53.27411886</real>
+			<real>53.274118854</real>
+			<real>53.274114579</real>
+			<real>53.2741642</real>
+			<real>53.274204742</real>
+			<real>53.274240056</real>
+			<real>53.274240727</real>
+			<real>53.274240056</real>
+			<real>53.274250031</real>
+			<real>53.274282217</real>
+			<real>53.274357319</real>
+			<real>53.274368048</real>
+			<real>53.274368048</real>
+			<real>53.274362599</real>
+			<real>53.274368048</real>
+			<real>53.274368048</real>
+			<real>53.274354252</real>
+			<real>53.274322953</real>
+			<real>53.274330552</real>
 			<real>53.274330578</real>
+			<real>53.27429874</real>
 			<real>53.2742985</real>
+			<real>53.274250776</real>
 			<real>53.274250382</real>
+			<real>53.274186672</real>
 			<real>53.274186225</real>
+			<real>53.274116095</real>
 			<real>53.274115653</real>
+			<real>53.274051993</real>
 			<real>53.274051495</real>
+			<real>53.274010395</real>
 			<real>53.274009793</real>
-			<real>53.273961675</real>
-			<real>53.273839776</real>
-			<real>53.273765995</real>
-			<real>53.273733916</real>
+			<real>53.273962337</real>
+			<real>53.273897518</real>
+			<real>53.27378845</real>
+			<real>53.273727501</real>
+			<real>53.273711461</real>
+			<real>53.273686141</real>
 			<real>53.273685798</real>
+			<real>53.273822922</real>
 			<real>53.273823737</real>
+			<real>53.27391607</real>
 			<real>53.273916765</real>
+			<real>53.273846229</real>
+			<real>53.273814933</real>
+			<real>53.273780434</real>
+			<real>53.273718024</real>
+			<real>53.273650653</real>
 			<real>53.273650511</real>
+			<real>53.27359602</real>
+			<real>53.273445494</real>
 			<real>53.273445206</real>
+			<real>53.27322106</real>
 			<real>53.273220652</real>
+			<real>53.273192764</real>
 			<real>53.273191781</real>
+			<real>53.273148024</real>
 			<real>53.27314687</real>
+			<real>53.273083819</real>
 			<real>53.273082711</real>
+			<real>53.273015941</real>
 			<real>53.273015345</real>
+			<real>53.272923531</real>
 			<real>53.272922314</real>
+			<real>53.272782422</real>
 			<real>53.272781165</real>
+			<real>53.272695782</real>
 			<real>53.27269455</real>
+			<real>53.272586557</real>
 			<real>53.272585479</real>
+			<real>53.272454812</real>
 			<real>53.272453952</real>
+			<real>53.272371429</real>
 			<real>53.272370544</real>
+			<real>53.272304433</real>
 			<real>53.272303177</real>
+			<real>53.272223873</real>
 			<real>53.272222977</real>
+			<real>53.272179562</real>
 			<real>53.272178065</real>
+			<real>53.272137882</real>
 			<real>53.272136361</real>
+			<real>53.272038154</real>
 			<real>53.272036913</real>
+			<real>53.27192625</real>
 			<real>53.271924632</real>
+			<real>53.271839321</real>
 			<real>53.271838016</real>
+			<real>53.271813032</real>
 			<real>53.271812351</real>
 			<real>53.271812351</real>
 			<real>53.271812351</real>
+			<real>53.271812351</real>
+			<real>53.271812351</real>
+			<real>53.271788092</real>
 			<real>53.271786687</real>
+			<real>53.271622827</real>
+			<real>53.271411187</real>
+			<real>53.271191392</real>
+			<real>53.271036346</real>
 			<real>53.271036002</real>
+			<real>53.270918357</real>
 			<real>53.270917303</real>
+			<real>53.270866645</real>
 			<real>53.270865973</real>
+			<real>53.270822103</real>
 			<real>53.27082106</real>
+			<real>53.270687738</real>
 			<real>53.270686319</real>
+			<real>53.270652017</real>
 			<real>53.27065103</real>
+			<real>53.270604607</real>
 			<real>53.270602908</real>
+			<real>53.270515283</real>
 			<real>53.270513081</real>
+			<real>53.270428795</real>
 			<real>53.270426461</real>
+			<real>53.270319763</real>
 			<real>53.270317385</real>
+			<real>53.270260538</real>
 			<real>53.270259638</real>
+			<real>53.270162557</real>
 			<real>53.270160186</real>
+			<real>53.270075588</real>
 			<real>53.270073566</real>
+			<real>53.270000946</real>
 			<real>53.269999778</real>
+			<real>53.270044108</real>
 			<real>53.270044692</real>
+			<real>53.270221888</real>
 			<real>53.270224349</real>
+			<real>53.270315205</real>
 			<real>53.270317385</real>
+			<real>53.270561907</real>
 			<real>53.270564411</real>
+			<real>53.270692075</real>
 			<real>53.270692736</real>
+			<real>53.270759569</real>
 			<real>53.270760106</real>
+			<real>53.270856848</real>
 			<real>53.270859557</real>
+			<real>53.270919521</real>
 			<real>53.270920511</real>
+			<real>53.270964709</real>
 			<real>53.270965424</real>
+			<real>53.271043483</real>
 			<real>53.271045626</real>
+			<real>53.271146036</real>
 			<real>53.271148285</real>
+			<real>53.271261375</real>
 			<real>53.271263775</real>
+			<real>53.271307931</real>
 			<real>53.271308688</real>
+			<real>53.271424552</real>
 			<real>53.271427387</real>
+			<real>53.271474545</real>
 			<real>53.271475507</real>
+			<real>53.27147868</real>
 			<real>53.271478715</real>
-			<real>53.271629494</real>
+			<real>53.271627169</real>
 		</array>
 		<key>longitudes</key>
 		<array>
 			<real>-3.043332836</real>
 			<real>-3.043481112</real>
 			<real>-3.043481112</real>
+			<real>-3.04372614</real>
 			<real>-3.043792248</real>
 			<real>-3.043974638</real>
 			<real>-3.044189215</real>
+			<real>-3.044278585</real>
 			<real>-3.044339418</real>
 			<real>-3.044435978</real>
 			<real>-3.044489622</real>
 			<real>-3.044553995</real>
 			<real>-3.044618368</real>
 			<real>-3.044650555</real>
+			<real>-3.044631014</real>
 			<real>-3.044629097</real>
 			<real>-3.04451108</real>
 			<real>-3.044345118</real>
@@ -855,89 +973,201 @@
 			<real>-3.044157028</real>
 			<real>-3.044157028</real>
 			<real>-3.043996096</real>
+			<real>-3.043942682</real>
+			<real>-3.043598236</real>
 			<real>-3.043524027</real>
 			<real>-3.043459654</real>
 			<real>-3.043427467</real>
 			<real>-3.043287992</real>
+			<real>-3.043212838</real>
 			<real>-3.043212891</real>
 			<real>-3.043212891</real>
+			<real>-3.043116361</real>
 			<real>-3.043116331</real>
+			<real>-3.043218208</real>
 			<real>-3.043218255</real>
+			<real>-3.043212897</real>
 			<real>-3.043212891</real>
-			<real>-3.043271899</real>
-			<real>-3.043298721</real>
-			<real>-3.044291139</real>
-			<real>-3.044548631</real>
-			<real>-3.044698834</real>
-			<real>-3.0450207</real>
-			<real>-3.045074344</real>
-			<real>-3.045090437</real>
-			<real>-3.045079708</real>
-			<real>-3.045117259</real>
-			<real>-3.04515481</real>
-			<real>-3.045149446</real>
-			<real>-3.04515481</real>
-			<real>-3.045181632</real>
-			<real>-3.04520309</real>
-			<real>-3.045208454</real>
-			<real>-3.045079708</real>
-			<real>-3.045052886</real>
-			<real>-3.044967055</real>
-			<real>-3.044494987</real>
-			<real>-3.044849038</real>
-			<real>-3.045181632</real>
-			<real>-3.04520309</real>
-			<real>-3.04520309</real>
-			<real>-3.045176268</real>
-			<real>-3.045326471</real>
-			<real>-3.045353293</real>
-			<real>-3.045342565</real>
-			<real>-3.045380116</real>
-			<real>-3.045476675</real>
-			<real>-3.04566443</real>
-			<real>-3.04579854</real>
-			<real>-3.045857549</real>
-			<real>-3.046002388</real>
-			<real>-3.046018481</real>
-			<real>-3.045997024</real>
-			<real>-3.045889735</real>
-			<real>-3.045889735</real>
-			<real>-3.045991659</real>
-			<real>-3.046082854</real>
-			<real>-3.046227694</real>
-			<real>-3.046388626</real>
-			<real>-3.046426177</real>
-			<real>-3.045374751</real>
-			<real>-3.045127988</real>
-			<real>-3.04492414</real>
-			<real>-3.044806123</real>
-			<real>-3.044607639</real>
-			<real>-3.044714928</real>
-			<real>-3.044779301</real>
+			<real>-3.043271819</real>
+			<real>-3.043271815</real>
+			<real>-3.043340296</real>
+			<real>-3.043341637</real>
+			<real>-3.043395281</real>
+			<real>-3.043422019</real>
+			<real>-3.043416739</real>
+			<real>-3.043422019</real>
+			<real>-3.043556213</real>
+			<real>-3.043589999</real>
+			<real>-3.043717146</real>
+			<real>-3.043751499</real>
+			<real>-3.043792248</real>
+			<real>-3.043885072</real>
+			<real>-3.043899536</real>
+			<real>-3.043966189</real>
+			<real>-3.044080166</real>
+			<real>-3.044092655</real>
+			<real>-3.044194941</real>
+			<real>-3.044274806</real>
+			<real>-3.044387698</real>
+			<real>-3.044387698</real>
+			<real>-3.044394739</real>
+			<real>-3.044478893</real>
+			<real>-3.044514284</real>
+			<real>-3.04454511</real>
+			<real>-3.044543266</real>
+			<real>-3.04454511</real>
+			<real>-3.044553995</real>
+			<real>-3.04469347</real>
 			<real>-3.044747114</real>
+			<real>-3.044779301</real>
+			<real>-3.04479003</real>
+			<real>-3.04479003</real>
+			<real>-3.04479003</real>
+			<real>-3.044843674</real>
+			<real>-3.044896112</real>
+			<real>-3.045015084</real>
+			<real>-3.045021027</real>
+			<real>-3.0450207</real>
+			<real>-3.045073943</real>
+			<real>-3.045074344</real>
+			<real>-3.045090305</real>
+			<real>-3.045090437</real>
+			<real>-3.045079783</real>
+			<real>-3.045079708</real>
+			<real>-3.045117024</real>
+			<real>-3.045117259</real>
+			<real>-3.045154519</real>
+			<real>-3.04515481</real>
+			<real>-3.045149523</real>
+			<real>-3.045149446</real>
+			<real>-3.045154736</real>
+			<real>-3.045331836</real>
+			<real>-3.045364022</real>
+			<real>-3.045310378</real>
+			<real>-3.045208454</real>
+			<real>-3.045080626</real>
+			<real>-3.045079708</real>
+			<real>-3.045053044</real>
+			<real>-3.045052886</real>
+			<real>-3.044967697</real>
+			<real>-3.044967055</real>
+			<real>-3.044841994</real>
+			<real>-3.044786506</real>
+			<real>-3.04472534</real>
+			<real>-3.044614687</real>
+			<real>-3.044495238</real>
+			<real>-3.044494987</real>
+			<real>-3.044588957</real>
+			<real>-3.044848541</real>
+			<real>-3.044849038</real>
+			<real>-3.045181028</real>
+			<real>-3.045181632</real>
+			<real>-3.045202359</real>
+			<real>-3.04520309</real>
+			<real>-3.04520309</real>
+			<real>-3.04520309</real>
+			<real>-3.045176731</real>
+			<real>-3.045176268</real>
+			<real>-3.04532514</real>
+			<real>-3.045326471</real>
+			<real>-3.045352943</real>
+			<real>-3.045353293</real>
+			<real>-3.04534266</real>
+			<real>-3.045342565</real>
+			<real>-3.045379581</real>
+			<real>-3.045380116</real>
+			<real>-3.04547572</real>
+			<real>-3.045476675</real>
+			<real>-3.045663202</real>
+			<real>-3.04566443</real>
+			<real>-3.045797117</real>
+			<real>-3.04579854</real>
+			<real>-3.045856448</real>
+			<real>-3.045857549</real>
+			<real>-3.04600077</real>
+			<real>-3.046002388</real>
+			<real>-3.046017945</real>
+			<real>-3.046018481</real>
+			<real>-3.045997806</real>
+			<real>-3.045997024</real>
+			<real>-3.045891075</real>
+			<real>-3.045889735</real>
+			<real>-3.045889735</real>
+			<real>-3.045889735</real>
+			<real>-3.045990123</real>
+			<real>-3.045991659</real>
+			<real>-3.046080435</real>
+			<real>-3.046082854</real>
+			<real>-3.046225151</real>
+			<real>-3.046227694</real>
+			<real>-3.046386033</real>
+			<real>-3.046388626</real>
+			<real>-3.046424122</real>
+			<real>-3.046426177</real>
+			<real>-3.04619667</real>
+			<real>-3.045900241</real>
+			<real>-3.045592392</real>
+			<real>-3.045375233</real>
+			<real>-3.045374751</real>
+			<real>-3.04513018</real>
+			<real>-3.045127988</real>
+			<real>-3.044926808</real>
+			<real>-3.04492414</real>
+			<real>-3.044808865</real>
+			<real>-3.044806123</real>
+			<real>-3.044609729</real>
+			<real>-3.044607639</real>
+			<real>-3.044711928</real>
+			<real>-3.044714928</real>
+			<real>-3.044777028</real>
+			<real>-3.044779301</real>
+			<real>-3.044747903</real>
+			<real>-3.044747114</real>
+			<real>-3.044762774</real>
 			<real>-3.044763207</real>
+			<real>-3.04475796</real>
 			<real>-3.044757843</real>
+			<real>-3.04455189</real>
 			<real>-3.044548631</real>
+			<real>-3.044506738</real>
 			<real>-3.044505715</real>
+			<real>-3.04441665</real>
 			<real>-3.04441452</real>
+			<real>-3.044219179</real>
 			<real>-3.044216037</real>
+			<real>-3.043956601</real>
 			<real>-3.04395318</real>
+			<real>-3.043990217</real>
 			<real>-3.043990731</real>
+			<real>-3.043906912</real>
 			<real>-3.043904901</real>
+			<real>-3.04386773</real>
 			<real>-3.04386735</real>
+			<real>-3.043333668</real>
 			<real>-3.043330908</real>
+			<real>-3.04293178</real>
 			<real>-3.042928576</real>
 			<real>-3.042928576</real>
+			<real>-3.042928576</real>
+			<real>-3.042701651</real>
 			<real>-3.042697906</real>
+			<real>-3.042455073</real>
 			<real>-3.042451143</real>
+			<real>-3.042560786</real>
 			<real>-3.042563796</real>
+			<real>-3.042689722</real>
 			<real>-3.042692542</real>
+			<real>-3.042571725</real>
 			<real>-3.04256916</real>
+			<real>-3.042321286</real>
 			<real>-3.042317033</real>
+			<real>-3.042238488</real>
 			<real>-3.042236567</real>
+			<real>-3.042021022</real>
 			<real>-3.042016625</real>
+			<real>-3.041639966</real>
 			<real>-3.041635752</real>
-			<real>-3.0418396</real>
+			<real>-3.041836457</real>
 		</array>
 		<key>images</key>
 		<array>
@@ -990,11 +1220,9 @@ Now turn left and head to the striking multi-stemmed white-barked birch in front
 				<string>Himalayan Birch is thought to occur from Afghanistan in the west, through Bhutan, India and Nepal to China in the east. It grows in temperate broad-leaved forests from 2,500-3,800m altitude where it can be an important timber tree up to 35m in height, and is often grown for its hard, dense, but rather brittle timber. In cultivation, it is grown for its attractive bark colouration that varies from shades of copper and red to the purest white. Many forms have bark that peels in strips, with the best forms being the red-barked subspecies albosinensis. 
  
 This fine specimen is subspecies jacquemontii, collected as seed by modern-day plant collectors in Himachal Pradesh in northern India. 
-You can tell that this plant has been grown from seed, as its natural form is 
- 
-multi-stemmed (single-trunk nursery trees have been grafted). This is one of the best specimens of this species in the Gardens, but other fine examples can be found around Ness. 
+You can tell that this plant has been grown from seed, as its natural form is multi-stemmed (single-trunk nursery trees have been grafted). This is one of the best specimens of this species in the Gardens, but other fine examples can be found around Ness. 
 A little further on is Strawberry Dogwood, Cornus kousa var. chinensis, one of the very best large shrubs for any garden. It has flowers with large petal-like bracts that mature into raspberry-like and edible red fruit.
-Continue straight on. At the junction take the left fork and after 20m stop at the large evergreen shrub on your left</string>
+Continue straight on. At the junction take the left fork and after 20m stop at the large evergreen shrub on your left.</string>
 				<key>pointLatitude</key>
 				<real>53.27434</real>
 				<key>pointLongitude</key>
@@ -1029,6 +1257,272 @@ From the Ginkgos bear diagonally left to follow the narrow gravel path that lead
 				<real>53.27344</real>
 				<key>pointLongitude</key>
 				<real>-3.04509</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>6</integer>
+				<key>pointName</key>
+				<string>Chinese Wingnut</string>
+				<key>pointDescription</key>
+				<string>Walking through the beds you pass on the left the Tulip Tree, Liriodendron tulipifera and on the right Coast Redwood, Sequoia sempervirens, the world’s tallest tree. Both originate from North America. Later in the walk (Stops 18 and 21) you will see unusual forms of both of these species.
+Beyond the Redwood are two specimens of a rare variety of the Chinese Wingnut. Wingnuts are in the Walnut family, Juglandaceae. All have large leaves split into several separate leaflets (pinnate leaves). Walnuts and Hickories produce nuts that are borne singly on the tree, whereas Wingnuts have long catkin-like clusters of two-winged nuts. 
+Chinese Wingnut can be distinguished from the Caucasian Wingnut P. fraxinifolia by its winged leaf-stalks and the forward pointing narrow wings of the nuts. These two trees were grown from seed collected in the mountains of N. E. China by Beijing Botanic Gardens. The species is rare in cultivation, and the variety is not known to have been cultivated previously. 
+Underneath the Wingnut on your left is one of the best mid-spring flowering shrubs: Corylopsis sinensis, a Chinese relative of the more commonly encountered C. spicata. Corylopsis is a member of the Witch Hazel family.
+Turn immediately left to view the special Ness Monkey Puzzle Tree</string>
+				<key>pointLatitude</key>
+				<real>53.272903</real>
+				<key>pointLongitude</key>
+				<real>-3.045419</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>7</integer>
+				<key>pointName</key>
+				<string>Monkey Puzzle</string>
+				<key>pointDescription</key>
+				<string>Monkey Puzzle originates from Chile, and is sometimes called the Chilean Pine (although it is not actually a pine). The Ness specimen has an unusual form, retaining its lower branches, in contrast to the typical form which has a clear stem. No one is sure why ours grows in this manner!  
+The genus contains 10 species, all in the southern hemisphere. The seeds, or pine nuts, said to be delicious roasted, were brought back from South America by Archibald Menzies in 1795. He apparently pocketed some nuts put on the table for dessert while he was dining with the Governor of Chile during one of his plant hunting expeditions. He sowed the seed on board ship and eventually landed five live plants in England. The wood and cones are both resinous. 
+The trees are dioecious, having male and female flowers on separate trees. This particular tree is a male, bearing male cones which can be seen in late summer as brown ends to branches higher up on the tree.  
+Despite being a protected species, the Monkey Puzzle is threatened with extinction in the wild due to over-logging, fires and collection of its seed by locals. Efforts are underway by the Royal Botanic Gardens of Edinburgh to bring more into cultivation here as well as to protect those in Chile. 
+The next stop is at the large straight-trunked oak tree directly opposite the Monkey Puzzle.</string>
+				<key>pointLatitude</key>
+				<real>53.272813</real>
+				<key>pointLongitude</key>
+				<real>-3.045284</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>8</integer>
+				<key>pointName</key>
+				<string>Pin Oak</string>
+				<key>pointDescription</key>
+				<string>The oaks (Quercus spp.) form a large genus of over 500 species of trees and shrubs found throughout the northern hemisphere. Many are evergreen and found in a wide range of habitats from dry Mediterranean scrub to tropical rainforests. The country with the richest diversity of oaks is Mexico, with 160 species. Oaks are of major economic and social importance as their timber is prized as fuel, dyes, cork, medicines and building material. Many species are threatened by man-made pressures including logging, over-grazing, land use change, diseases such as Sudden Oak Death, Phytophthora ramorum and climate change.
+Around you are several oaks from the USA, commonly included in the ‘red oak’ group. In the wild they have magnificent displays of fiery autumn colour. You can see the following species: Red Oak, Quercus rubra, Pin Oak, Q. palustris and Northern Pin Oak, Q. ellipsoidalis. These oaks are difficult to identify from each other and they may hybridise in the wild. Q. rubra is an important source of hardwood timber in America. The strength of the timber means it is commonly used in house building, furniture making, fence posts and paper manufacture.  
+Now walk towards a large stump on the left of the path, and continue for about 40m until you see a pyramidal (Christmas tree shaped) conifer in front of you.</string>
+				<key>pointLatitude</key>
+				<real>53.272604</real>
+				<key>pointLongitude</key>
+				<real>-3.045563</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>9</integer>
+				<key>pointName</key>
+				<string>Chihuahua Spruce</string>
+				<key>pointDescription</key>
+				<string>The genus Picea is a member of the Pine family (Pinaceae). Spruces can be distinguished from Firs (Abies) in that spruces have persistent pendulous cones (fir cones are erect and disintegrate on the tree leaving behind the central spike) and spruce needles are borne on pegs on the shoot (fir needles are borne directly on the shoot, which is smooth after the needles fall).
+Chihuahua Spruce was planted as part of a line of unusual spruces from around the world. Some of these trees were brought to Ness by modern day plant collectors. Others were procured via the ‘Index Seminum’, a system of seed exchange by Botanic Gardens worldwide. 
+Also in this area are: 
+P. mexicana, from Mexico, Arizona and New Mexico is another endangered tree: rare in the wild and in cultivation. Its dense forward pointing needles are not as glaucous as those of P. chihuahuana. 
+P. Brachytyla, was first introduced by Wilson. This tree comes from seed collected in the wild from Emei Shan (Mt. Omei) in Sichuan Provence, China by Keith Rushforth and bears an abundance of purple cones in spring. 
+Follow the gravel path left stopping at the small grove of shrubby trees on your left.</string>
+				<key>pointLatitude</key>
+				<real>53.272231</real>
+				<key>pointLongitude</key>
+				<real>-3.046067</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>10</integer>
+				<key>pointName</key>
+				<string>Betula chichibuensis</string>
+				<key>pointDescription</key>
+				<string>Betula chichibuensis is a shrubby species of birch which originates from a small area of Japan, from which the species derives its name. It is critically endangered in the wild as there are only about 15 plants left in existence. There are eighteen B. chichibuensis planted in this bed alone, with several other groups of this species around the gardens. Ness, therefore, has more of this species than there are in the wild. Ness has also been responsible for introducing this species into cultivation in the west through the exchange of seed and plants with other Botanic Gardens. 
+There are 46 species of birch distributed throughout the northern hemisphere, from Morocco and Iceland in the west through Asia and across all of North America. They vary from dwarf shrubs that grow no taller than 30cm (such as B. michauxii in the Rock Garden), to huge and significant trees (e.g. B. cylindrostachya). Ness has one of the most significant collections of birch in the country, with over 350 different acquisitions. 
+Birch are distinguished in having their wind-pollinated flowers borne in separate male and female catkins, and, unlike the closely-related alders, the female catkins are not woody and do not usually remain on the tree after the seeds are shed. They grow in a wide range of habitats but are most prominent in cold temperate forests.
+Continue on the gravel path for 60m to stop by the group of evergreen trees on the left of the path. Look at the belt of alders on your right</string>
+				<key>pointLatitude</key>
+				<real>53.272058</real>
+				<key>pointLongitude</key>
+				<real>-3.045843</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>11</integer>
+				<key>pointName</key>
+				<string>Alders</string>
+				<key>pointDescription</key>
+				<string>There are approximately 40 species of alders worldwide, varying from small multi-stemmed shrubs to large dominant trees. They can be found throughout the northern hemisphere in a wide range of habitats, from riverbanks in the UK to the dry mountains of Italy and Iran. They often produce beautiful flowers in early spring, although some flower in autumn.  
+Alders are useful trees in land reclamation as many are drought tolerant and all have the ability to fix nitrogen in the soil via bacteria in nodules on their roots. They are also useful in shelter situations as their leaves are retained much further into autumn than many other deciduous trees. 
+There are 14 different species of alder in this bed, including:
+Alnus sieboldiana, with large leaves, catkins and cones, named after Von Siebold, a German botanist who worked in Japan as a doctor in the 1820s and amassed thousands of both living and preserved specimens of plants; 
+A. subcordata from Iran is a rare, fast growing tree in cultivation;
+A. pendula and A. firma (from Japan) are both beautiful shrubs with attractive finely-toothed leaves and delicate flowers in spring.
+At the end of the evergreen belt on your left, turn sharp left and head about 90m along the main track, passing the weather station on your right to stop at the two large poplars on your left.</string>
+				<key>pointLatitude</key>
+				<real>53.271891</real>
+				<key>pointLongitude</key>
+				<real>-3.046365</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>12</integer>
+				<key>pointName</key>
+				<string>Black Poplar</string>
+				<key>pointDescription</key>
+				<string>On either side of the avenue leading down towards the Dee estuary are two tall Black Poplars. These are both female trees and in early summer are covered with long female catkins, which release seeds bearing numerous cottony hairs. Female trees can be unpopular as the fruits create a mess and can irritate allergy sufferers. In the wild, it grows near water and used to be common on floodplains where it nearly always leans away from the prevailing wind. 
+The population of native Black Poplars in Britain has declined and it is now considered Britain’s most endangered timber tree. Reasons for the decline include floodplain clearance, land drainage and river engineering operations. 
+It is thought that these Ness trees are hybrids of Populus nigra. They could have originated from Eastern Europe, or be a hybrid between our native P. nigra ssp. betulifolia with Lombardy Poplar P. nigra ‘Italica’. In truth, we may never know!
+This is the halfway point of the Trail, so if you are in need of refreshments, you can return to the Visitor Centre by heading up the slope across the lawn.
+To continue the Trail, carry on along the track, and stop next to the pyramidal conifer on the left adjacent to the path.</string>
+				<key>pointLatitude</key>
+				<real>53.271189</real>
+				<key>pointLongitude</key>
+				<real>-3.045566</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>13</integer>
+				<key>pointName</key>
+				<string>Giant Redwood</string>
+				<key>pointDescription</key>
+				<string>Giant Redwood, Wellingtonia or simply Big Tree comes from the western slopes of the Sierra Nevada in California where it can live for thousands of years. Brought to Britain in 1853 (the year after Wellington’s death), it is easy to grow and is popular here and across Europe, particularly in large estates where it can be planted to show off its great stature. 
+Giant Redwood has soft red spongy bark and often a wide buttressed base. The foliage is scale-like and lies flat along the shoot. The timber, although virtually everlasting, is too brittle to be of commercial value. The tree is susceptible to lightning strikes and to honey fungus.
+Giant Redwood is the world’s largest tree by volume. A tree called General Sherman in the Sequoia National Park is the world’s largest living single stem tree, measured at a height of 83.8m and a diameter of 7.7m in 2008. It is thought to be at least 2,300 years old. 
+Looking back to your left you can also see a line of Black Pine, Pinus nigra. These were planted by Bulley in about 1910 as a shelter belt between what were then farmers’ fields. Black Pine is an abundant species found throughout the mountainous regions of southern Europe: from the Iberian Peninsula in the west, to Turkey in the east. 
+Continue 10m down the main track and stop to look at the group of smooth-barked beeches to the right of the path.</string>
+				<key>pointLatitude</key>
+				<real>53.270812</real>
+				<key>pointLongitude</key>
+				<real>-3.044694</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>14</integer>
+				<key>pointName</key>
+				<string>Beech</string>
+				<key>pointDescription</key>
+				<string>Here we have a few of the many cultivars or varieties of Common Beech, Fagus sylvatica. A native of Europe, including most of southern England, it is naturalised elsewhere in Britain. A pleasing tree in maturity, with smooth grey bark and large limbs, it provides much of our autumn colour. The bright green spring foliage is fringed with fine hairs. Twigs within 3m of the base retain leaves over winter; hence beech is useful for hedging. The fruits are nuts in a four-lobed husk, called beechmast. A ‘mast year’ is one in which abundant fruit is produced.
+‘Dawyck’ is a well-known fastigiate (with ascending branches) variety said to have originated in the woods of Peebleshire and subsequently planted and distributed by the owner of Dawyck Gardens. ‘Purpurea’ is the dark leaved variety or form, which has been cultivated in Britain since the 1760s and is said to have originated in the wild. ‘Rohani’, is perhaps not quite so well known. It has dark leaves which are coarsely lobed and it is thought to have originated in Czechoslovakia.
+The large mature woodland behind these beeches, known as the Spinney, was planted by Arthur Bulley for shelter. The beech grown here are all of poor form, and were probably originally hedging plants. This area now contains the Gardens’ bamboo collection.
+Continue on for 30m down the track and stop on the path before the small bridge to look at the two tall deciduous conifers, one on the left and one on the right of the track.</string>
+				<key>pointLatitude</key>
+				<real>53.270749</real>
+				<key>pointLongitude</key>
+				<real>-3.044847</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>15</integer>
+				<key>pointName</key>
+				<string>Deciduous Conifers</string>
+				<key>pointDescription</key>
+				<string>On the left is Swamp Cypress, Taxodium distichum, from the eastern USA which was introduced into Britain by John Tradescant the Younger in 1640. It grows in wet soil or even submerged in water and produces breathing roots known as pneumatophores or “knees”. Look for them around the base of this specimen. Swamp Cypress has finer, more feathery alternate leaves and comes into leaf later than Dawn Redwood mentioned below. Both trees turn red-brown in autumn and then lose their leaves. 
+On the right is Dawn Redwood, Metasequoia glyptostroboides, from China, a critically endangered tree in the wild. It was known only from fossil records until it was rediscovered by Mr T. Kan in 1941. Since then it has been much planted here and in the USA for its hardy nature and ease of propagation from cuttings. It has opposite buds and cones on long stalks.
+Next to the Dawn Redwood is a fine specimen of River Birch, Betula nigra, another damp-loving tree. It comes from eastern USA and has dark, flaking bark. 
+The next section of the route takes us off the main track heading right and past the Dawn Redwood to go around the back of the pond. Continue around the edge of the pond for 80m to arrive at two waterside trees on your left. 
+Note: this section can be wet underfoot and you can choose to continue along the track to Stop 20 in wet conditions</string>
+				<key>pointLatitude</key>
+				<real>53.270701</real>
+				<key>pointLongitude</key>
+				<real>-3.044582</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>16</integer>
+				<key>pointName</key>
+				<string>Katsura Tree</string>
+				<key>pointDescription</key>
+				<string>The generic name Cercidiphyllum refers to the fact that the leaves resemble those of the Judas Tree, Cercis siliquastrum. However on the Katsura the leaves are mostly opposite whereas on the Judas Tree they are alternate. In autumn the leaves of Katsura smell of burnt sugar. It has inconspicuous male and female flowers on separate trees. 
+These two trees are both male plants and were grown from seed collected in the wild from Japan on an expedition by the Alpine Garden Society. Plants grown from seed display natural variability and each of these trees shows different leaf shape and autumn colour.
+Walk up the slope passing on your left Kobushi, Magnolia kobus. 
+This is a sturdy small white flowered magnolia originating from Japan. Many magnolia are threatened in the wild due to the destruction of native habitats and over-logging. Some 28 species are on the brink of extinction, many of which are found in Columbia and China. 
+Continue a few paces on up the slope and stop to look at the large-leaved tree on your left</string>
+				<key>pointLatitude</key>
+				<real>53.270306</real>
+				<key>pointLongitude</key>
+				<real>-3.044655</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>17</integer>
+				<key>pointName</key>
+				<string>Chinese Poplar</string>
+				<key>pointDescription</key>
+				<string>Chinese Poplar has large blue-green leaves that rattle in the wind and make it a distinctive and attractive plant. The identity of this plant has been much discussed by experts. The large-leaved species of Poplar that grow in China are all quite similar, with Populus. pseudoglauca, P. wilsonii and P. glauca probably being the same species, although expert opinion differs! Identification is largely based on flower characteristics, but as they seldom flower and plants are either male or female, this can be difficult.
+This species is very rare in cultivation as getting plant material legitimately from the wild is difficult. This is in part due to the Convention on Biological Diversity that restricts the movement of plants without the prior permission of the relevant Government. Sadly the Convention is abused on both sides, with some countries inappropriately restricting legitimate collections that would otherwise aid plant conservation programmes. Many individuals collect irresponsibly and without permission. 
+On your right and opposite is a planting of Persian Ironwood, Parrotia persica that forms a very large shrub. Each of these plants from the wild in Iran has different autumn colour each year ranging from yellow to red to deep burgundy.
+Continue up the slope for 20m to a crossroads. At the crossroads go straight on (not right) and then turn left to go downhill again. Stop after 10m at the Tulip Tree on your right</string>
+				<key>pointLatitude</key>
+				<real>53.27016</real>
+				<key>pointLongitude</key>
+				<real>-3.0445</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>18</integer>
+				<key>pointName</key>
+				<string>Chinese Tulip Tree</string>
+				<key>pointDescription</key>
+				<string>Tulip Trees belong to the same family of plants as Magnolias and have a similar flower structure. These plants get their name from their beautiful yellow tulip-like flowers which are produced in June and pollinated by beetles. The scaly, cone-shaped fruits produce single-winged seeds dispersed by the wind. 
+Chinese Tulip Tree was once a much more common species occurring throughout western Asia, but is now restricted to small areas of western China and northern Vietnam. Its continuing decline is due to over-logging and loss of habitat. It is a hardy species in Britain and was introduced into cultivation by Wilson in 1901. 
+There are only two species in the genus, the other being the better known North American Tulip Tree, L. tulipifera. 
+Behind the Tulip Tree is a group of tall conifers. These are some large examples of Leyland Cypress, x Cupressocyparis leylandii. It is an intentional cross between Nootka Cypress, Chamaecyparis nootkatensis and Monterey Cypress, Cupressus macrocarpa. It was bred to be a fast growing conifer for use in the paper industry, but the much-branching growth form meant it was less than useful for this purpose. Leyland Cypress is one of the most important hedging plants in the UK, and can grow up to 0.8m per year, and will eventually reach 35m in height. 
+Continue down the slope for 20m to stop at the large tree on your right</string>
+				<key>pointLatitude</key>
+				<real>53.27008</real>
+				<key>pointLongitude</key>
+				<real>-3.0439</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>19</integer>
+				<key>pointName</key>
+				<string>Handkerchief Tree</string>
+				<key>pointDescription</key>
+				<string>Native to China, Handkerchief Tree was first discovered by Père Jean Pierre Amand David in 1869 after whom the genus is named. However, it was not introduced until 1899 when Ernest ‘Chinese’ Wilson was sent by Veitches Nursery to seek out the elusive plant. Despite limited information, escaping bandits, illness and near-drowning, he eventually found the location of the tree - only to find it had been felled! The tenacious Wilson returned in 1901 and found and collected 13,000 seeds that were shipped back to Britain. 
+In June the white flower bracts hang in tiers like handkerchiefs or ghosts around the insignificant flowers. The specimen here is the more hardy variety, var. vilmoriniana and hence is the one more commonly seen in Britain. The rarer variety, var. involucrata is less hardy and can be identified by looking at the under surfaces of the leaves; they are noticeably hairy whereas var. vilmoriniana is hairless. An example of D. involucrata var. involucrata can be seen at Ness in the Spinney.
+ 
+Just below the Handkerchief Tree is a single Paperbark Maple next to the path. This and the other maples to your left is the location of the next stop.</string>
+				<key>pointLatitude</key>
+				<real>53.27036</real>
+				<key>pointLongitude</key>
+				<real>-3.04386</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>20</integer>
+				<key>pointName</key>
+				<string>Paperbark Maple</string>
+				<key>pointDescription</key>
+				<string>A large genus of 120-150 species, maples are found in northern temperate regions. They can be distinguished by their opposite buds and leaves. Maple fruits are winged ‘samaras’, the familiar fruits of Sycamore. Their dispersal by wind is aided by the spiralling motion of the wings.
+Paper-bark Maple is grown for its superb bark colouration and autumn colour. In the wild this species grows in mixed forests in central China. It is closely related to three other species of maple that all have trifoliate leaves (split into three parts). 
+These are: Nikko Maple (A. maximowiczianum), Manchurian Maple (A. mandshuricum), and Three-flowered Maple (A. triflorum). Examples of each of these species can be found growing in the beds around this stop. 
+The following maples can also be seen:
+Acer rubrum ‘October Glory’, is a variety of red maple from North America which is selected for its wonderful autumn colour. 
+Hornbeam-leaved Maple, A. carpinifolium originates from the mountain forests of Japan and is rarely seen in cultivation. Its unusual leaves look like hornbeam leaves and gives the species its name.
+Rejoin the main track and keep straight on towards the Rock Garden. Turn left by the wooden shed on your left, then immediately right, and stop by the large columnar conifer in front of you.</string>
+				<key>pointLatitude</key>
+				<real>53.27056</real>
+				<key>pointLongitude</key>
+				<real>-3.04381</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>21</integer>
+				<key>pointName</key>
+				<string>Coast Redwood</string>
+				<key>pointDescription</key>
+				<string>In the middle of the Rock Garden stands a magnificent cultivated form of Coast Redwood. The strange globe-like witches’ brooms that can be seen at intervals all the way up the tree on its branches (best seen when standing directly underneath the tree), are a result of a fungus or virus that affects the tree and causes mutations of its cells. These abnormalities if cultivated can grow into unusual forms of the original plant. In the Redwood, these mutations have led to two distinct forms: a low-growing form called ‘Prostrata’ and this upright form known as ‘Cantab’. It is believed that the Ness plant is possibly the largest form of ‘Cantab’ known. 
+Coast Redwood is the tallest tree species known, growing up to 100m (330ft) in height. The tallest tree is known as Hyperion and reaches a massive 115m (380ft) in height, and was only found in 2006 in a remote part of the Redwood National and State Parks, California, USA. This species is found in mountainous regions along the western coast of the United States, from SW Oregon and NW California.
+Head across the Rock Garden towards the small brick building with the pointed roof (the Belvedere) and climb the steps to the top of the Terraces. Walk left a few paces to stop in front of a large Gum Tree and look back across the Rock Garden.</string>
+				<key>pointLatitude</key>
+				<real>53.27089</real>
+				<key>pointLongitude</key>
+				<real>-3.04271</real>
+			</dict>
+			<dict>
+				<key>trailNumber</key>
+				<integer>22</integer>
+				<key>pointName</key>
+				<string>Cedars</string>
+				<key>pointDescription</key>
+				<string>From this vantage point, you can see three of the four species of Cedrus. All are easy to distinguish at a distance by observing the tips of their branches: to the left, Blue Atlas Cedar, Cedrus atlantica var. glauca has ascending tips; in the centre Cedar of Lebanon, C. libani has level plates of branches; and to the right, Deodar, C. deodara has descending branch tips. This gives us a nice aide-memoire: C. atlantica-ascending; C. libani-level; C. deodara-descending. 
+Looking at them individually, Blue Atlas Cedar has noticeably bluish foliage as its variety name ‘glauca’ indicates. A native of Algeria and Morocco on the Atlas Mountains, it is very hardy. The wide-spreading crown and horizontal branching of the Cedar of Lebanon give it a fine statuesque form. Coming from the Middle East it grows best in the warmer parts of Britain; it is however sensitive to pollution.</string>
+				<key>pointLatitude</key>
+				<real>53.27159</real>
+				<key>pointLongitude</key>
+				<real>-3.04203</real>
 			</dict>
 		</array>
 	</dict>

@@ -8,12 +8,18 @@
 import UIKit
 import MapKit
 
-class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var gardenMapView: MKMapView!
+    @IBOutlet var gardenMapView: MKMapView!
+
+    @IBOutlet weak var tableParentView: UIView!
+    @IBOutlet weak var searchResultTable: UITableView!
+    var filteredData: [Landmark]?
+    
     var attractions: [Landmark]?
     var sections: [Landmark]?
     var features: [Landmark]?
+    var allLandmarks: [Landmark]?
     
     var selectedTitle: String?
     var selectedDescription: String?
@@ -21,12 +27,16 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
+    var searchBar = UISearchBar()
     
     override func viewDidLoad() {
     
         super.viewDidLoad()
         gardenMapView.delegate = self
         locationManager.delegate = self
+        searchBar.delegate = self
+        searchResultTable.delegate = self
+        searchResultTable.dataSource = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
@@ -34,6 +44,13 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // Do any additional setup after loading the view.
         mapSetUp(mapView: gardenMapView)
         addMapAnnotations()
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for a feature"
+        searchBar.setShowsCancelButton(true, animated: true)
+        navigationItem.titleView = searchBar
+        searchResultTable.isHidden = true
+        searchBar.showsCancelButton = false
+        tableParentView.isHidden = true
     }
 
     // MARK: - Navigation
@@ -77,6 +94,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
             gardenMapView.addAnnotation(newAnnotation)
         }
+        allLandmarks = features! + sections! + attractions!
     }
     
     // MARK: - Delegate Functions
@@ -84,6 +102,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
             let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotation.title!!)
+            marker.displayPriority = MKFeatureDisplayPriority.required
             marker.canShowCallout = true
             if annotation.subtitle != "" {
                 marker.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
@@ -120,5 +139,72 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         let region = MKCoordinateRegion(center: coordinate, span: span)
         mapView.setRegion(region, animated:true)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchResultTable.isHidden = true
+        tableParentView.isHidden = true
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = allLandmarks?.filter({ i in
+            i.name.localizedCaseInsensitiveContains(searchText)
+        })
+        searchResultTable.isHidden = false
+        tableParentView.isHidden = false
+        tableParentView.sizeToFit()
+        tableParentView.sizeThatFits(searchResultTable.intrinsicContentSize)
+        self.searchResultTable.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if filteredData?.count == 0 {
+            return 1
+        }
+        return filteredData?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchResultCell")
+        var content = cell?.defaultContentConfiguration()
+        if filteredData?.count == 0 {
+            content?.text = "No results"
+            content?.textProperties.font = UIFont.italicSystemFont(ofSize: 14)
+            content?.textProperties.color = UIColor.systemGray2
+            cell?.isUserInteractionEnabled = false
+        }
+        else {
+            content?.text = filteredData?[indexPath.row].name
+            content?.textProperties.font = UIFont.systemFont(ofSize: 16)
+            content?.textProperties.color = UIColor.black
+            cell?.isUserInteractionEnabled = true
+        }
+        cell?.contentConfiguration = content
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        gardenMapView.showAnnotations(gardenMapView.annotations.filter({ annotation in
+            if annotation.title == filteredData?[indexPath.row].name {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                    self.gardenMapView.selectAnnotation(annotation, animated: true)
+                }
+            }
+            return annotation.title == filteredData?[indexPath.row].name
+        }), animated: true)
+        searchResultTable.isHidden = true
+        tableParentView.isHidden = true
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
     }
 }

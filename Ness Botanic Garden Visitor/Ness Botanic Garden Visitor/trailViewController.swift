@@ -135,11 +135,11 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if indexPath.section > 0 {
             drawPolyLine(lineName: (trails?[indexPath.row + trailTable.numberOfRows(inSection: 0)].trailName)!, vertices: (trailCoordinates?[indexPath.row + trailTable.numberOfRows(inSection: 0)])!, mapView: trailMap)
             trailMap.addAnnotations(treeTrailAnnotations)
+            trailMap.showAnnotations(treeTrailAnnotations, animated: true)
         }
         // If any other trail is selected, display it on the map
         else {
             drawPolyLine(lineName: (trails?[indexPath.row].trailName)!, vertices: (trailCoordinates?[indexPath.row])!, mapView: trailMap)
-            
         }
         
     }
@@ -148,6 +148,7 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
             let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotation.title!!)
+            marker.displayPriority = MKFeatureDisplayPriority.required
             if marker.annotation?.title!! == "Start" {
                 marker.markerTintColor = UIColor.systemGreen
             }
@@ -156,7 +157,7 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
             else {
                 marker.markerTintColor = UIColor.init(named: "AccentColor")
-                marker.glyphImage = UIImage(systemName: "\(marker.annotation?.subtitle!!.first ?? "0").circle")
+                marker.glyphImage = UIImage(systemName: "\(marker.annotation?.subtitle!!.components(separatedBy: " ")[0] ?? "0").circle")
                 if annotation.subtitle != "" {
                     marker.canShowCallout = true
                     marker.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)

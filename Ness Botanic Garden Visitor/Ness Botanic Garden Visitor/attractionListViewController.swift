@@ -21,6 +21,7 @@ class attractionListViewController: UITableViewController, CLLocationManagerDele
     override func viewDidLoad() {
         // Retrieve the sections of the gardens from local storage
         sections = getPlacesFromPlist(fileName: "garden_sections")
+        navigationItem.title = "Places"
         super.viewDidLoad()
         // Start the location manager to get the user's location
         locationManager.delegate = self
