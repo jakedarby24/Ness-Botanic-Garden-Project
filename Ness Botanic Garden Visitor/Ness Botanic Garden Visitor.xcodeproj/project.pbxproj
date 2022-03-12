@@ -18,7 +18,7 @@
 		473976BB274C0F2A0031D666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976B9274C0F2A0031D666 /* Main.storyboard */; };
 		473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976BC274C0F2B0031D666 /* Assets.xcassets */; };
 		473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */; };
-		473976C5274C0F2B0031D666 /* Ness Botanic Visitor.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 473976C4274C0F2B0031D666 /* Ness Botanic Visitor.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		473976C5274C0F2B0031D666 /* Ness Botanic Visitor.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 473976C4274C0F2B0031D666 /* Ness Botanic Visitor.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473976C9274C0F2B0031D666 /* Interface.storyboard */; };
 		473976CD274C0F2B0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976CC274C0F2B0031D666 /* Assets.xcassets */; };
 		473976D3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -164,6 +164,7 @@
 		47C3238427BBF9BB000ECB66 /* Ness Icon 102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ness Icon 102.png"; sourceTree = "<group>"; };
 		47C3238627BC052B000ECB66 /* trails.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = trails.plist; sourceTree = "<group>"; };
 		47C3238827BC05BC000ECB66 /* Trail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail.swift; sourceTree = "<group>"; };
+		47EE99EC27DBED5500821555 /* Ness Botanic Garden Visitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ness Botanic Garden Visitor.entitlements"; sourceTree = "<group>"; };
 		47FB8F8427BE9223008EEDFF /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		47FB8F8927BE99A8008EEDFF /* UsefulMapFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulMapFunctions.swift; sourceTree = "<group>"; };
 		47FB8F9627BEABCD008EEDFF /* DetailScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenController.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		473976B2274C0F2A0031D666 /* Ness Botanic Garden Visitor */ = {
 			isa = PBXGroup;
 			children = (
+				47EE99EC27DBED5500821555 /* Ness Botanic Garden Visitor.entitlements */,
 				473976BC274C0F2B0031D666 /* Assets.xcassets */,
 				4734958C27AABA3100DF56D4 /* images */,
 				4719EF4527A9E19E0061AD55 /* attractionListViewController.swift */,
@@ -561,6 +563,7 @@
 /* Begin PBXTargetDependency section */
 		473976C7274C0F2B0031D666 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 473976C3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit App */;
 			targetProxy = 473976C6274C0F2B0031D666 /* PBXContainerItemProxy */;
 		};
@@ -730,16 +733,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Ness_Botanic_Garden_Visitor_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to see how far you are from garden attractions";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to see how far you are from garden attractions";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Ness_Botanic_Garden_Visitor_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -761,16 +766,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Garden Visitor WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Ness_Botanic_Garden_Visitor_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to see how far you are from garden attractions";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to see how far you are from garden attractions";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = Ness_Botanic_Garden_Visitor_WatchKit_Extension.ExtensionDelegate;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -797,7 +804,7 @@
 				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "Ness Botanic Visitor";
 				SDKROOT = watchos;
@@ -823,7 +830,7 @@
 				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "Ness Botanic Visitor";
 				SDKROOT = watchos;
@@ -841,12 +848,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ness Botanic Garden Visitor/Ness Botanic Garden Visitor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NU8BL486WN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Visitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
@@ -861,10 +870,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -876,12 +886,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ness Botanic Garden Visitor/Ness Botanic Garden Visitor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NU8BL486WN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Visitor";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
@@ -896,10 +908,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

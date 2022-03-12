@@ -186,7 +186,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         else {
             content?.text = filteredData?[indexPath.row].name
             content?.textProperties.font = UIFont.systemFont(ofSize: 16)
-            content?.textProperties.color = UIColor.black
+            content?.textProperties.color = UIColor.label
             cell?.isUserInteractionEnabled = true
         }
         cell?.contentConfiguration = content
