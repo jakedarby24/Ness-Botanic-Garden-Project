@@ -11,9 +11,14 @@ import MapKit
 class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var gardenMapView: MKMapView!
-
     @IBOutlet weak var tableParentView: UIView!
     @IBOutlet weak var searchResultTable: UITableView!
+    @IBOutlet weak var filterSegmentControl: UISegmentedControl!
+    
+    @IBAction func filterTapped(_ sender: Any) {
+        addMapAnnotations()
+    }
+    
     var filteredData: [Landmark]?
     
     var attractions: [Landmark]?
@@ -70,29 +75,59 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
     
     func addMapAnnotations() {
+        gardenMapView.removeAnnotations(gardenMapView.annotations)
         features = getPlacesFromPlist(fileName: "features")
-        for item in features! {
-            let newAnnotation = MKPointAnnotation()
-            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-            newAnnotation.title = item.name
-            newAnnotation.subtitle = item.description
-            gardenMapView.addAnnotation(newAnnotation)
-        }
         sections = getPlacesFromPlist(fileName: "garden_sections")
-        for item in sections! {
-            let newAnnotation = MKPointAnnotation()
-            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-            newAnnotation.title = item.name
-            newAnnotation.subtitle = item.description
-            gardenMapView.addAnnotation(newAnnotation)
-        }
         attractions = getPlacesFromPlist(fileName: "attractions")
-        for item in attractions! {
-            let newAnnotation = MKPointAnnotation()
-            newAnnotation.title = item.name
-            newAnnotation.subtitle = item.description
-            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
-            gardenMapView.addAnnotation(newAnnotation)
+        switch filterSegmentControl.selectedSegmentIndex {
+        case 0:
+            for item in features! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+            for item in sections! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+            for item in attractions! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        case 1:
+            for item in sections! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        case 2:
+            for item in attractions! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        case 3:
+            for item in features! {
+                let newAnnotation = MKPointAnnotation()
+                newAnnotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
+                newAnnotation.title = item.name
+                newAnnotation.subtitle = item.description
+                gardenMapView.addAnnotation(newAnnotation)
+            }
+        default:
+            print("Error")
         }
         allLandmarks = features! + sections! + attractions!
     }
@@ -194,6 +229,8 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        filterSegmentControl.selectedSegmentIndex = 0
+        addMapAnnotations()
         gardenMapView.showAnnotations(gardenMapView.annotations.filter({ annotation in
             if annotation.title == filteredData?[indexPath.row].name {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {

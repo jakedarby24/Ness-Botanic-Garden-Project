@@ -46,6 +46,20 @@
                                     <constraint firstItem="M23-Um-Ugj" firstAttribute="top" secondItem="494-wj-nSU" secondAttribute="top" id="iiW-Jh-8rG"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h2Y-b6-4Qa">
+                                <rect key="frame" x="202" y="705" width="172" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="" image="mappin.and.ellipse" catalog="system"/>
+                                    <segment title="" image="leaf" catalog="system"/>
+                                    <segment title="" image="fork.knife" catalog="system"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="filterTapped:" destination="wbk-Ed-cWK" eventType="valueChanged" id="hGm-9c-lkY"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Un-6X-QT9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,6 +76,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FK6-5l-vXa"/>
                     <connections>
+                        <outlet property="filterSegmentControl" destination="h2Y-b6-4Qa" id="Cgm-Vg-rAe"/>
                         <outlet property="gardenMapView" destination="5HS-Ek-fGm" id="4cg-Wg-8fO"/>
                         <outlet property="searchResultTable" destination="M23-Um-Ugj" id="akS-Jd-eZj"/>
                         <outlet property="tableParentView" destination="494-wj-nSU" id="uIZ-YS-wtl"/>
@@ -602,12 +617,15 @@ Bomarea image provided by scott.zona under CC BY 2.0 licence.  No changes have b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Py0-vE-7ca"/>
+        <segue reference="PLP-Cy-8ii"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="fork.knife" catalog="system" width="92" height="128"/>
+        <image name="leaf" catalog="system" width="128" height="109"/>
         <image name="leaf.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="signpost.right" catalog="system" width="128" height="118"/>
         <namedColor name="AccentColor">
