@@ -13,6 +13,8 @@
 		<real>53.271937</real>
 		<key>longitude</key>
 		<real>-3.044404</real>
+		<key>imageLink</key>
+		<string>allium.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -25,6 +27,8 @@
 		<real>53.271642</real>
 		<key>longitude</key>
 		<real>-3.04332</real>
+		<key>imageLink</key>
+		<string>ammocharis.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -37,6 +41,8 @@
 		<real>53.270981</real>
 		<key>longitude</key>
 		<real>-3.043052</real>
+		<key>imageLink</key>
+		<string>bomarea.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -49,6 +55,8 @@
 		<real>53.270821</real>
 		<key>longitude</key>
 		<real>-3.043513</real>
+		<key>imageLink</key>
+		<string>Cobra Lily.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -61,6 +69,8 @@
 		<real>53.27127</real>
 		<key>longitude</key>
 		<real>-3.042462</real>
+		<key>imageLink</key>
+		<string>Brunsvigia.jpg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -73,6 +83,8 @@
 		<real>53.271366</real>
 		<key>longitude</key>
 		<real>-3.041915</real>
+		<key>imageLink</key>
+		<string>Lilium.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>
@@ -85,6 +97,8 @@
 		<real>53.271585</real>
 		<key>longitude</key>
 		<real>-3.042623</real>
+		<key>imageLink</key>
+		<string>galanthus.jpeg</string>
 	</dict>
 	<dict>
 		<key>enabled</key>

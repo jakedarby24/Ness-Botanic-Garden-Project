@@ -470,7 +470,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="VRs-Pu-APT">
-                        <barButtonItem key="rightBarButtonItem" title="Info" id="LS9-Gm-fF7">
+                        <barButtonItem key="rightBarButtonItem" title="Legal Info" image="books.vertical" catalog="system" id="LS9-Gm-fF7">
                             <connections>
                                 <segue destination="pLt-Dy-Bed" kind="show" id="We4-nU-l9M"/>
                             </connections>
@@ -491,30 +491,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-oP-BZj">
-                                <rect key="frame" x="16" y="88" width="358" height="50.333333333333343"/>
-                                <string key="text">Acer Griseum image provided by Jean-Pol Grandmont under CC BY 3.0 licence. Available at https://creativecommons.org/licenses/by/3.0/legalcode</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-ck-Wkg">
-                                <rect key="frame" x="16" y="154.33333333333334" width="358" height="67"/>
-                                <string key="text">Eucalyptus Pauciflora image provided by Amanda Slater under  CC BY-SA 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/2.0/legalcode</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Be-uv-Ncv">
-                                <rect key="frame" x="16" y="237.33333333333337" width="358" height="67"/>
-                                <string key="text">Betula Utilis image provided by Krzysztof Ziarnek under  CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us4-Uh-aJp">
-                                <rect key="frame" x="16" y="320.33333333333331" width="358" height="67"/>
-                                <string key="text">Acer Rubrum image provided by Danny S. under  CC BY-SA 3.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/3.0/legalcode</string>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <rect key="frame" x="16" y="88" width="358" height="587.33333333333337"/>
+                                <mutableString key="text">Acer Griseum image provided by Jean-Pol Grandmont under CC BY 3.0 licence. Available at https://creativecommons.org/licenses/by/3.0/legalcode.
+Eucalyptus Pauciflora image provided by Amanda Slater under  CC BY-SA 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/2.0/legalcode.
+Betula Utilis image provided by Krzysztof Ziarnek under  CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Acer Rubrum image provided by Danny S. under  CC BY-SA 3.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/3.0/legalcode.
+Lilium image provided by Ermell under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Allium image provided by Rhododentrites under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Allium image provided by Rhododentrites under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Arisaema image provided by Daperro under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Brunsvigia image provided by Pam Ellenberger Kleiman under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Galanthus image provided by Zeynel Cebeci under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Ammocharis image provided by Paul Venter under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Bomarea image provided by scott.zona under CC BY 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by/2.0/legalcode.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -522,28 +512,17 @@
                         <viewLayoutGuide key="safeArea" id="Hqi-Fr-qdw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3Be-uv-Ncv" firstAttribute="leading" secondItem="Hqi-Fr-qdw" secondAttribute="leading" constant="16" id="0nx-Rg-usT"/>
-                            <constraint firstItem="us4-Uh-aJp" firstAttribute="top" secondItem="3Be-uv-Ncv" secondAttribute="bottom" constant="16" id="1l7-0U-bxj"/>
-                            <constraint firstItem="yDU-oP-BZj" firstAttribute="top" secondItem="Hqi-Fr-qdw" secondAttribute="top" id="1zT-Mm-OBe"/>
-                            <constraint firstItem="Hqi-Fr-qdw" firstAttribute="trailing" secondItem="us4-Uh-aJp" secondAttribute="trailing" constant="16" id="Bh9-Cv-j3w"/>
-                            <constraint firstItem="Hqi-Fr-qdw" firstAttribute="trailing" secondItem="yDU-oP-BZj" secondAttribute="trailing" constant="16" id="Clq-J3-hyR"/>
-                            <constraint firstItem="Hqi-Fr-qdw" firstAttribute="trailing" secondItem="XBp-ck-Wkg" secondAttribute="trailing" constant="16" id="GdZ-kk-Ph8"/>
-                            <constraint firstItem="Hqi-Fr-qdw" firstAttribute="trailing" secondItem="3Be-uv-Ncv" secondAttribute="trailing" constant="16" id="VnE-ax-CRf"/>
-                            <constraint firstItem="us4-Uh-aJp" firstAttribute="top" secondItem="3Be-uv-Ncv" secondAttribute="bottom" constant="16" id="Zfn-PN-49l"/>
-                            <constraint firstItem="yDU-oP-BZj" firstAttribute="leading" secondItem="Hqi-Fr-qdw" secondAttribute="leading" constant="16" id="ckT-Y1-RFp"/>
-                            <constraint firstItem="XBp-ck-Wkg" firstAttribute="leading" secondItem="Hqi-Fr-qdw" secondAttribute="leading" constant="16" id="fJy-6i-JdK"/>
-                            <constraint firstItem="3Be-uv-Ncv" firstAttribute="top" secondItem="XBp-ck-Wkg" secondAttribute="bottom" constant="16" id="oxc-EU-Bzc"/>
-                            <constraint firstItem="us4-Uh-aJp" firstAttribute="leading" secondItem="Hqi-Fr-qdw" secondAttribute="leading" constant="16" id="pP5-AS-sj7"/>
-                            <constraint firstItem="XBp-ck-Wkg" firstAttribute="top" secondItem="yDU-oP-BZj" secondAttribute="bottom" constant="16" id="tGu-1W-m56"/>
-                            <constraint firstItem="XBp-ck-Wkg" firstAttribute="top" secondItem="yDU-oP-BZj" secondAttribute="bottom" constant="16" id="tL5-Bp-jbe"/>
-                            <constraint firstItem="3Be-uv-Ncv" firstAttribute="top" secondItem="XBp-ck-Wkg" secondAttribute="bottom" constant="16" id="uQA-On-Det"/>
+                            <constraint firstItem="yDU-oP-BZj" firstAttribute="leading" secondItem="Nvn-eX-8hy" secondAttribute="leadingMargin" id="2BM-R4-XLL"/>
+                            <constraint firstItem="yDU-oP-BZj" firstAttribute="top" secondItem="Hqi-Fr-qdw" secondAttribute="top" id="6aN-fI-zuh"/>
+                            <constraint firstItem="yDU-oP-BZj" firstAttribute="leading" secondItem="Hqi-Fr-qdw" secondAttribute="leading" constant="16" id="AeT-BP-edS"/>
+                            <constraint firstItem="Hqi-Fr-qdw" firstAttribute="trailing" secondItem="yDU-oP-BZj" secondAttribute="trailing" constant="16" id="bW1-ML-yII"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H8I-uc-C1Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xp-ra-d0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4361.538461538461" y="1289.5734597156397"/>
+            <point key="canvasLocation" x="4360" y="1289.5734597156397"/>
         </scene>
         <!--Places-->
         <scene sceneID="RqM-37-7P2">
@@ -623,9 +602,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PLP-Cy-8ii"/>
+        <segue reference="Py0-vE-7ca"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="leaf.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
