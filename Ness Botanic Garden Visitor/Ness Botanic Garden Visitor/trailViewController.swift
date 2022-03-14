@@ -8,18 +8,38 @@
 import UIKit
 import MapKit
 
-class trailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, XMLParserDelegate {
+class trailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, CLLocationManagerDelegate {
     
     // Outlet declarations
     @IBOutlet weak var trailMap: MKMapView!
     @IBOutlet weak var trailTable: UITableView!
+    
+    @IBAction func locationHeadingButton(_ sender: UIButton) {
+        if toggleStateHeading {
+            locationManager.stopUpdatingHeading()
+            trailMap.userTrackingMode = .none
+            toggleStateHeading = false
+            trailMap.isUserInteractionEnabled = true
+            sender.setImage(UIImage(systemName: "location.fill"), for: .normal)
+        }
+        else {
+            locationManager.startUpdatingHeading()
+            trailMap.userTrackingMode = .followWithHeading
+            toggleStateHeading = true
+            trailMap.isUserInteractionEnabled = false
+            sender.setImage(UIImage(systemName: "location.north.line.fill"), for: .normal)
+        }
+    }
     
     // Class attribute declarations
     var trails = getTrailsFromPlist(fileName: "trails")
     var differentTrailTypes = [""]
     var trailCoordinates : [[CLLocationCoordinate2D]]?
     var treeTrailAnnotations = [MKPointAnnotation]()
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
     var selectedPinInfo = ("", "")
+    var toggleStateHeading = false
     
     // The function that runs when the view is first loaded
     override func viewDidLoad() {
@@ -27,6 +47,11 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
         trailMap.delegate = self
         trailTable.delegate = self
         trailTable.dataSource = self
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        locationManager.delegate = self
 
         // Zoom and position the map correctly
         mapSetUp(mapView: trailMap)
@@ -58,7 +83,7 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    //MARK: - Delegate Functions
+    //MARK: - Table Delegate Functions
     
     // Gets the number of sections in the table view. Dependent on the different amount of trails
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -102,26 +127,6 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return differentTrailTypes[section]
     }
     
-    // Polyline renderer function that determines what colour each polyline should be
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
-        switch overlay.title {
-        case trails?[0].trailName:
-            polylineRenderer.strokeColor = UIColor.systemGreen
-        case trails?[1].trailName:
-            polylineRenderer.strokeColor = UIColor.systemBlue
-        case trails?[2].trailName:
-            polylineRenderer.strokeColor = UIColor.systemOrange
-        case trails?[3].trailName:
-            polylineRenderer.strokeColor = UIColor.systemRed
-        default:
-            polylineRenderer.strokeColor = UIColor.purple.withAlphaComponent(0.55)
-        }
-        
-        polylineRenderer.lineWidth = 3
-        return polylineRenderer
-    }
-    
     // Displays the relevant trail on the map when a trail in a cell is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -142,6 +147,28 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
             drawPolyLine(lineName: (trails?[indexPath.row].trailName)!, vertices: (trailCoordinates?[indexPath.row])!, mapView: trailMap)
         }
         
+    }
+    
+    //MARK: - Map Delegate Functions
+    
+    // Polyline renderer function that determines what colour each polyline should be
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        switch overlay.title {
+        case trails?[0].trailName:
+            polylineRenderer.strokeColor = UIColor.systemGreen
+        case trails?[1].trailName:
+            polylineRenderer.strokeColor = UIColor.systemBlue
+        case trails?[2].trailName:
+            polylineRenderer.strokeColor = UIColor.systemOrange
+        case trails?[3].trailName:
+            polylineRenderer.strokeColor = UIColor.systemRed
+        default:
+            polylineRenderer.strokeColor = UIColor.purple.withAlphaComponent(0.55)
+        }
+        
+        polylineRenderer.lineWidth = 3
+        return polylineRenderer
     }
     
     // Determines what each annotation should look like on the map

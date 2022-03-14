@@ -10,6 +10,7 @@ import MapKit
 
 class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: - Storyboard Outlets/Actions
     @IBOutlet var gardenMapView: MKMapView!
     @IBOutlet weak var tableParentView: UIView!
     @IBOutlet weak var searchResultTable: UITableView!
@@ -18,7 +19,27 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBAction func filterTapped(_ sender: Any) {
         addMapAnnotations()
     }
+
+    @IBAction func locationHeadingButton(_ sender: UIButton) {
+        if toggleStateHeading {
+            locationManager.stopUpdatingHeading()
+            gardenMapView.userTrackingMode = .none
+            toggleStateHeading = false
+            gardenMapView.isUserInteractionEnabled = true
+            sender.setImage(UIImage(systemName: "location.fill"), for: .normal)
+        }
+        else {
+            locationManager.startUpdatingHeading()
+            gardenMapView.userTrackingMode = .followWithHeading
+            toggleStateHeading = true
+            gardenMapView.isUserInteractionEnabled = false
+            sender.setImage(UIImage(systemName: "location.north.line.fill"), for: .normal)
+        }
+    }
     
+    
+    
+    // MARK: - Class Attributes
     var filteredData: [Landmark]?
     
     var attractions: [Landmark]?
@@ -33,6 +54,10 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     var searchBar = UISearchBar()
+    var headingImageView: UIImageView?
+    var toggleStateHeading = false
+    
+    //MARK: - View Loaded
     
     override func viewDidLoad() {
     
@@ -58,9 +83,8 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         tableParentView.isHidden = true
     }
 
-    // MARK: - Navigation
+    // MARK: - Storyboard navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "placeDetailViewSegue" {
             let secondViewController = segue.destination as! placeDetailViewController
@@ -132,7 +156,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         allLandmarks = features! + sections! + attractions!
     }
     
-    // MARK: - Delegate Functions
+    // MARK: - Map Delegate Functions
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
@@ -164,18 +188,8 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         performSegue(withIdentifier: "placeDetailViewSegue", sender: nil)
     }
 
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        let coordinate = CLLocationCoordinate2DMake(mapView.region.center.latitude, mapView.region.center.longitude)
-        var span = mapView.region.span
-        if span.latitudeDelta < 0.003 { // MIN LEVEL
-            span = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
-        } else if span.latitudeDelta > 0.01 { // MAX LEVEL
-            span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        }
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        mapView.setRegion(region, animated:true)
-    }
-
+    // MARK: - Search Delegate Functions
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchResultTable.isHidden = true
         tableParentView.isHidden = true
@@ -195,12 +209,18 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        // Make the view visible
         searchBar.showsCancelButton = true
+        self.view.bringSubviewToFront(tableParentView)
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        // Make the view invisible
         searchBar.showsCancelButton = false
+        self.view.sendSubviewToBack(tableParentView)
     }
+    
+    // MARK: - Search Table Delegate Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if filteredData?.count == 0 {

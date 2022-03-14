@@ -17,14 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
-                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
-                            </mapView>
                             <view contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="494-wj-nSU">
-                                <rect key="frame" x="0.0" y="88" width="390" height="581"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="573"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M23-Um-Ugj">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="595"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="573"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchResultCell" id="gFK-Z4-Zzz">
@@ -41,11 +38,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="M23-Um-Ugj" firstAttribute="leading" secondItem="494-wj-nSU" secondAttribute="leading" id="3x4-xL-O7B"/>
-                                    <constraint firstAttribute="bottom" secondItem="M23-Um-Ugj" secondAttribute="bottom" constant="-14" id="FjF-LN-Feu"/>
+                                    <constraint firstAttribute="bottom" secondItem="M23-Um-Ugj" secondAttribute="bottom" id="FjF-LN-Feu"/>
                                     <constraint firstAttribute="trailing" secondItem="M23-Um-Ugj" secondAttribute="trailing" id="Kew-nm-VtX"/>
                                     <constraint firstItem="M23-Um-Ugj" firstAttribute="top" secondItem="494-wj-nSU" secondAttribute="top" id="iiW-Jh-8rG"/>
                                 </constraints>
                             </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-Ek-fGm">
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                            </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h2Y-b6-4Qa">
                                 <rect key="frame" x="202" y="705" width="172" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,12 +60,21 @@
                                     <action selector="filterTapped:" destination="wbk-Ed-cWK" eventType="valueChanged" id="hGm-9c-lkY"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjn-w4-zdG">
+                                <rect key="frame" x="330" y="669" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="locationHeadingButton:" destination="wbk-Ed-cWK" eventType="touchUpInside" id="kJ5-fT-IwJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Un-6X-QT9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="494-wj-nSU" firstAttribute="leading" secondItem="5HS-Ek-fGm" secondAttribute="leading" id="0av-go-vHk"/>
-                            <constraint firstItem="2Un-6X-QT9" firstAttribute="bottom" secondItem="494-wj-nSU" secondAttribute="bottom" constant="92" id="3KI-l5-LIC"/>
+                            <constraint firstItem="2Un-6X-QT9" firstAttribute="bottom" secondItem="494-wj-nSU" secondAttribute="bottom" constant="100" id="3KI-l5-LIC"/>
                             <constraint firstItem="5HS-Ek-fGm" firstAttribute="bottom" secondItem="2Un-6X-QT9" secondAttribute="bottom" id="NSh-my-47D"/>
                             <constraint firstItem="494-wj-nSU" firstAttribute="leading" secondItem="2Un-6X-QT9" secondAttribute="leading" id="OWD-zS-tyR"/>
                             <constraint firstItem="494-wj-nSU" firstAttribute="trailing" secondItem="5HS-Ek-fGm" secondAttribute="trailing" id="Ym7-nf-hfe"/>
@@ -155,7 +164,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="V39-2c-7Hu"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="TXl-7X-vUC"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on map for walking directions to this location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-va-qio">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on map for walking directions to this location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-va-qio">
                                 <rect key="frame" x="37" y="429" width="316" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="n2Y-wZ-nJy"/>
@@ -299,6 +308,15 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-cb-vzq">
+                                <rect key="frame" x="330" y="397" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="locationHeadingButton:" destination="7Eg-MA-Y8o" eventType="touchUpInside" id="6pd-xB-n4F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HBA-8a-ntn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -624,6 +642,7 @@ Bomarea image provided by scott.zona under CC BY 2.0 licence.  No changes have b
         <image name="fork.knife" catalog="system" width="92" height="128"/>
         <image name="leaf" catalog="system" width="128" height="109"/>
         <image name="leaf.circle" catalog="system" width="128" height="121"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
