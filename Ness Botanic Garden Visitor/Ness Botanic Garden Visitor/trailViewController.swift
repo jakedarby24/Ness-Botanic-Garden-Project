@@ -175,12 +175,13 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
             let marker = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotation.title!!)
-            marker.displayPriority = MKFeatureDisplayPriority.required
             if marker.annotation?.title!! == "Start" {
                 marker.markerTintColor = UIColor.systemGreen
+                marker.displayPriority = .required
             }
             else if marker.annotation?.title!! == "End" {
                 marker.markerTintColor = UIColor.systemRed
+                marker.displayPriority = .required
             }
             else {
                 marker.markerTintColor = UIColor.init(named: "AccentColor")

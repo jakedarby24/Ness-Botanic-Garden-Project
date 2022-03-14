@@ -525,7 +525,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-oP-BZj">
                                 <rect key="frame" x="16" y="88" width="358" height="587.33333333333337"/>
-                                <mutableString key="text">Acer Griseum image provided by Jean-Pol Grandmont under CC BY 3.0 licence. Available at https://creativecommons.org/licenses/by/3.0/legalcode.
+                                <string key="text">Acer Griseum image provided by Jean-Pol Grandmont under CC BY 3.0 licence. Available at https://creativecommons.org/licenses/by/3.0/legalcode.
 Eucalyptus Pauciflora image provided by Amanda Slater under  CC BY-SA 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/2.0/legalcode.
 Betula Utilis image provided by Krzysztof Ziarnek under  CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 Acer Rubrum image provided by Danny S. under  CC BY-SA 3.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/3.0/legalcode.
@@ -536,7 +536,7 @@ Arisaema image provided by Daperro under CC BY-SA 4.0 licence.  No changes have 
 Brunsvigia image provided by Pam Ellenberger Kleiman under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 Galanthus image provided by Zeynel Cebeci under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
 Ammocharis image provided by Paul Venter under CC BY-SA 4.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by-sa/4.0/legalcode.
-Bomarea image provided by scott.zona under CC BY 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by/2.0/legalcode.</mutableString>
+Bomarea image provided by scott.zona under CC BY 2.0 licence.  No changes have been made to this image. Available at https://creativecommons.org/licenses/by/2.0/legalcode.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

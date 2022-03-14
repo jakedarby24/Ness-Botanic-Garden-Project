@@ -111,10 +111,12 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         request.transportType = .walking
 
         let directions = MKDirections(request: request)
+        
+        self.view.isUserInteractionEnabled = false
 
         directions.calculate { [unowned self] response, error in
             guard let unwrappedResponse = response else {
-                let noConnectionAlert = UIAlertController(title: "No network connection", message: "Please connect to a Wi-Fi network or mobile data to display directions between you and this landmark", preferredStyle: UIAlertController.Style.alert)
+                let noConnectionAlert = UIAlertController(title: "No network connection", message: "Please connect to a Wi-Fi network or mobile data to display directions between you and this place", preferredStyle: UIAlertController.Style.alert)
                 noConnectionAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(noConnectionAlert, animated: true, completion: nil)
                 return
@@ -133,6 +135,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
                 }
             }
         }
+        self.view.isUserInteractionEnabled = true
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
