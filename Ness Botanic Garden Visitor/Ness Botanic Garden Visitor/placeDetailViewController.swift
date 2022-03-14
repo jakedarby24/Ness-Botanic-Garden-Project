@@ -113,7 +113,12 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         let directions = MKDirections(request: request)
 
         directions.calculate { [unowned self] response, error in
-            guard let unwrappedResponse = response else { return }
+            guard let unwrappedResponse = response else {
+                let noConnectionAlert = UIAlertController(title: "No network connection", message: "Please connect to a Wi-Fi network or mobile data to display directions between you and this landmark", preferredStyle: UIAlertController.Style.alert)
+                noConnectionAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                self.present(noConnectionAlert, animated: true, completion: nil)
+                return
+            }
             
             if let route = unwrappedResponse.routes.first {
                 //show on map
