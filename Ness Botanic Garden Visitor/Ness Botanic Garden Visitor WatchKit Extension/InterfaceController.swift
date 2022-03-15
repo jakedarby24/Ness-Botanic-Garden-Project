@@ -7,22 +7,17 @@
 
 import WatchKit
 import Foundation
+import UserNotifications
 
-
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, UNUserNotificationCenterDelegate {
     
-    @IBOutlet weak var menuTable: WKInterfaceTable!
-    
-    let tableTitles = ["Trails", "Places", "Flora"]
-    let tableRelations = ["trails", "garden_sections", "attractions"]
+    @IBOutlet weak var placeTitleLabel: WKInterfaceLabel!
+    @IBOutlet weak var placeDescriptionLabel: WKInterfaceLabel!
+    @IBOutlet weak var placeImage: WKInterfaceImage!
     
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
-        menuTable.setNumberOfRows(tableTitles.count, withRowType: "menuTable")
-        for i in 0..<tableTitles.count {
-            let row = menuTable.rowController(at: i) as! menuTableController
-            row.titleLabel.setText(tableTitles[i])
-        }
+        UNUserNotificationCenter.current().delegate = self
         
     }
     
@@ -34,8 +29,20 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
     
-    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
-        return (tableRelations[rowIndex], tableTitles[rowIndex])
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        var notificationContent = response.notification.request.content.body
+        notificationContent.removeFirst(12)
+        notificationContent = notificationContent.components(separatedBy: ".")[0]
+        print(notificationContent)
+        let attractions = getPlacesFromPlist(fileName: "attractions")
+        for i in attractions! {
+            if i.name == notificationContent {
+                print(i)
+                placeTitleLabel.setText(i.name)
+                placeDescriptionLabel.setText(i.description)
+                placeImage.setImage(UIImage(named: "Watch Images/\(i.imageLink ?? "")"))
+            }
+        }
     }
 
 }

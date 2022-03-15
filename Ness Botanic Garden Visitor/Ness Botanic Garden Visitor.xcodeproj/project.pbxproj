@@ -30,6 +30,8 @@
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
 		473AC91627A9C43900280A25 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AC91527A9C43900280A25 /* Landmark.swift */; };
 		473E733E27B14F60009B311A /* trailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E733D27B14F60009B311A /* trailViewController.swift */; };
+		4748523F27DFE2E100812E47 /* Flower Route Test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4748523E27DFE2E000812E47 /* Flower Route Test.gpx */; };
+		4748524127E0E0FA00812E47 /* Watch Images in Resources */ = {isa = PBXBuildFile; fileRef = 4748524027E0E0FA00812E47 /* Watch Images */; };
 		4759A40727B69773006CAA08 /* Main Route.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4759A40627B69773006CAA08 /* Main Route.gpx */; };
 		475B060D27CD757F0022D9CE /* trailPinDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475B060C27CD757F0022D9CE /* trailPinDetailController.swift */; };
 		475C1A2027CE6EB300721B4A /* Ness_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475C1A1F27CE6EB300721B4A /* Ness_Tests.swift */; };
@@ -47,7 +49,6 @@
 		47C3238527BBF9BB000ECB66 /* Ness Icon 102.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C3238427BBF9BB000ECB66 /* Ness Icon 102.png */; };
 		47C3238727BC052B000ECB66 /* trails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C3238627BC052B000ECB66 /* trails.plist */; };
 		47C3238927BC05BC000ECB66 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C3238827BC05BC000ECB66 /* Trail.swift */; };
-		47FB8F8527BE9223008EEDFF /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB8F8427BE9223008EEDFF /* SecondScreenController.swift */; };
 		47FB8F8827BE96CB008EEDFF /* PolylineCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959227AC231400DF56D4 /* PolylineCoordinates.swift */; };
 		47FB8F8A27BE99A8008EEDFF /* UsefulMapFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB8F8927BE99A8008EEDFF /* UsefulMapFunctions.swift */; };
 		47FB8F8B27BE99C7008EEDFF /* UsefulFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734959027AC187B00DF56D4 /* UsefulFunctions.swift */; };
@@ -61,9 +62,6 @@
 		47FB8F9327BE9FD6008EEDFF /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA2F274FF49700496756 /* features.plist */; };
 		47FB8F9427BE9FD9008EEDFF /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
 		47FB8F9527BE9FDB008EEDFF /* trails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C3238627BC052B000ECB66 /* trails.plist */; };
-		47FB8F9727BEABCD008EEDFF /* DetailScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FB8F9627BEABCD008EEDFF /* DetailScreenController.swift */; };
-		47FB8F9827BEB007008EEDFF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4734958C27AABA3100DF56D4 /* images */; };
-		47FB8F9927BEBB2C008EEDFF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4734958C27AABA3100DF56D4 /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +148,8 @@
 		473976F2274C13410031D666 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		473AC91527A9C43900280A25 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		473E733D27B14F60009B311A /* trailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailViewController.swift; sourceTree = "<group>"; };
+		4748523E27DFE2E000812E47 /* Flower Route Test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Flower Route Test.gpx"; sourceTree = "<group>"; };
+		4748524027E0E0FA00812E47 /* Watch Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Watch Images"; sourceTree = "<group>"; };
 		474C300627B682E5005C06EB /* Ness Botanic Garden VisitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ness Botanic Garden VisitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4759A40627B69773006CAA08 /* Main Route.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Main Route.gpx"; path = "Routes/Main Route.gpx"; sourceTree = "<group>"; };
 		475B060C27CD757F0022D9CE /* trailPinDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trailPinDetailController.swift; sourceTree = "<group>"; };
@@ -165,9 +165,7 @@
 		47C3238627BC052B000ECB66 /* trails.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = trails.plist; sourceTree = "<group>"; };
 		47C3238827BC05BC000ECB66 /* Trail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail.swift; sourceTree = "<group>"; };
 		47EE99EC27DBED5500821555 /* Ness Botanic Garden Visitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ness Botanic Garden Visitor.entitlements"; sourceTree = "<group>"; };
-		47FB8F8427BE9223008EEDFF /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		47FB8F8927BE99A8008EEDFF /* UsefulMapFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulMapFunctions.swift; sourceTree = "<group>"; };
-		47FB8F9627BEABCD008EEDFF /* DetailScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +241,7 @@
 				473976B9274C0F2A0031D666 /* Main.storyboard */,
 				473976BE274C0F2B0031D666 /* LaunchScreen.storyboard */,
 				4759A40627B69773006CAA08 /* Main Route.gpx */,
+				4748523E27DFE2E000812E47 /* Flower Route Test.gpx */,
 				476631CA27CD0ADD0050BA77 /* Botanic Circle.gpx */,
 				47BE5369274FEC8A002C6E93 /* attractions.plist */,
 				4797EA2F274FF49700496756 /* features.plist */,
@@ -271,9 +270,8 @@
 		473976D6274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4748524027E0E0FA00812E47 /* Watch Images */,
 				473976D7274C0F2B0031D666 /* InterfaceController.swift */,
-				47FB8F8427BE9223008EEDFF /* SecondScreenController.swift */,
-				47FB8F9627BEABCD008EEDFF /* DetailScreenController.swift */,
 				473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */,
 				473976DB274C0F2B0031D666 /* NotificationController.swift */,
 				473976DD274C0F2B0031D666 /* ComplicationController.swift */,
@@ -444,6 +442,7 @@
 				473976C0274C0F2B0031D666 /* LaunchScreen.storyboard in Resources */,
 				473976BD274C0F2B0031D666 /* Assets.xcassets in Resources */,
 				473976BB274C0F2A0031D666 /* Main.storyboard in Resources */,
+				4748523F27DFE2E100812E47 /* Flower Route Test.gpx in Resources */,
 				47C3238727BC052B000ECB66 /* trails.plist in Resources */,
 				47BE536A274FEC8A002C6E93 /* attractions.plist in Resources */,
 				4797EA30274FF49700496756 /* features.plist in Resources */,
@@ -462,7 +461,6 @@
 				47FB8F9527BE9FDB008EEDFF /* trails.plist in Resources */,
 				47C3238527BBF9BB000ECB66 /* Ness Icon 102.png in Resources */,
 				473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */,
-				47FB8F9927BEBB2C008EEDFF /* images in Resources */,
 				47FB8F9127BE9FD3008EEDFF /* attractions.plist in Resources */,
 				47FB8F9227BE9FD6008EEDFF /* features.plist in Resources */,
 				47FB8F9427BE9FD9008EEDFF /* garden_sections.plist in Resources */,
@@ -473,12 +471,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47FB8F9827BEB007008EEDFF /* images in Resources */,
 				47FB8F8F27BE9FCD008EEDFF /* trails.plist in Resources */,
 				473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */,
 				47FB8F8E27BE9AA2008EEDFF /* garden_sections.plist in Resources */,
 				47FB8F9027BE9FD1008EEDFF /* attractions.plist in Resources */,
 				47FB8F9327BE9FD6008EEDFF /* features.plist in Resources */,
+				4748524127E0E0FA00812E47 /* Watch Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,8 +533,6 @@
 				47FB8F8D27BE99D3008EEDFF /* Trail.swift in Sources */,
 				47FB8F8B27BE99C7008EEDFF /* UsefulFunctions.swift in Sources */,
 				473976D8274C0F2B0031D666 /* InterfaceController.swift in Sources */,
-				47FB8F8527BE9223008EEDFF /* SecondScreenController.swift in Sources */,
-				47FB8F9727BEABCD008EEDFF /* DetailScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,9 +852,8 @@
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Visitor";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "You can receive notifications for when you are close to attractions if you select Always Allow. If you only want directions, then choose 'While Using'";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -894,9 +889,8 @@
 				INFOPLIST_FILE = "Ness Botanic Garden Visitor/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ness Botanic Visitor";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "\"We need your location to show you where you are in the gardens\"";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need your location to show you where you are in the gardens\"";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "You can receive notifications for when you are close to attractions if you select Always Allow. If you only want directions, then choose 'While Using'";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to determine the distance between you and Ness features.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

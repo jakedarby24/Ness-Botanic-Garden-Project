@@ -66,10 +66,8 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "Ness Botanic Garden Visitor WatchKit Extension/PushNotificationPayload.apns">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "473976C3274C0F2B0031D666"
@@ -77,7 +75,7 @@
             BlueprintName = "Ness Botanic Garden Visitor WatchKit App"
             ReferencedContainer = "container:Ness Botanic Garden Visitor.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -87,10 +85,8 @@
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "Ness Botanic Garden Visitor WatchKit Extension/PushNotificationPayload.apns">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "473976C3274C0F2B0031D666"
@@ -98,16 +94,7 @@
             BlueprintName = "Ness Botanic Garden Visitor WatchKit App"
             ReferencedContainer = "container:Ness Botanic Garden Visitor.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "473976C3274C0F2B0031D666"
-            BuildableName = "Ness Botanic Visitor.app"
-            BlueprintName = "Ness Botanic Garden Visitor WatchKit App"
-            ReferencedContainer = "container:Ness Botanic Garden Visitor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

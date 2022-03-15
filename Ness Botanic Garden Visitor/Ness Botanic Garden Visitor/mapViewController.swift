@@ -68,7 +68,6 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         searchResultTable.delegate = self
         searchResultTable.dataSource = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
 
         // Do any additional setup after loading the view.
@@ -81,6 +80,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         searchResultTable.isHidden = true
         searchBar.showsCancelButton = false
         tableParentView.isHidden = true
+        
     }
 
     // MARK: - Storyboard navigation

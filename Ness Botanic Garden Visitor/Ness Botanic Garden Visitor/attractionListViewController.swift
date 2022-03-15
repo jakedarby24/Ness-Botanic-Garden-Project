@@ -26,7 +26,6 @@ class attractionListViewController: UITableViewController, CLLocationManagerDele
         // Start the location manager to get the user's location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 

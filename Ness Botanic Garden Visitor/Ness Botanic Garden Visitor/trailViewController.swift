@@ -49,7 +49,6 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
         trailTable.dataSource = self
         
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
 

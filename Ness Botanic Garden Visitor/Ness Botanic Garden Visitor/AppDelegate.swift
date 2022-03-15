@@ -7,12 +7,14 @@
 
 import UIKit
 import CoreData
+import MapKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self
         preloadDataCheck()
         return true
     }
@@ -29,6 +31,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        let attractions = getPlacesFromPlist(fileName: "attractions")
+        
+        // Get the name of the Attraction from the notification
+        var notificationContent = response.notification.request.content.body
+        notificationContent.removeFirst(12)
+        notificationContent = notificationContent.components(separatedBy: ".")[0]
+        var coordinates: CLLocationCoordinate2D?
+        var attractionDescription: String?
+        for i in attractions! {
+            if i.name == notificationContent {
+                coordinates = CLLocationCoordinate2D(latitude: i.latitude, longitude: i.longitude)
+                attractionDescription = i.description
+            }
+        }
+        
+        // Create a new view controller to display
+        guard let window = UIApplication.shared.keyWindow else { return }
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabController = storyboard.instantiateViewController(identifier: "TabBarController") as! UITabBarController
+        let detailViewController = storyboard.instantiateViewController(identifier: "PlaceDetailController") as! placeDetailViewController
+        detailViewController.titleName = notificationContent
+        detailViewController.position = coordinates
+        detailViewController.descriptionName = attractionDescription
+        tabController.selectedIndex = 3
+        window.rootViewController = tabController
+        window.makeKeyAndVisible()
+        window.rootViewController?.present(detailViewController, animated: true, completion: nil)
+        completionHandler()
     }
     
     lazy var persistentContainer: NSPersistentContainer = {

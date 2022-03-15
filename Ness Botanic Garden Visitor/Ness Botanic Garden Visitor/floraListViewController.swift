@@ -20,7 +20,6 @@ class floraListViewController: UITableViewController, CLLocationManagerDelegate 
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 

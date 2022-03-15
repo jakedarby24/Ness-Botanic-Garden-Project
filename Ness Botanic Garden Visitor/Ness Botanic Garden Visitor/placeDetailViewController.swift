@@ -10,6 +10,8 @@ import MapKit
 
 class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    //MARK: - Outlets and Actions
+    
     // Outlets from the storyboard
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -30,6 +32,8 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
     }
     
+    //MARK: - Attributes
+    
     // Class attributes
     var titleName: String?
     var descriptionName: String?
@@ -43,6 +47,8 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
+    // MARK: - View Setup
+    
     // Runs when the view loads
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +56,6 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
 
         attractions = getPlacesFromPlist(fileName: "attractions")
@@ -65,7 +70,6 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
         let region = MKCoordinateRegion(center: position!, span: span)
         self.positionOfLandmarkMap.setRegion(region, animated: true)
-        //self.positionOfLandmarkMap.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         let newAnnotation = MKPointAnnotation()
         newAnnotation.coordinate = CLLocationCoordinate2D(latitude: position!.latitude, longitude: position!.longitude)
         newAnnotation.title = titleName
@@ -75,15 +79,18 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
                 self.showRouteOnMap(startCoord: self.currentLocation!.coordinate, endCoord: newAnnotation.coordinate)
             }
             else {
-                /*
                 let alert = UIAlertController(title: "Location Disabled", message: "Enable location to see directions to this landmark", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: {_ in
+                    settingsRedirect()
+                }))
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-                */
             }
         }
         
     }
+    
+    // MARK: - Map Delegate Methods
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if !(annotation is MKUserLocation) {
@@ -95,13 +102,24 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        polylineRenderer.strokeColor = UIColor.systemCyan
+        polylineRenderer.lineWidth = 3
+        return polylineRenderer
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
     }
+    
+    // MARK: - Table Delegate Methods
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    // MARK: - Custom Methods
     
     func showRouteOnMap(startCoord: CLLocationCoordinate2D, endCoord: CLLocationCoordinate2D) {
         let request = MKDirections.Request()
@@ -137,11 +155,12 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         }
         self.view.isUserInteractionEnabled = true
     }
-    
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
-        polylineRenderer.strokeColor = UIColor.systemCyan
-        polylineRenderer.lineWidth = 3
-        return polylineRenderer
+}
+
+func settingsRedirect() {
+    if let bundleId = Bundle.main.bundleIdentifier,
+        let url = URL(string: "\(UIApplication.openSettingsURLString)&path=LOCATION/\(bundleId)")
+    {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
