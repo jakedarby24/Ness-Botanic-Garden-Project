@@ -4,7 +4,7 @@
 //
 //  Created by Jake Darby on 03/02/2022.
 //
-// This file is responsible for holding any other polyline coordinates that are needed
+//  This file is responsible for holding any other polyline coordinates that are needed
 
 import Foundation
 import MapKit

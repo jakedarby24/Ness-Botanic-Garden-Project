@@ -4,6 +4,7 @@
 //
 //  Created by Jake Darby on 17/02/2022.
 //
+//  Similar to the UsefulFunctions file but specifically for map functions
 
 import Foundation
 import MapKit
@@ -73,6 +74,7 @@ func setAnnotationStyle(marker: MKMarkerAnnotationView, annotation: MKAnnotation
     return marker
 }
 
+// Sets up a map
 func mapSetUp(mapView: MKMapView) {
     let latitude = 53.27182
     let longitude = -3.0448

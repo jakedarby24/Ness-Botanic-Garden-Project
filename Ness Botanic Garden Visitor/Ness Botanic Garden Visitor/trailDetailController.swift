@@ -12,6 +12,8 @@ import MapKit
 
 class trailDetailController: UIViewController {
     
+    // MARK: - Outlet and attribute declaration
+    
     // Outlet declaration
     @IBOutlet weak var trailNameLabel: UILabel!
     @IBOutlet weak var trailDescLabel: UILabel!
@@ -29,6 +31,8 @@ class trailDetailController: UIViewController {
     var imagesListArray = [UIImage]()
     var currentImage = 1
 
+    // MARK: - View Setup
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +49,7 @@ class trailDetailController: UIViewController {
             trailAccessibleLabel.textColor = UIColor.systemRed
         }
         
+        // If there are images for the trail, set them
         if imageLinks != nil {
             for i in imageLinks! {
                 imagesListArray.append(UIImage(named: "images/\(i)")!)
@@ -65,7 +70,7 @@ class trailDetailController: UIViewController {
             images.image = imagesListArray[currentImage]
             currentImage += 1
         }, completion: {
-            // This code uses a recursive function to continue cycling through images
+            // This code uses a recursive function to continue cycling through images every two seconds
             [self]_ in DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [self] in
             transitionRepeater()
         }})

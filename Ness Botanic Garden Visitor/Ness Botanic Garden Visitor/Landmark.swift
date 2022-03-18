@@ -4,6 +4,7 @@
 //
 //  Created by Jake Darby on 29/01/2022.
 //
+// Structure for landmark information
 
 import Foundation
 import MapKit

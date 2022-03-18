@@ -98,6 +98,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     // MARK: - Custom Functions
     // A function that sets the map view to the correct location of the Botanic Garden and zoom level.
     
+    // Get all of the features from all three plist files and create map annotations for them
     func addMapAnnotations() {
         gardenMapView.removeAnnotations(gardenMapView.annotations)
         features = getPlacesFromPlist(fileName: "features")
@@ -153,6 +154,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         default:
             print("Error")
         }
+        // Create an array that contains all of the landmarks, for use with the search function
         allLandmarks = features! + sections! + attractions!
     }
     
@@ -232,12 +234,14 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchResultCell")
         var content = cell?.defaultContentConfiguration()
+        // If there are no matching search results
         if filteredData?.count == 0 {
             content?.text = "No results"
             content?.textProperties.font = UIFont.italicSystemFont(ofSize: 14)
             content?.textProperties.color = UIColor.systemGray2
             cell?.isUserInteractionEnabled = false
         }
+        // If there ARE matching search results
         else {
             content?.text = filteredData?[indexPath.row].name
             content?.textProperties.font = UIFont.systemFont(ofSize: 16)
@@ -249,6 +253,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // On selecting a row, identify the landmark on the map and manually select it
         filterSegmentControl.selectedSegmentIndex = 0
         addMapAnnotations()
         gardenMapView.showAnnotations(gardenMapView.annotations.filter({ annotation in
@@ -259,6 +264,7 @@ class mapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             }
             return annotation.title == filteredData?[indexPath.row].name
         }), animated: true)
+        // Hide the table, dismiss the keyboard
         searchResultTable.isHidden = true
         tableParentView.isHidden = true
         searchBar.text = ""

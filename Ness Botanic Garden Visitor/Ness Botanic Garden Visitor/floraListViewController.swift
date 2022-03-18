@@ -10,10 +10,12 @@ import MapKit
 
 class floraListViewController: UITableViewController, CLLocationManagerDelegate {
 
+    // MARK: - Class attributes
     var flowers: [Landmark]?
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
+    // MARK: - View setup
     override func viewDidLoad() {
         flowers = getPlacesFromPlist(fileName: "attractions")
         navigationItem.title = "Flora"
@@ -23,7 +25,7 @@ class floraListViewController: UITableViewController, CLLocationManagerDelegate 
         locationManager.startUpdatingLocation()
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table view functions
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -62,7 +64,7 @@ class floraListViewController: UITableViewController, CLLocationManagerDelegate 
         }
     }
     
-    //updates the current location, updates the table of locations
+    // Updates the current location, updates the table of locations
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
         var newFlowers: [Landmark]

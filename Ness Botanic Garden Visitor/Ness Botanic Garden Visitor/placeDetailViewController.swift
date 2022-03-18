@@ -82,6 +82,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
             walkingDirectionsInfoLabel.isHidden = true
         }
         
+        // Setup the map to focus on the correct landmark position
         titleLabel.text = titleName
         descriptionLabel.text = descriptionName
         descriptionLabel.sizeToFit()
@@ -95,9 +96,11 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         newAnnotation.title = titleName
         positionOfLandmarkMap.addAnnotation(newAnnotation)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Show the route on the map
             if self.currentLocation != nil {
                 self.showRouteOnMap(startCoord: self.currentLocation!.coordinate, endCoord: newAnnotation.coordinate)
             }
+            // If location is disabled, alert the user to this
             else {
                 let alert = UIAlertController(title: "Location Disabled", message: "Enable location to see directions to this landmark", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: {_ in
@@ -141,6 +144,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     
     // MARK: - Custom Methods
     
+    // This function is responsible for getting the route between two coordinates, and displaying this on a map.
     func showRouteOnMap(startCoord: CLLocationCoordinate2D, endCoord: CLLocationCoordinate2D) {
         let request = MKDirections.Request()
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: startCoord, addressDictionary: nil))
@@ -148,18 +152,23 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         request.requestsAlternateRoutes = false
         request.transportType = .walking
 
+        // Make a request for directions
         let directions = MKDirections(request: request)
         
+        // Make the view non-interactive only whilst calculating directions
         self.view.isUserInteractionEnabled = false
 
+        // Calculate directions
         directions.calculate { [unowned self] response, error in
             guard let unwrappedResponse = response else {
+                // If there is no network connection, alert the user
                 let noConnectionAlert = UIAlertController(title: "No network connection", message: "Please connect to a Wi-Fi network or mobile data to display directions between you and this place", preferredStyle: UIAlertController.Style.alert)
                 noConnectionAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(noConnectionAlert, animated: true, completion: nil)
                 return
             }
             
+            // Add the overlay to the map and set the labels appropriately
             if let route = unwrappedResponse.routes.first {
                 //show on map
                 self.positionOfLandmarkMap.addOverlay(route.polyline)
@@ -177,6 +186,7 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     }
 }
 
+// A function to redirect the user to the settings for the app
 func settingsRedirect() {
     if let bundleId = Bundle.main.bundleIdentifier,
         let url = URL(string: "\(UIApplication.openSettingsURLString)&path=LOCATION/\(bundleId)")

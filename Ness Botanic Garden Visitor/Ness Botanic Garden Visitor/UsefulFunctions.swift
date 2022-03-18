@@ -4,10 +4,11 @@
 //
 //  Created by Jake Darby on 03/02/2022.
 //
+//  A file that contains some useful functions for use around the program
 
 import Foundation
 
-// A function for getting landmark information from the plist files
+// MARK: - Get places from Plist
 func getPlacesFromPlist(fileName: String) -> [Landmark]? {
     
     var landmarks: [Landmark]
@@ -28,7 +29,7 @@ func getPlacesFromPlist(fileName: String) -> [Landmark]? {
     }
 }
 
-// A function for getting trail information from a plist file
+// MARK: - Get trails from Plist
 func getTrailsFromPlist(fileName: String) -> [Trail]? {
     
     var trails: [Trail]

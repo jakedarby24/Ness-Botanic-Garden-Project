@@ -19,12 +19,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // Request notification access
         let notificationCentre = UNUserNotificationCenter.current()
         notificationCentre.requestAuthorization(options: [.alert, .sound]) { granted, error in
             if let error = error {
-                
+                print(error)
             }
         }
+        
+        // Monitor regions
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
@@ -75,6 +79,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
+// Extends the class file to include the monitoring for entering regions
 extension SceneDelegate: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         if UIApplication.shared.applicationState == .active {}
@@ -96,6 +101,7 @@ extension SceneDelegate: CLLocationManagerDelegate {
         }
     }
         
+    // Function for leaving a region
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
     }

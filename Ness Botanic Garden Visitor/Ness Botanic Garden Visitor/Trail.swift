@@ -4,6 +4,7 @@
 //
 //  Created by Jake Darby on 15/02/2022.
 //
+//  Structure for trail and point of interest information
 
 import Foundation
 
