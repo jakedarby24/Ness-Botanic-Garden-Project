@@ -17,6 +17,8 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var positionOfLandmarkMap: MKMapView!
     @IBOutlet weak var timeDistanceLabel: UILabel!
+    @IBOutlet weak var notificationOnlyImageView: UIImageView!
+    @IBOutlet weak var walkingDirectionsInfoLabel: UILabel!
     
     // Action function for when the map is tapped.
     // This redirects the user to Apple Maps, if installed.
@@ -61,6 +63,24 @@ class placeDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         attractions = getPlacesFromPlist(fileName: "attractions")
         features = getPlacesFromPlist(fileName: "features")
         sections = getPlacesFromPlist(fileName: "garden_sections")
+        
+        /* If the image is nil, it signifies to the controller that the page has been
+           accessed from the table view and not a notification. The map should be shown,
+           and not an image.
+           If the image contains a value, it signifies that this is a redirect from a
+           notification and so the map should be hidden and an image shown instead, as
+           the user will not need directions to the landmark.
+         */
+        if imageLink == nil {
+            notificationOnlyImageView.isHidden = true
+        }
+        else {
+            positionOfLandmarkMap.isHidden = true
+            self.view.bringSubviewToFront(notificationOnlyImageView)
+            notificationOnlyImageView.image = UIImage(named: "images/\(imageLink!)")
+            timeDistanceLabel.isHidden = true
+            walkingDirectionsInfoLabel.isHidden = true
+        }
         
         titleLabel.text = titleName
         descriptionLabel.text = descriptionName

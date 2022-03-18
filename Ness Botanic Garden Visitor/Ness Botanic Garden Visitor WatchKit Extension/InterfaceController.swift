@@ -33,12 +33,10 @@ class InterfaceController: WKInterfaceController, UNUserNotificationCenterDelega
         var notificationContent = response.notification.request.content.body
         notificationContent.removeFirst(12)
         notificationContent = notificationContent.components(separatedBy: ".")[0]
-        print(notificationContent)
         let attractions = getPlacesFromPlist(fileName: "attractions")
         for i in attractions! {
             if i.name == notificationContent {
-                print(i)
-                placeTitleLabel.setText(i.name)
+                placeTitleLabel.setAttributedText(NSAttributedString(string: i.name, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20.0)]))
                 placeDescriptionLabel.setText(i.description)
                 placeImage.setImage(UIImage(named: "Watch Images/\(i.imageLink ?? "")"))
             }

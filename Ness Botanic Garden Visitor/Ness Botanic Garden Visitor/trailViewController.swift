@@ -10,10 +10,9 @@ import MapKit
 
 class trailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, CLLocationManagerDelegate {
     
-    // Outlet declarations
+    // MARK: - Outlets and Actions
     @IBOutlet weak var trailMap: MKMapView!
     @IBOutlet weak var trailTable: UITableView!
-    
     @IBAction func locationHeadingButton(_ sender: UIButton) {
         if toggleStateHeading {
             locationManager.stopUpdatingHeading()
@@ -30,6 +29,8 @@ class trailViewController: UIViewController, UITableViewDelegate, UITableViewDat
             sender.setImage(UIImage(systemName: "location.north.line.fill"), for: .normal)
         }
     }
+    
+    // MARK: - Attributes and Setup
     
     // Class attribute declarations
     var trails = getTrailsFromPlist(fileName: "trails")

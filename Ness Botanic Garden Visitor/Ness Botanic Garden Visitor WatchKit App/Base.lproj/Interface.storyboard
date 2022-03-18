@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch45"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
         <!--Ness Botanic-->
@@ -11,10 +11,11 @@
             <objects>
                 <controller identifier="Main Menu" title="Ness Botanic" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Ness_Botanic_Visitor" customModuleProvider="target">
                     <items>
-                        <group width="1" height="41" alignment="left" id="0fv-eG-rXH">
+                        <group width="1" alignment="left" id="0fv-eG-rXH">
                             <items>
-                                <label width="136" alignment="left" textAlignment="left" numberOfLines="3" id="cZ6-9w-GUC">
-                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                <label alignment="left" textAlignment="left" numberOfLines="0" id="cZ6-9w-GUC">
+                                    <string key="text">This watchOS app can only be opened from a notification. Please use the app on your iPhone for full functionality for accessing information without a notification.</string>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
                             </items>
                         </group>
@@ -25,9 +26,7 @@
                         </group>
                         <group width="1" alignment="left" id="2pp-IM-kxn">
                             <items>
-                                <label alignment="left" textAlignment="center" numberOfLines="0" id="3hP-fk-q2F">
-                                    <string key="text">This watchOS app can only be opened from a notification. Please use the app on your iPhone for full functionality for accessing information without a notification.</string>
-                                </label>
+                                <label alignment="left" textAlignment="center" numberOfLines="0" id="3hP-fk-q2F"/>
                             </items>
                         </group>
                     </items>

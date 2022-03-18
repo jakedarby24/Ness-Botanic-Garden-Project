@@ -37,6 +37,8 @@ class Ness_Tests: XCTestCase {
     func testNumberOfTableRows() {
         XCTAssertEqual(sut.tableView(sut.tableView, numberOfRowsInSection: 0), sut.sections?.count)
     }
-
     
+    func testUserInterface() {
+        
+    }
 }

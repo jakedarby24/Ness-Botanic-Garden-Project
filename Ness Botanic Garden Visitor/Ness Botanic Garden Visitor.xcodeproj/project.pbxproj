@@ -24,7 +24,6 @@
 		473976D3274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		473976D8274C0F2B0031D666 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976D7274C0F2B0031D666 /* InterfaceController.swift */; };
 		473976DA274C0F2B0031D666 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */; };
-		473976DC274C0F2B0031D666 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DB274C0F2B0031D666 /* NotificationController.swift */; };
 		473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976DD274C0F2B0031D666 /* ComplicationController.swift */; };
 		473976E0274C0F2C0031D666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473976DF274C0F2C0031D666 /* Assets.xcassets */; };
 		473976F3274C13410031D666 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473976F2274C13410031D666 /* mapViewController.swift */; };
@@ -43,6 +42,7 @@
 		4786984D27BEE1DD00F84992 /* trails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C3238627BC052B000ECB66 /* trails.plist */; };
 		4797EA30274FF49700496756 /* features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA2F274FF49700496756 /* features.plist */; };
 		4797EA32274FFB0900496756 /* garden_sections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4797EA31274FFB0900496756 /* garden_sections.plist */; };
+		479B9EB527E37A3A00D55610 /* Watch Images in Resources */ = {isa = PBXBuildFile; fileRef = 4748524027E0E0FA00812E47 /* Watch Images */; };
 		479D33FD27BACAB500FC269D /* trailDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D33FC27BACAB500FC269D /* trailDetailController.swift */; };
 		47BE536A274FEC8A002C6E93 /* attractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47BE5369274FEC8A002C6E93 /* attractions.plist */; };
 		47C3238127BBF043000ECB66 /* menuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C3238027BBF043000ECB66 /* menuTableController.swift */; };
@@ -140,7 +140,6 @@
 		473976D2274C0F2B0031D666 /* Ness Botanic Garden Visitor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ness Botanic Garden Visitor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473976D7274C0F2B0031D666 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		473976DB274C0F2B0031D666 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		473976DD274C0F2B0031D666 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		473976DF274C0F2C0031D666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		473976E1274C0F2C0031D666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -273,7 +272,6 @@
 				4748524027E0E0FA00812E47 /* Watch Images */,
 				473976D7274C0F2B0031D666 /* InterfaceController.swift */,
 				473976D9274C0F2B0031D666 /* ExtensionDelegate.swift */,
-				473976DB274C0F2B0031D666 /* NotificationController.swift */,
 				473976DD274C0F2B0031D666 /* ComplicationController.swift */,
 				473976DF274C0F2C0031D666 /* Assets.xcassets */,
 				473976E1274C0F2C0031D666 /* Info.plist */,
@@ -458,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				473976CD274C0F2B0031D666 /* Assets.xcassets in Resources */,
+				479B9EB527E37A3A00D55610 /* Watch Images in Resources */,
 				47FB8F9527BE9FDB008EEDFF /* trails.plist in Resources */,
 				47C3238527BBF9BB000ECB66 /* Ness Icon 102.png in Resources */,
 				473976CB274C0F2B0031D666 /* Interface.storyboard in Resources */,
@@ -524,7 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				473976DC274C0F2B0031D666 /* NotificationController.swift in Sources */,
 				473976DE274C0F2B0031D666 /* ComplicationController.swift in Sources */,
 				47C3238127BBF043000ECB66 /* menuTableController.swift in Sources */,
 				47FB8F8827BE96CB008EEDFF /* PolylineCoordinates.swift in Sources */,
@@ -740,7 +738,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -773,7 +771,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -800,7 +798,7 @@
 				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "Ness Botanic Visitor";
 				SDKROOT = watchos;
@@ -826,7 +824,7 @@
 				IBSC_MODULE = Ness_Botanic_Garden_Visitor_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jakedarby.Ness-Botanic-Garden-Visitor";
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor.watchkitapp";
 				PRODUCT_NAME = "Ness Botanic Visitor";
 				SDKROOT = watchos;
@@ -865,7 +863,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -902,7 +900,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jakedarby.Ness-Botanic-Garden-Visitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

@@ -43,15 +43,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         notificationContent = notificationContent.components(separatedBy: ".")[0]
         var coordinates: CLLocationCoordinate2D?
         var attractionDescription: String?
+        var attractionImage: String?
         for i in attractions! {
             if i.name == notificationContent {
                 coordinates = CLLocationCoordinate2D(latitude: i.latitude, longitude: i.longitude)
                 attractionDescription = i.description
+                attractionImage = i.imageLink
             }
         }
         
         // Create a new view controller to display
-        guard let window = UIApplication.shared.keyWindow else { return }
+        guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
+        //guard let window = UIApplication.shared.keyWindow else { return }
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let tabController = storyboard.instantiateViewController(identifier: "TabBarController") as! UITabBarController
@@ -59,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         detailViewController.titleName = notificationContent
         detailViewController.position = coordinates
         detailViewController.descriptionName = attractionDescription
+        detailViewController.imageLink = attractionImage
         tabController.selectedIndex = 3
         window.rootViewController = tabController
         window.makeKeyAndVisible()

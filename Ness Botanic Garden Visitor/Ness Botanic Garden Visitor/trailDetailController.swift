@@ -66,7 +66,7 @@ class trailDetailController: UIViewController {
             currentImage += 1
         }, completion: {
             // This code uses a recursive function to continue cycling through images
-            [self]_ in DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            [self]_ in DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [self] in
             transitionRepeater()
         }})
     }
@@ -81,7 +81,7 @@ class trailDetailController: UIViewController {
             currentImage += 1
         }, completion: {
             // This code uses a recursive function to continue cycling through images
-            [self]_ in DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            [self]_ in DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [self] in
             transitionRepeater()
         }})
     }

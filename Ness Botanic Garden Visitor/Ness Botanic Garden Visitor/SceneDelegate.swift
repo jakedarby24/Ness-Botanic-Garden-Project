@@ -67,7 +67,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
             // Register the region.
             let region = CLCircularRegion(center: center,
-                                          radius: 2.0, identifier: identifier)
+                                          radius: CLLocationDistance(100), identifier: identifier)
             region.notifyOnEntry = true
             region.notifyOnExit = false
             locationManager.startMonitoring(for: region)

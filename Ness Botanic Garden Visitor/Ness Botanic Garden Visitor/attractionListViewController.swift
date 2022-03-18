@@ -29,7 +29,7 @@ class attractionListViewController: UITableViewController, CLLocationManagerDele
         locationManager.startUpdatingLocation()
     }
 
-    // MARK: - Table view data
+    // MARK: - Table Delegate Functions
 
     // Returns the number of sections for the table (will only ever be 1 for this implementation)
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,11 +62,12 @@ class attractionListViewController: UITableViewController, CLLocationManagerDele
     }
 
 
-    // MARK: - Navigation
+    // MARK: - Segue Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "placeDetailFromTable" {
+            // Create the new view controller
             let selectedRow = tableView.indexPath(for: sender as! UITableViewCell)
             let secondViewController = segue.destination as! placeDetailViewController
             secondViewController.titleName = sections![selectedRow!.row].name
